@@ -84,6 +84,9 @@
 		6DAB768519953D3D0048AA42 = {
 			isa = PBXGroup;
 			children = (
+				6DAB76DA19954FF50048AA42 /* Model */,
+				6DAB76D919954FE90048AA42 /* View */,
+				6DAB76D819954FE00048AA42 /* Controller */,
 				6DAB769919953D3D0048AA42 /* Versus */,
 				6DAB76B619953D3D0048AA42 /* VersusTests */,
 				6DAB769019953D3D0048AA42 /* Frameworks */,
@@ -151,6 +154,27 @@
 				6DAB76B919953D3D0048AA42 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DAB76D819954FE00048AA42 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6DAB76D919954FE90048AA42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6DAB76DA19954FF50048AA42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,6 +474,7 @@
 				6DAB76C219953D3D0048AA42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DAB76C319953D3D0048AA42 /* Build configuration list for PBXNativeTarget "VersusTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +483,7 @@
 				6DAB76C519953D3D0048AA42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
