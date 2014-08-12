@@ -10,7 +10,6 @@
                 <outlet property="answer2" destination="M5U-KI-Cl1" id="ZUg-ek-49S"/>
                 <outlet property="answer3" destination="fLv-ng-Kv9" id="hAq-m6-ehv"/>
                 <outlet property="answer4" destination="cPs-5V-gUf" id="T0h-6f-LdP"/>
-                <outlet property="progressViewBar" destination="9GK-n6-x2N" id="DRd-nD-fP2"/>
                 <outlet property="questionField" destination="dlM-oZ-vFt" id="LcW-vS-GUM"/>
                 <outlet property="trocar" destination="Fs5-Az-3CB" id="ZVi-mN-fck"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -92,10 +91,6 @@
                         <action selector="alterar:" destination="-1" eventType="touchUpInside" id="M2f-GC-1Lz"/>
                     </connections>
                 </button>
-                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9GK-n6-x2N">
-                    <rect key="frame" x="8" y="231" width="292" height="2"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </progressView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

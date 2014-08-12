@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>1</key>
+		<string>Vespa</string>
+		<key>2</key>
+		<string>Arqueiro Verde</string>
+		<key>3</key>
+		<string>Capitão América</string>
+		<key>4</key>
+		<string>Lex Luthor</string>
+		<key>Pergunta</key>
+		<string>Qual herói participava da formação original dos vingadores?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Batman</string>
+		<key>2</key>
+		<string>Arqueiro Verde</string>
+		<key>3</key>
+		<string>Capitão América</string>
+		<key>4</key>
+		<string>Homem Aranha</string>
+		<key>Pergunta</key>
+		<string>Qual herói possui um anel de Kryptonita caso Superman tenha que ser detido?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Barro</string>
+		<key>2</key>
+		<string>Água</string>
+		<key>3</key>
+		<string>Terra</string>
+		<key>4</key>
+		<string>Areia</string>
+		<key>Pergunta</key>
+		<string>A mulher maravilha foi concebida a partir do que?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Aquaman</string>
+		<key>2</key>
+		<string>Flash</string>
+		<key>3</key>
+		<string>Arqueiro Verde</string>
+		<key>4</key>
+		<string>Capitão América</string>
+		<key>Pergunta</key>
+		<string>Qual o herói se chama Orin?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Terra</string>
+		<key>2</key>
+		<string>Midgard</string>
+		<key>3</key>
+		<string>Svartalfheim</string>
+		<key>4</key>
+		<string>Asgard</string>
+		<key>Pergunta</key>
+		<string>A mãe de Thor é a deusa de que mundo?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Flash</string>
+		<key>2</key>
+		<string>Apocalypse</string>
+		<key>3</key>
+		<string>Hulk</string>
+		<key>4</key>
+		<string>Superman</string>
+		<key>Pergunta</key>
+		<string>Qual Herói tem o soco mais forte dos quadrinhos?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Amarelo</string>
+		<key>2</key>
+		<string>Vermelho</string>
+		<key>3</key>
+		<string>Azul</string>
+		<key>4</key>
+		<string>Verde</string>
+		<key>Pergunta</key>
+		<string>Qual cor é a fraqueza do Lantera Verde?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>1960</string>
+		<key>2</key>
+		<string>1980</string>
+		<key>3</key>
+		<string>2000</string>
+		<key>4</key>
+		<string>1940</string>
+		<key>Pergunta</key>
+		<string>Em que ano Batman entrou na liga da justiça?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Pantera Negra</string>
+		<key>2</key>
+		<string>Homem de Ferro</string>
+		<key>3</key>
+		<string>Batman</string>
+		<key>4</key>
+		<string>Professor X</string>
+		<key>Pergunta</key>
+		<string>Qual personagem mais ricos dos HQ’s?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>1941</string>
+		<key>2</key>
+		<string>1942</string>
+		<key>3</key>
+		<string>1944</string>
+		<key>4</key>
+		<string>1950</string>
+		<key>Pergunta</key>
+		<string>Em que ano foi  a primeira aparição do Capitão América?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>4</string>
+		<key>2</key>
+		<string>3</string>
+		<key>3</key>
+		<string>6</string>
+		<key>4</key>
+		<string>9</string>
+		<key>Pergunta</key>
+		<string>Quantas sedes já teve a Liga da Justiça?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Sr. Fantátisco</string>
+		<key>2</key>
+		<string>Mary Jane</string>
+		<key>3</key>
+		<string>Gwen Stacy</string>
+		<key>4</key>
+		<string>Tia May</string>
+		<key>Pergunta</key>
+		<string>Quando o Homem Aranha precisou de reparou em seu uniforme, quem o fez?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Participar de Luta Livre</string>
+		<key>2</key>
+		<string>Contar a Tia May
+Contar a Tia May</string>
+		<key>3</key>
+		<string>Ir a um programa de TV</string>
+		<key>4</key>
+		<string>Salvar a cidade</string>
+		<key>Pergunta</key>
+		<string>O que o Homem Aranha fez ao descobrir seus poderes?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Nick Fury</string>
+		<key>2</key>
+		<string>Bruce Wayne</string>
+		<key>3</key>
+		<string>Tony Stark</string>
+		<key>4</key>
+		<string>Bruce Bayne</string>
+		<key>Pergunta</key>
+		<string>Qual personagem é o diretor da SHIELD?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Garota Esquilo</string>
+		<key>2</key>
+		<string>Mulher Macaco</string>
+		<key>3</key>
+		<string>She-Hulk</string>
+		<key>4</key>
+		<string>Mulher Maravilha</string>
+		<key>Pergunta</key>
+		<string>Qual super heroína é conhecida como “Super-heroína do rabo peludo”?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Barbeador Modificado</string>
+		<key>2</key>
+		<string>Celular Modificado</string>
+		<key>3</key>
+		<string>Óculos Modificado</string>
+		<key>4</key>
+		<string>Fone Modificado</string>
+		<key>Pergunta</key>
+		<string>Na verdade, o que era o comunicador usado por Qui-Gon Jinn?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>James Hawlett</string>
+		<key>2</key>
+		<string>Allan Jhones</string>
+		<key>3</key>
+		<string>James Hawnk</string>
+		<key>4</key>
+		<string>Tony Fury</string>
+		<key>Pergunta</key>
+		<string>Qual o verdadeiro nome de Wolverine?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Daken</string>
+		<key>2</key>
+		<string>Allan</string>
+		<key>3</key>
+		<string>James</string>
+		<key>4</key>
+		<string>Itsu</string>
+		<key>Pergunta</key>
+		<string>Qual o nome do filho do Wolverine?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Canada</string>
+		<key>2</key>
+		<string>USA</string>
+		<key>3</key>
+		<string>Russia</string>
+		<key>4</key>
+		<string>Alemanha</string>
+		<key>Pergunta</key>
+		<string>Onde o Wolverine nasceu?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Decapitado</string>
+		<key>2</key>
+		<string>Queimado</string>
+		<key>3</key>
+		<string>Esquartejado</string>
+		<key>4</key>
+		<string>Perfurado</string>
+		<key>Pergunta</key>
+		<string>De qual forma Wolverine pode ser morto?</string>
+	</dict>
+</array>
+</plist>

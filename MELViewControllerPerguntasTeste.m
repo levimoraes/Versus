@@ -41,23 +41,6 @@
 
 }
 
--(void)progress {
-    _progressViewBar.progress += 0.001;
-    
-    if (_progressViewBar.progress == 1){
-        [timer invalidate];
-        UIAlertView * alert =[[UIAlertView alloc ] initWithTitle:@"Seu Tempo Acabou"
-                                                         message:@""
-                                                        delegate:self
-                                               cancelButtonTitle:nil
-                                               otherButtonTitles: nil];
-        [alert addButtonWithTitle:@"OK"];
-        [alert show];
-    }
-}
-
-
-
 -(IBAction)teste1:(id)sender
 {
     NSLog(@"Chamou a funcao");
