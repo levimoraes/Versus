@@ -7,6 +7,7 @@
 //
 
 #import "MELAppDelegate.h"
+#import "MELViewControllerPerguntasTeste.h"
 
 @implementation MELAppDelegate
 
@@ -18,6 +19,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    MELViewControllerPerguntasTeste *view = [[MELViewControllerPerguntasTeste alloc]init];
+    self.window.rootViewController = view;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

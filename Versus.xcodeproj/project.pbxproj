@@ -22,6 +22,10 @@
 		6DAB76B319953D3D0048AA42 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAB769719953D3D0048AA42 /* CoreData.framework */; };
 		6DAB76BB19953D3D0048AA42 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DAB76B919953D3D0048AA42 /* InfoPlist.strings */; };
 		6DAB76BD19953D3D0048AA42 /* VersusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAB76BC19953D3D0048AA42 /* VersusTests.m */; };
+		6DCE4CD1199A955E002747C6 /* MELViewControllerPerguntasTeste.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE4CD0199A955E002747C6 /* MELViewControllerPerguntasTeste.m */; };
+		6DCE4CD3199A9567002747C6 /* MELViewControllerPerguntasViloes.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE4CD2199A9567002747C6 /* MELViewControllerPerguntasViloes.m */; };
+		6DCE4CD6199A9571002747C6 /* MELViewControllerPerguntasViloes.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DCE4CD4199A9571002747C6 /* MELViewControllerPerguntasViloes.xib */; };
+		6DCE4CD7199A9571002747C6 /* MELViewControllerPerguntasTeste.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DCE4CD5199A9571002747C6 /* MELViewControllerPerguntasTeste.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		6DAB76B819953D3D0048AA42 /* VersusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VersusTests-Info.plist"; sourceTree = "<group>"; };
 		6DAB76BA19953D3D0048AA42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6DAB76BC19953D3D0048AA42 /* VersusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VersusTests.m; sourceTree = "<group>"; };
+		6DCE4CCE199A9549002747C6 /* MELViewControllerPerguntasTeste.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MELViewControllerPerguntasTeste.h; sourceTree = "<group>"; };
+		6DCE4CCF199A9555002747C6 /* MELViewControllerPerguntasViloes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MELViewControllerPerguntasViloes.h; sourceTree = "<group>"; };
+		6DCE4CD0199A955E002747C6 /* MELViewControllerPerguntasTeste.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MELViewControllerPerguntasTeste.m; sourceTree = "<group>"; };
+		6DCE4CD2199A9567002747C6 /* MELViewControllerPerguntasViloes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MELViewControllerPerguntasViloes.m; sourceTree = "<group>"; };
+		6DCE4CD4199A9571002747C6 /* MELViewControllerPerguntasViloes.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MELViewControllerPerguntasViloes.xib; sourceTree = "<group>"; };
+		6DCE4CD5199A9571002747C6 /* MELViewControllerPerguntasTeste.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MELViewControllerPerguntasTeste.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +169,8 @@
 		6DAB76D819954FE00048AA42 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6DCE4CD2199A9567002747C6 /* MELViewControllerPerguntasViloes.m */,
+				6DCE4CD0199A955E002747C6 /* MELViewControllerPerguntasTeste.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -166,6 +178,8 @@
 		6DAB76D919954FE90048AA42 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6DCE4CD4199A9571002747C6 /* MELViewControllerPerguntasViloes.xib */,
+				6DCE4CD5199A9571002747C6 /* MELViewControllerPerguntasTeste.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -173,6 +187,8 @@
 		6DAB76DA19954FF50048AA42 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6DCE4CCF199A9555002747C6 /* MELViewControllerPerguntasViloes.h */,
+				6DCE4CCE199A9549002747C6 /* MELViewControllerPerguntasTeste.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -254,7 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DAB769E19953D3D0048AA42 /* InfoPlist.strings in Resources */,
+				6DCE4CD6199A9571002747C6 /* MELViewControllerPerguntasViloes.xib in Resources */,
 				6DAB76A919953D3D0048AA42 /* Images.xcassets in Resources */,
+				6DCE4CD7199A9571002747C6 /* MELViewControllerPerguntasTeste.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DCE4CD3199A9567002747C6 /* MELViewControllerPerguntasViloes.m in Sources */,
 				6DAB76A019953D3D0048AA42 /* main.m in Sources */,
+				6DCE4CD1199A955E002747C6 /* MELViewControllerPerguntasTeste.m in Sources */,
 				6DAB76A419953D3D0048AA42 /* MELAppDelegate.m in Sources */,
 				6DAB76A719953D3D0048AA42 /* Versus.xcdatamodeld in Sources */,
 			);
