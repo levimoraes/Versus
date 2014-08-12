@@ -26,6 +26,10 @@
 		6DCE4CD3199A9567002747C6 /* MELViewControllerPerguntasViloes.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE4CD2199A9567002747C6 /* MELViewControllerPerguntasViloes.m */; };
 		6DCE4CD6199A9571002747C6 /* MELViewControllerPerguntasViloes.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DCE4CD4199A9571002747C6 /* MELViewControllerPerguntasViloes.xib */; };
 		6DCE4CD7199A9571002747C6 /* MELViewControllerPerguntasTeste.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DCE4CD5199A9571002747C6 /* MELViewControllerPerguntasTeste.xib */; };
+		6DCE4CDB199A9657002747C6 /* MELViewControllerMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE4CD9199A9657002747C6 /* MELViewControllerMenu.m */; };
+		6DCE4CDC199A9657002747C6 /* MELViewControllerMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DCE4CDA199A9657002747C6 /* MELViewControllerMenu.xib */; };
+		6DCE4CE0199A96E3002747C6 /* MELViewControllerEscolha.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE4CDE199A96E3002747C6 /* MELViewControllerEscolha.m */; };
+		6DCE4CE1199A96E3002747C6 /* MELViewControllerEscolha.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DCE4CDF199A96E3002747C6 /* MELViewControllerEscolha.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,12 @@
 		6DCE4CD2199A9567002747C6 /* MELViewControllerPerguntasViloes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MELViewControllerPerguntasViloes.m; sourceTree = "<group>"; };
 		6DCE4CD4199A9571002747C6 /* MELViewControllerPerguntasViloes.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MELViewControllerPerguntasViloes.xib; sourceTree = "<group>"; };
 		6DCE4CD5199A9571002747C6 /* MELViewControllerPerguntasTeste.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MELViewControllerPerguntasTeste.xib; sourceTree = "<group>"; };
+		6DCE4CD8199A9657002747C6 /* MELViewControllerMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MELViewControllerMenu.h; path = Versus/MELViewControllerMenu.h; sourceTree = "<group>"; };
+		6DCE4CD9199A9657002747C6 /* MELViewControllerMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MELViewControllerMenu.m; path = Versus/MELViewControllerMenu.m; sourceTree = "<group>"; };
+		6DCE4CDA199A9657002747C6 /* MELViewControllerMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MELViewControllerMenu.xib; path = Versus/MELViewControllerMenu.xib; sourceTree = "<group>"; };
+		6DCE4CDD199A96E3002747C6 /* MELViewControllerEscolha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MELViewControllerEscolha.h; sourceTree = "<group>"; };
+		6DCE4CDE199A96E3002747C6 /* MELViewControllerEscolha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MELViewControllerEscolha.m; sourceTree = "<group>"; };
+		6DCE4CDF199A96E3002747C6 /* MELViewControllerEscolha.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MELViewControllerEscolha.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +179,8 @@
 		6DAB76D819954FE00048AA42 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6DCE4CDE199A96E3002747C6 /* MELViewControllerEscolha.m */,
+				6DCE4CD9199A9657002747C6 /* MELViewControllerMenu.m */,
 				6DCE4CD2199A9567002747C6 /* MELViewControllerPerguntasViloes.m */,
 				6DCE4CD0199A955E002747C6 /* MELViewControllerPerguntasTeste.m */,
 			);
@@ -178,8 +190,10 @@
 		6DAB76D919954FE90048AA42 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6DCE4CDA199A9657002747C6 /* MELViewControllerMenu.xib */,
 				6DCE4CD4199A9571002747C6 /* MELViewControllerPerguntasViloes.xib */,
 				6DCE4CD5199A9571002747C6 /* MELViewControllerPerguntasTeste.xib */,
+				6DCE4CDF199A96E3002747C6 /* MELViewControllerEscolha.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -187,6 +201,8 @@
 		6DAB76DA19954FF50048AA42 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6DCE4CDD199A96E3002747C6 /* MELViewControllerEscolha.h */,
+				6DCE4CD8199A9657002747C6 /* MELViewControllerMenu.h */,
 				6DCE4CCF199A9555002747C6 /* MELViewControllerPerguntasViloes.h */,
 				6DCE4CCE199A9549002747C6 /* MELViewControllerPerguntasTeste.h */,
 			);
@@ -273,6 +289,8 @@
 				6DCE4CD6199A9571002747C6 /* MELViewControllerPerguntasViloes.xib in Resources */,
 				6DAB76A919953D3D0048AA42 /* Images.xcassets in Resources */,
 				6DCE4CD7199A9571002747C6 /* MELViewControllerPerguntasTeste.xib in Resources */,
+				6DCE4CDC199A9657002747C6 /* MELViewControllerMenu.xib in Resources */,
+				6DCE4CE1199A96E3002747C6 /* MELViewControllerEscolha.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +312,9 @@
 				6DCE4CD3199A9567002747C6 /* MELViewControllerPerguntasViloes.m in Sources */,
 				6DAB76A019953D3D0048AA42 /* main.m in Sources */,
 				6DCE4CD1199A955E002747C6 /* MELViewControllerPerguntasTeste.m in Sources */,
+				6DCE4CE0199A96E3002747C6 /* MELViewControllerEscolha.m in Sources */,
 				6DAB76A419953D3D0048AA42 /* MELAppDelegate.m in Sources */,
+				6DCE4CDB199A9657002747C6 /* MELViewControllerMenu.m in Sources */,
 				6DAB76A719953D3D0048AA42 /* Versus.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
