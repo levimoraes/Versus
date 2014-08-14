@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface MELAppDelegate : UIResponder <UIApplicationDelegate,AVAudioPlayerDelegate>{
-    AVAudioPlayer *audioPlayer;
-}
+@interface MELAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

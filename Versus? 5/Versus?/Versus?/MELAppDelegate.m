@@ -13,17 +13,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    NSString *music = [[NSBundle mainBundle]pathForResource:@"music3" ofType:@"m4a"];
-//    audioPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL fileURLWithPath:music] error:NULL];
-//    audioPlayer.delegate= self;
-//    audioPlayer.numberOfLoops = -1;
-//    [audioPlayer play];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+
+    if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+        
+    }else{
+        MELViewControllerMenu *p = [[MELViewControllerMenu alloc]init];
+        self.window.rootViewController = p;
+    }
     
-    MELViewControllerMenu *p = [[MELViewControllerMenu alloc]init];
-    self.window.rootViewController = p;
+
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

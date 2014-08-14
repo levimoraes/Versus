@@ -130,14 +130,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34ABFE08199D4B4D00E29175 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				34E0F6DE199A9CB5005A1FD0 /* xib */,
+				34E0F6DD199A9CAE005A1FD0 /* .m */,
+				34E0F6DC199A9C99005A1FD0 /* .h */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		34ABFE09199D4BD100E29175 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = xib;
+			sourceTree = "<group>";
+		};
+		34ABFE0A199D4BD600E29175 /* .m */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = .m;
+			sourceTree = "<group>";
+		};
+		34ABFE0B199D4BDB00E29175 /* .h */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = .h;
+			sourceTree = "<group>";
+		};
+		34ABFE0C199D4BE000E29175 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				34ABFE0B199D4BDB00E29175 /* .h */,
+				34ABFE0A199D4BD600E29175 /* .m */,
+				34ABFE09199D4BD100E29175 /* xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 		34E0F69C199A9C5D005A1FD0 = {
 			isa = PBXGroup;
 			children = (
 				34E0F6F7199AA3F0005A1FD0 /* Perguntas */,
 				34E0F6DF199A9CE4005A1FD0 /* imagens */,
-				34E0F6DE199A9CB5005A1FD0 /* xib */,
-				34E0F6DD199A9CAE005A1FD0 /* .m */,
-				34E0F6DC199A9C99005A1FD0 /* .h */,
+				34ABFE08199D4B4D00E29175 /* iPhone */,
+				34ABFE0C199D4BE000E29175 /* iPad */,
 				34E0F6AE199A9C5D005A1FD0 /* Versus? */,
 				34E0F6C7199A9C5D005A1FD0 /* Versus?Tests */,
 				34E0F6A7199A9C5D005A1FD0 /* Frameworks */,
