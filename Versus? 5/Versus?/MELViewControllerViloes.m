@@ -176,6 +176,22 @@
     
     _timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(tempo) userInfo:nil repeats:YES];
 
+    NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+    
+    _labelScore.text = [plistPerfil objectAtIndex:5];
+    
+}
+
+-(NSString*)caminhoPerfil
+{
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains
+    (NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    NSString *fileName = [NSString stringWithFormat:@"%@/perfil.plist",documentsDirectory];
+    
+    return fileName;
 }
 
 -(void)pegarPerguntaAleatoria{
