@@ -8,6 +8,7 @@
 
 #import "MELAppDelegate.h"
 #import "MELViewControllerMenu.h"
+#import "MELViewControllerMenuiPad.h"
 
 @implementation MELAppDelegate
 
@@ -18,12 +19,13 @@
     // Override point for customization after application launch.
 
     if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+        MELViewControllerMenuiPad *p = [[MELViewControllerMenuiPad alloc]init];
+        self.window.rootViewController = p;
         
     }else{
         MELViewControllerMenu *p = [[MELViewControllerMenu alloc]init];
         self.window.rootViewController = p;
     }
-    
 
     
     self.window.backgroundColor = [UIColor whiteColor];

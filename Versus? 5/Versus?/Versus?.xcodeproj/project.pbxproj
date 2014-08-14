@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		34130DD1199D2A780059276B /* MELViewControllerPerfil.m in Sources */ = {isa = PBXBuildFile; fileRef = 34130DCF199D2A780059276B /* MELViewControllerPerfil.m */; };
 		34130DD2199D2A780059276B /* MELViewControllerPerfil.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34130DD0199D2A780059276B /* MELViewControllerPerfil.xib */; };
+		34ABFE10199D4CF200E29175 /* MELViewControllerMenuiPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ABFE0E199D4CF200E29175 /* MELViewControllerMenuiPad.m */; };
+		34ABFE11199D4CF200E29175 /* MELViewControllerMenuiPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34ABFE0F199D4CF200E29175 /* MELViewControllerMenuiPad.xib */; };
 		34E0F6A9199A9C5D005A1FD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E0F6A8199A9C5D005A1FD0 /* Foundation.framework */; };
 		34E0F6AB199A9C5D005A1FD0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E0F6AA199A9C5D005A1FD0 /* CoreGraphics.framework */; };
 		34E0F6AD199A9C5D005A1FD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E0F6AC199A9C5D005A1FD0 /* UIKit.framework */; };
@@ -60,6 +62,9 @@
 		34130DCE199D2A780059276B /* MELViewControllerPerfil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MELViewControllerPerfil.h; sourceTree = "<group>"; };
 		34130DCF199D2A780059276B /* MELViewControllerPerfil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MELViewControllerPerfil.m; sourceTree = "<group>"; };
 		34130DD0199D2A780059276B /* MELViewControllerPerfil.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MELViewControllerPerfil.xib; sourceTree = "<group>"; };
+		34ABFE0D199D4CF200E29175 /* MELViewControllerMenuiPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MELViewControllerMenuiPad.h; sourceTree = "<group>"; };
+		34ABFE0E199D4CF200E29175 /* MELViewControllerMenuiPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MELViewControllerMenuiPad.m; sourceTree = "<group>"; };
+		34ABFE0F199D4CF200E29175 /* MELViewControllerMenuiPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MELViewControllerMenuiPad.xib; sourceTree = "<group>"; };
 		34E0F6A5199A9C5D005A1FD0 /* Versus?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Versus?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E0F6A8199A9C5D005A1FD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		34E0F6AA199A9C5D005A1FD0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -143,6 +148,7 @@
 		34ABFE09199D4BD100E29175 /* xib */ = {
 			isa = PBXGroup;
 			children = (
+				34ABFE0F199D4CF200E29175 /* MELViewControllerMenuiPad.xib */,
 			);
 			name = xib;
 			sourceTree = "<group>";
@@ -150,6 +156,7 @@
 		34ABFE0A199D4BD600E29175 /* .m */ = {
 			isa = PBXGroup;
 			children = (
+				34ABFE0E199D4CF200E29175 /* MELViewControllerMenuiPad.m */,
 			);
 			name = .m;
 			sourceTree = "<group>";
@@ -157,6 +164,7 @@
 		34ABFE0B199D4BDB00E29175 /* .h */ = {
 			isa = PBXGroup;
 			children = (
+				34ABFE0D199D4CF200E29175 /* MELViewControllerMenuiPad.h */,
 			);
 			name = .h;
 			sourceTree = "<group>";
@@ -394,6 +402,7 @@
 				34E0F707199AA547005A1FD0 /* BG Vilao.png in Resources */,
 				34E0F701199AA4E3005A1FD0 /* MELViewControllerHerois.xib in Resources */,
 				34E0F6FC199AA4C2005A1FD0 /* MELViewControllerViloes.xib in Resources */,
+				34ABFE11199D4CF200E29175 /* MELViewControllerMenuiPad.xib in Resources */,
 				34E0F70C199AA58B005A1FD0 /* Fundo Pergunta Heroi.png in Resources */,
 				34E0F70D199AA58B005A1FD0 /* Fundo Pergunta Vilao.png in Resources */,
 				34E0F6EE199A9FF1005A1FD0 /* MELViewControllerCategoria.xib in Resources */,
@@ -431,6 +440,7 @@
 				34E0F6DA199A9C8F005A1FD0 /* MELViewControllerMenu.m in Sources */,
 				34E0F700199AA4E3005A1FD0 /* MELViewControllerHerois.m in Sources */,
 				34E0F6B9199A9C5D005A1FD0 /* MELAppDelegate.m in Sources */,
+				34ABFE10199D4CF200E29175 /* MELViewControllerMenuiPad.m in Sources */,
 				34E0F6ED199A9FF1005A1FD0 /* MELViewControllerCategoria.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
