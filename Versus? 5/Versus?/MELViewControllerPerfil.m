@@ -55,7 +55,10 @@
     _errosViloes.text = [array objectAtIndex:3];
     _errosHerois.text = [array objectAtIndex:4];
     _score.text = [array objectAtIndex:5];
-    _totalPerguntas.text = [array objectAtIndex:6];
+    
+    int total = [_acertosHerois.text intValue] + [_acertosViloes.text intValue] + [_errosHerois.text intValue] + [_errosViloes.text intValue];
+    
+    _totalPerguntas.text = [NSString stringWithFormat:@"%i",total];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {

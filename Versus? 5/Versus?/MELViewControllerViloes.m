@@ -48,12 +48,49 @@
         [_opcao3 setHidden:YES];
         [_opcao4 setHidden:YES];
         
+        //Pontuação
+        NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+        NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+        int pontos = [pontosPlist intValue];
+        pontos += 10;
+        pontosPlist = [NSString stringWithFormat:@"%d",pontos];
+        
+        NSString *acertos = [plistPerfil objectAtIndex:2];
+        int acerto = [acertos intValue];
+        acerto++;
+        acertos = [NSString stringWithFormat:@"%d",acerto];
+        
+        [plistPerfil replaceObjectAtIndex:2 withObject:acertos];
+        [plistPerfil replaceObjectAtIndex:5 withObject:pontosPlist];
+        [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+        
+        _labelScore.text = pontosPlist;
+
+        
     }else{
         
         [_opcao1 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         [_opcao2 setHidden:YES];
         [_opcao3 setHidden:YES];
         [_opcao4 setHidden:YES];
+        
+        //Pontuação
+        NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+        NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+        int pontos = [pontosPlist intValue];
+        pontos -= 10;
+        pontosPlist = [NSString stringWithFormat:@"%d",pontos];
+        
+        NSString *erros = [plistPerfil objectAtIndex:3];
+        int erro = [erros intValue];
+        erro++;
+        erros = [NSString stringWithFormat:@"%d",erro];
+        
+        [plistPerfil replaceObjectAtIndex:3 withObject:erros];
+        [plistPerfil replaceObjectAtIndex:5 withObject:pontosPlist];
+        [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+        
+        _labelScore.text = pontosPlist;
     }
     
     [self performSelector:@selector(proximaPergunta) withObject:nil afterDelay:0.5];
@@ -78,12 +115,49 @@
         [_opcao3 setHidden:YES];
         [_opcao4 setHidden:YES];
         
+        //Pontuação
+        NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+        NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+        int pontos = [pontosPlist intValue];
+        pontos += 10;
+        pontosPlist = [NSString stringWithFormat:@"%d",pontos];
+        
+        NSString *acertos = [plistPerfil objectAtIndex:2];
+        int acerto = [acertos intValue];
+        acerto++;
+        acertos = [NSString stringWithFormat:@"%d",acerto];
+        
+        [plistPerfil replaceObjectAtIndex:2 withObject:acertos];
+        [plistPerfil replaceObjectAtIndex:5 withObject:pontosPlist];
+        [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+        
+        _labelScore.text = pontosPlist;
+        
     }else{
         
         [_opcao2 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         [_opcao1 setHidden:YES];
         [_opcao3 setHidden:YES];
         [_opcao4 setHidden:YES];
+    
+        //Pontuação
+        NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+        NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+        int pontos = [pontosPlist intValue];
+        pontos -= 10;
+        pontosPlist = [NSString stringWithFormat:@"%d",pontos];
+        
+        NSString *erros = [plistPerfil objectAtIndex:3];
+        int erro = [erros intValue];
+        erro++;
+        erros = [NSString stringWithFormat:@"%d",erro];
+        
+        [plistPerfil replaceObjectAtIndex:3 withObject:erros];
+        [plistPerfil replaceObjectAtIndex:5 withObject:pontosPlist];
+        [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+        
+        _labelScore.text = pontosPlist;
+        
     }
     
     [self performSelector:@selector(proximaPergunta) withObject:nil afterDelay:0.5];}
@@ -107,12 +181,48 @@
         [_opcao1 setHidden:YES];
         [_opcao4 setHidden:YES];
         
+        //Pontuação
+        NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+        NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+        int pontos = [pontosPlist intValue];
+        pontos += 10;
+        pontosPlist = [NSString stringWithFormat:@"%d",pontos];
+        
+        NSString *acertos = [plistPerfil objectAtIndex:2];
+        int acerto = [acertos intValue];
+        acerto++;
+        acertos = [NSString stringWithFormat:@"%d",acerto];
+        
+        [plistPerfil replaceObjectAtIndex:2 withObject:acertos];
+        [plistPerfil replaceObjectAtIndex:5 withObject:pontosPlist];
+        [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+        
+        _labelScore.text = pontosPlist;
+        
     }else{
         
         [_opcao3 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         [_opcao2 setHidden:YES];
         [_opcao1 setHidden:YES];
         [_opcao4 setHidden:YES];
+
+        //Pontuação
+        NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+        NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+        int pontos = [pontosPlist intValue];
+        pontos -= 10;
+        pontosPlist = [NSString stringWithFormat:@"%d",pontos];
+        
+        NSString *erros = [plistPerfil objectAtIndex:3];
+        int erro = [erros intValue];
+        erro++;
+        erros = [NSString stringWithFormat:@"%d",erro];
+        
+        [plistPerfil replaceObjectAtIndex:3 withObject:erros];
+        [plistPerfil replaceObjectAtIndex:5 withObject:pontosPlist];
+        [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+        
+        _labelScore.text = pontosPlist;
     }
     
     [self performSelector:@selector(proximaPergunta) withObject:nil afterDelay:0.5];
@@ -136,6 +246,24 @@
         [_opcao3 setHidden:YES];
         [_opcao1 setHidden:YES];
         
+        //Pontuação
+        NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+        NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+        int pontos = [pontosPlist intValue];
+        pontos += 10;
+        pontosPlist = [NSString stringWithFormat:@"%d",pontos];
+        
+        NSString *acertos = [plistPerfil objectAtIndex:2];
+        int acerto = [acertos intValue];
+        acerto++;
+        acertos = [NSString stringWithFormat:@"%d",acerto];
+        
+        [plistPerfil replaceObjectAtIndex:2 withObject:acertos];
+        [plistPerfil replaceObjectAtIndex:5 withObject:pontosPlist];
+        [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+        
+        _labelScore.text = pontosPlist;
+        
     }else{
         
         [_opcao4 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
@@ -143,6 +271,23 @@
         [_opcao3 setHidden:YES];
         [_opcao1 setHidden:YES];
         
+        //Pontuação
+        NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+        NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+        int pontos = [pontosPlist intValue];
+        pontos -= 10;
+        pontosPlist = [NSString stringWithFormat:@"%d",pontos];
+        
+        NSString *erros = [plistPerfil objectAtIndex:3];
+        int erro = [erros intValue];
+        erro++;
+        erros = [NSString stringWithFormat:@"%d",erro];
+        
+        [plistPerfil replaceObjectAtIndex:3 withObject:erros];
+        [plistPerfil replaceObjectAtIndex:5 withObject:pontosPlist];
+        [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+        
+        _labelScore.text = pontosPlist;
     }
     
     [self performSelector:@selector(proximaPergunta) withObject:nil afterDelay:0.5];
