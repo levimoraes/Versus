@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MELViewControllerViloesiPad">
+            <connections>
+                <outlet property="barraTempo" destination="VEp-wH-POb" id="vLF-sV-MNp"/>
+                <outlet property="labelPergunta" destination="VyR-6o-iCg" id="gYY-2p-Ivj"/>
+                <outlet property="labelScore" destination="zTE-ta-mW3" id="uVU-Sc-lbG"/>
+                <outlet property="opcao1" destination="i9N-BW-8ax" id="iX4-DM-WYe"/>
+                <outlet property="opcao2" destination="gcB-4g-hKX" id="Sqg-dq-vvL"/>
+                <outlet property="opcao3" destination="k3p-P1-f0a" id="fys-7V-vJA"/>
+                <outlet property="opcao4" destination="CaJ-C8-T2N" id="zp5-Cn-08g"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG Vilao.png" translatesAutoresizingMaskIntoConstraints="NO" id="PRX-bZ-XDI">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9N-BW-8ax">
+                    <rect key="frame" x="706" y="48" width="298" height="119"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="15"/>
+                    <state key="normal" title="Button" backgroundImage="Botao Vilao.png">
+                        <color key="titleColor" red="1" green="0.95564576572809623" blue="0.99122052484944889" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Opcao1:" destination="-1" eventType="touchUpInside" id="KOS-Tb-I0t"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcB-4g-hKX">
+                    <rect key="frame" x="706" y="204" width="298" height="119"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="15"/>
+                    <state key="normal" title="Button" backgroundImage="Botao Vilao.png">
+                        <color key="titleColor" red="1" green="0.95564576572809623" blue="0.99122052484944889" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="opcao2:" destination="-1" eventType="touchUpInside" id="Duy-wb-Vru"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3p-P1-f0a">
+                    <rect key="frame" x="706" y="351" width="298" height="119"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="15"/>
+                    <state key="normal" title="Button" backgroundImage="Botao Vilao.png">
+                        <color key="titleColor" red="1" green="0.95564576572809623" blue="0.99122052484944889" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="opcao3:" destination="-1" eventType="touchUpInside" id="oay-3h-u8J"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaJ-C8-T2N">
+                    <rect key="frame" x="706" y="501" width="298" height="119"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="15"/>
+                    <state key="normal" title="Button" backgroundImage="Botao Vilao.png">
+                        <color key="titleColor" red="1" green="0.95564576572809623" blue="0.99122052484944889" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="opcao4:" destination="-1" eventType="touchUpInside" id="qMB-hD-oGn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCI-rd-0FL">
+                    <rect key="frame" x="73" y="388" width="227" height="90"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="23"/>
+                    <state key="normal" title="Desistir" backgroundImage="Fundo Score Vilao.png">
+                        <color key="titleColor" red="1" green="0.95564576572809623" blue="0.99122052484944889" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="BotaoDesistir:" destination="-1" eventType="touchUpInside" id="KO1-Lg-GwH"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fundo Pergunta Vilao.png" translatesAutoresizingMaskIntoConstraints="NO" id="WAq-jw-U03">
+                    <rect key="frame" x="20" y="48" width="573" height="281"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fundo Score Vilao.png" translatesAutoresizingMaskIntoConstraints="NO" id="uFt-aj-xuz">
+                    <rect key="frame" x="347" y="388" width="227" height="90"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTE-ta-mW3">
+                    <rect key="frame" x="411" y="412" width="106" height="41"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                    <color key="textColor" red="0.99727097602739723" green="0.99727097602739723" blue="0.99727097602739723" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="VEp-wH-POb">
+                    <rect key="frame" x="54" y="351" width="539" height="3"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="progressTintColor" red="0.92156869173049927" green="0.15686275064945221" blue="0.098039224743843079" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="trackTintColor" red="1" green="0.95564576572809623" blue="0.99122052484944889" alpha="1" colorSpace="calibratedRGB"/>
+                </progressView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="470" translatesAutoresizingMaskIntoConstraints="NO" id="VyR-6o-iCg">
+                    <rect key="frame" x="73" y="87" width="470" height="161"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
+                    <color key="textColor" red="1" green="0.95564576570000004" blue="0.9912205248" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BG Vilao.png" width="640" height="1136"/>
+        <image name="Botao Vilao.png" width="316" height="195"/>
+        <image name="Fundo Pergunta Vilao.png" width="413" height="267"/>
+        <image name="Fundo Score Vilao.png" width="112" height="54"/>
+    </resources>
+</document>
