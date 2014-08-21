@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A990B65719A29AB900A5915E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A990B65619A29AB900A5915E /* Foundation.framework */; };
+		A990B65919A29AB900A5915E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A990B65819A29AB900A5915E /* CoreGraphics.framework */; };
+		A990B65B19A29AB900A5915E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A990B65A19A29AB900A5915E /* UIKit.framework */; };
+		A990B66119A29AB900A5915E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A990B65F19A29AB900A5915E /* InfoPlist.strings */; };
+		A990B66319A29AB900A5915E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A990B66219A29AB900A5915E /* main.m */; };
+		A990B66719A29AB900A5915E /* MAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A990B66619A29AB900A5915E /* MAppDelegate.m */; };
+		A990B66A19A29AB900A5915E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A990B66819A29AB900A5915E /* Main.storyboard */; };
+		A990B66D19A29AB900A5915E /* MFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A990B66C19A29AB900A5915E /* MFirstViewController.m */; };
+		A990B67019A29AB900A5915E /* MSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A990B66F19A29AB900A5915E /* MSecondViewController.m */; };
+		A990B67219A29AB900A5915E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A990B67119A29AB900A5915E /* Images.xcassets */; };
+		A990B67919A29AB900A5915E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A990B67819A29AB900A5915E /* XCTest.framework */; };
+		A990B67A19A29AB900A5915E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A990B65619A29AB900A5915E /* Foundation.framework */; };
+		A990B67B19A29AB900A5915E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A990B65A19A29AB900A5915E /* UIKit.framework */; };
+		A990B68319A29AB900A5915E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A990B68119A29AB900A5915E /* InfoPlist.strings */; };
+		A990B68519A29AB900A5915E /* CorePlotDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A990B68419A29AB900A5915E /* CorePlotDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A990B67C19A29AB900A5915E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A990B64B19A29AB900A5915E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A990B65219A29AB900A5915E;
+			remoteInfo = CorePlotDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A990B65319A29AB900A5915E /* CorePlotDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CorePlotDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A990B65619A29AB900A5915E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A990B65819A29AB900A5915E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A990B65A19A29AB900A5915E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A990B65E19A29AB900A5915E /* CorePlotDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CorePlotDemo-Info.plist"; sourceTree = "<group>"; };
+		A990B66019A29AB900A5915E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A990B66219A29AB900A5915E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A990B66419A29AB900A5915E /* CorePlotDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CorePlotDemo-Prefix.pch"; sourceTree = "<group>"; };
+		A990B66519A29AB900A5915E /* MAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAppDelegate.h; sourceTree = "<group>"; };
+		A990B66619A29AB900A5915E /* MAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAppDelegate.m; sourceTree = "<group>"; };
+		A990B66919A29AB900A5915E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A990B66B19A29AB900A5915E /* MFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFirstViewController.h; sourceTree = "<group>"; };
+		A990B66C19A29AB900A5915E /* MFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFirstViewController.m; sourceTree = "<group>"; };
+		A990B66E19A29AB900A5915E /* MSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSecondViewController.h; sourceTree = "<group>"; };
+		A990B66F19A29AB900A5915E /* MSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSecondViewController.m; sourceTree = "<group>"; };
+		A990B67119A29AB900A5915E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A990B67719A29AB900A5915E /* CorePlotDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CorePlotDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A990B67819A29AB900A5915E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A990B68019A29AB900A5915E /* CorePlotDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CorePlotDemoTests-Info.plist"; sourceTree = "<group>"; };
+		A990B68219A29AB900A5915E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A990B68419A29AB900A5915E /* CorePlotDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CorePlotDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A990B65019A29AB900A5915E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A990B65919A29AB900A5915E /* CoreGraphics.framework in Frameworks */,
+				A990B65B19A29AB900A5915E /* UIKit.framework in Frameworks */,
+				A990B65719A29AB900A5915E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A990B67419A29AB900A5915E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A990B67919A29AB900A5915E /* XCTest.framework in Frameworks */,
+				A990B67B19A29AB900A5915E /* UIKit.framework in Frameworks */,
+				A990B67A19A29AB900A5915E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A92E081B19A29D3C00B919D5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A92E081C19A29D3C00B919D5 /* CorePlotHeaders */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		A92E081C19A29D3C00B919D5 /* CorePlotHeaders */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CorePlotHeaders;
+			sourceTree = "<group>";
+		};
+		A990B64A19A29AB900A5915E = {
+			isa = PBXGroup;
+			children = (
+				A990B68E19A29B6400A5915E /* CorePlot */,
+				A990B65C19A29AB900A5915E /* CorePlotDemo */,
+				A990B67E19A29AB900A5915E /* CorePlotDemoTests */,
+				A990B65519A29AB900A5915E /* Frameworks */,
+				A990B65419A29AB900A5915E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A990B65419A29AB900A5915E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A990B65319A29AB900A5915E /* CorePlotDemo.app */,
+				A990B67719A29AB900A5915E /* CorePlotDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A990B65519A29AB900A5915E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A990B65619A29AB900A5915E /* Foundation.framework */,
+				A990B65819A29AB900A5915E /* CoreGraphics.framework */,
+				A990B65A19A29AB900A5915E /* UIKit.framework */,
+				A990B67819A29AB900A5915E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A990B65C19A29AB900A5915E /* CorePlotDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A990B66519A29AB900A5915E /* MAppDelegate.h */,
+				A990B66619A29AB900A5915E /* MAppDelegate.m */,
+				A990B66819A29AB900A5915E /* Main.storyboard */,
+				A990B66B19A29AB900A5915E /* MFirstViewController.h */,
+				A990B66C19A29AB900A5915E /* MFirstViewController.m */,
+				A990B66E19A29AB900A5915E /* MSecondViewController.h */,
+				A990B66F19A29AB900A5915E /* MSecondViewController.m */,
+				A990B67119A29AB900A5915E /* Images.xcassets */,
+				A990B65D19A29AB900A5915E /* Supporting Files */,
+			);
+			path = CorePlotDemo;
+			sourceTree = "<group>";
+		};
+		A990B65D19A29AB900A5915E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A990B65E19A29AB900A5915E /* CorePlotDemo-Info.plist */,
+				A990B65F19A29AB900A5915E /* InfoPlist.strings */,
+				A990B66219A29AB900A5915E /* main.m */,
+				A990B66419A29AB900A5915E /* CorePlotDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A990B67E19A29AB900A5915E /* CorePlotDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A990B68419A29AB900A5915E /* CorePlotDemoTests.m */,
+				A990B67F19A29AB900A5915E /* Supporting Files */,
+			);
+			path = CorePlotDemoTests;
+			sourceTree = "<group>";
+		};
+		A990B67F19A29AB900A5915E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A990B68019A29AB900A5915E /* CorePlotDemoTests-Info.plist */,
+				A990B68119A29AB900A5915E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A990B68E19A29B6400A5915E /* CorePlot */ = {
+			isa = PBXGroup;
+			children = (
+				A92E081B19A29D3C00B919D5 /* iOS */,
+			);
+			name = CorePlot;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A990B65219A29AB900A5915E /* CorePlotDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A990B68819A29AB900A5915E /* Build configuration list for PBXNativeTarget "CorePlotDemo" */;
+			buildPhases = (
+				A990B64F19A29AB900A5915E /* Sources */,
+				A990B65019A29AB900A5915E /* Frameworks */,
+				A990B65119A29AB900A5915E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CorePlotDemo;
+			productName = CorePlotDemo;
+			productReference = A990B65319A29AB900A5915E /* CorePlotDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A990B67619A29AB900A5915E /* CorePlotDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A990B68B19A29AB900A5915E /* Build configuration list for PBXNativeTarget "CorePlotDemoTests" */;
+			buildPhases = (
+				A990B67319A29AB900A5915E /* Sources */,
+				A990B67419A29AB900A5915E /* Frameworks */,
+				A990B67519A29AB900A5915E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A990B67D19A29AB900A5915E /* PBXTargetDependency */,
+			);
+			name = CorePlotDemoTests;
+			productName = CorePlotDemoTests;
+			productReference = A990B67719A29AB900A5915E /* CorePlotDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A990B64B19A29AB900A5915E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = M;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Marco;
+				TargetAttributes = {
+					A990B67619A29AB900A5915E = {
+						TestTargetID = A990B65219A29AB900A5915E;
+					};
+				};
+			};
+			buildConfigurationList = A990B64E19A29AB900A5915E /* Build configuration list for PBXProject "CorePlotDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				English,
+			);
+			mainGroup = A990B64A19A29AB900A5915E;
+			productRefGroup = A990B65419A29AB900A5915E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A990B65219A29AB900A5915E /* CorePlotDemo */,
+				A990B67619A29AB900A5915E /* CorePlotDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A990B65119A29AB900A5915E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A990B67219A29AB900A5915E /* Images.xcassets in Resources */,
+				A990B66119A29AB900A5915E /* InfoPlist.strings in Resources */,
+				A990B66A19A29AB900A5915E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A990B67519A29AB900A5915E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A990B68319A29AB900A5915E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A990B64F19A29AB900A5915E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A990B66719A29AB900A5915E /* MAppDelegate.m in Sources */,
+				A990B66319A29AB900A5915E /* main.m in Sources */,
+				A990B67019A29AB900A5915E /* MSecondViewController.m in Sources */,
+				A990B66D19A29AB900A5915E /* MFirstViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A990B67319A29AB900A5915E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A990B68519A29AB900A5915E /* CorePlotDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A990B67D19A29AB900A5915E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A990B65219A29AB900A5915E /* CorePlotDemo */;
+			targetProxy = A990B67C19A29AB900A5915E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A990B65F19A29AB900A5915E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A990B66019A29AB900A5915E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A990B66819A29AB900A5915E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A990B66919A29AB900A5915E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A990B68119A29AB900A5915E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A990B68219A29AB900A5915E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A990B68619A29AB900A5915E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A990B68719A29AB900A5915E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A990B68919A29AB900A5915E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/marco/Downloads/CorePlot_1.0/Binaries/MacOS,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CorePlotDemo/CorePlotDemo-Prefix.pch";
+				INFOPLIST_FILE = "CorePlotDemo/CorePlotDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/marco/Downloads/CorePlot_1.0/Binaries/iOS,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A990B68A19A29AB900A5915E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/marco/Downloads/CorePlot_1.0/Binaries/MacOS,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CorePlotDemo/CorePlotDemo-Prefix.pch";
+				INFOPLIST_FILE = "CorePlotDemo/CorePlotDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/marco/Downloads/CorePlot_1.0/Binaries/iOS,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A990B68C19A29AB900A5915E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CorePlotDemo.app/CorePlotDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CorePlotDemo/CorePlotDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CorePlotDemoTests/CorePlotDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A990B68D19A29AB900A5915E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CorePlotDemo.app/CorePlotDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CorePlotDemo/CorePlotDemo-Prefix.pch";
+				INFOPLIST_FILE = "CorePlotDemoTests/CorePlotDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A990B64E19A29AB900A5915E /* Build configuration list for PBXProject "CorePlotDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A990B68619A29AB900A5915E /* Debug */,
+				A990B68719A29AB900A5915E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A990B68819A29AB900A5915E /* Build configuration list for PBXNativeTarget "CorePlotDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A990B68919A29AB900A5915E /* Debug */,
+				A990B68A19A29AB900A5915E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A990B68B19A29AB900A5915E /* Build configuration list for PBXNativeTarget "CorePlotDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A990B68C19A29AB900A5915E /* Debug */,
+				A990B68D19A29AB900A5915E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A990B64B19A29AB900A5915E /* Project object */;
+}
