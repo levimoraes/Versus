@@ -35,13 +35,6 @@
     [self presentViewController:categoria animated:YES completion:nil];
 }
 
--(IBAction)BotaoRanking:(id)sender{
-    [self authenticateLocalPlayer];
-    
-    
-    [self reportScore];
-    
-}
 
 -(void)authenticateLocalPlayer
 {
@@ -55,6 +48,7 @@
         else{
             if ([GKLocalPlayer localPlayer].authenticated) {
                 _gameCenterEnabled = YES;
+                
                 
                 // Get the default leaderboard identifier.
                 [[GKLocalPlayer localPlayer] loadDefaultLeaderboardIdentifierWithCompletionHandler:^(NSString *leaderboardIdentifier, NSError *error) {
@@ -73,6 +67,56 @@
             }
         }
     };
+}
+
+- (void) showLeaderboard: (NSString*) leaderboardID
+
+{
+    
+    GKGameCenterViewController *gameCenterController = [[GKGameCenterViewController alloc] init];
+    
+    if (gameCenterController != nil)
+        
+    {
+        
+        gameCenterController.gameCenterDelegate = self;
+        
+        gameCenterController.viewState = GKGameCenterViewControllerStateAchievements;
+        
+        [self presentViewController: gameCenterController animated: YES completion:nil];
+        
+    }
+    
+}
+
+- (void) reportAchievementIdentifier: (NSString*) identifier percentComplete: (float) percent
+
+{
+    
+    GKAchievement *achievement = [[GKAchievement alloc] initWithIdentifier: identifier];
+    
+    if (achievement)
+        
+    {
+        
+        achievement.percentComplete = percent;
+        
+        [achievement reportAchievementWithCompletionHandler:^(NSError *error)
+         
+         {
+             
+             if (error != nil)
+                 
+             {
+                 
+                 NSLog(@"Error in reporting achievements: %@", error);
+                 
+             }
+             
+         }];
+        
+    }
+    
 }
 
 -(void)showLeaderboardAndAchievements:(BOOL)shouldShowLeaderboard
@@ -94,7 +138,42 @@
     
 }
 
--(void)reportScore{
+- (void) loadAchievements
+
+{    [GKAchievement loadAchievementsWithCompletionHandler:^(NSArray *achievements, NSError *error) {
+    
+    if (error != nil)
+        
+    {
+        
+        // Handle the error.
+        
+    }
+    
+    if (achievements != nil)
+        
+    {
+        
+        // Process the array of achievements.
+        
+    }
+    
+}];
+    
+}
+
+- (void)gameCenterViewControllerDidFinish:(GKGameCenterViewController *)gameCenterViewController
+
+{
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
+
+-(IBAction)reportScore:(id)sender
+{
+    NSString *leaderboardId = @"melhoresResultadosHeroi";
     
     int is=0;
     while (is<3) {
@@ -103,20 +182,25 @@
         NSLog (@"Report Score");
         
         NSMutableArray *array = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
-        NSString *string = [NSString stringWithFormat:@"%@",[array objectAtIndex:5]];
+        NSString *string = [NSString stringWithFormat:@"%@",[array objectAtIndex:7]];
         
-        GKScore *score = [[GKScore alloc] initWithLeaderboardIdentifier:_leaderboardIdentifier];
+        GKScore *score = [[GKScore alloc] initWithLeaderboardIdentifier:leaderboardId];
         _score = atoll([string UTF8String]);
         score.value = _score;
+        NSArray *newArray = [[NSArray alloc]initWithObjects:score, nil];
+        //        newArray = @[score,nil];
         
         
-        [GKScore reportScores:@[score] withCompletionHandler:^(NSError *error) {
+        [GKScore reportScores:newArray withCompletionHandler:^(NSError *error) {
             if (error != nil) {
                 NSLog(@"Erro = %@", [error localizedDescription]);
             }
         }];
         is++;
     }
+    
+    
+    [self showLeaderboard:leaderboardId];
 }
 
 
@@ -171,7 +255,11 @@
         
         NSLog(@"%@",[self caminhoPerfil]);
         
+        
+        
+        
     }
+    
     
     
 }
@@ -181,4 +269,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 @end

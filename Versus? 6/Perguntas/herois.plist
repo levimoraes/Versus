@@ -255,5 +255,113 @@ Contar a Tia May</string>
 		<key>Pergunta</key>
 		<string>O pernalonga é um...</string>
 	</dict>
+	<dict>
+		<key>1</key>
+		<string>10</string>
+		<key>2</key>
+		<string>9</string>
+		<key>3</key>
+		<string>8</string>
+		<key>4</key>
+		<string>7</string>
+		<key>Pergunta</key>
+		<string>Quantos tripulantes Mokey D. Luffy, de &quot;One Piece&quot;, diz querer ter em sua tripulação ?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Zanguetsu</string>
+		<key>2</key>
+		<string>Benihime</string>
+		<key>3</key>
+		<string>Minazuki</string>
+		<key>4</key>
+		<string>Senbonzakura</string>
+		<key>Pergunta</key>
+		<string>Qual o nome da zanpakutou de Ichigo (Bleach)?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Ace</string>
+		<key>2</key>
+		<string>Bellamy</string>
+		<key>3</key>
+		<string>Buggy</string>
+		<key>4</key>
+		<string>Kid</string>
+		<key>Pergunta</key>
+		<string>Qual o nome do irmão de Monkey D. Luffy (One Piece)?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Kabuto</string>
+		<key>2</key>
+		<string>Hawkins</string>
+		<key>3</key>
+		<string>Killer</string>
+		<key>4</key>
+		<string>Urouge</string>
+		<key>Pergunta</key>
+		<string>Qual o nome da arma usada por Usopp (One Piece) após o timeskip?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Laranja</string>
+		<key>2</key>
+		<string>Vermelho</string>
+		<key>3</key>
+		<string>Azul</string>
+		<key>4</key>
+		<string>Preto</string>
+		<key>Pergunta</key>
+		<string>Qual a cor do cabelo de Ichigo (Bleach)?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Tobirama</string>
+		<key>2</key>
+		<string>Hashirama</string>
+		<key>3</key>
+		<string>Sarutobi</string>
+		<key>4</key>
+		<string>Minato</string>
+		<key>Pergunta</key>
+		<string>Qual o nome do segundo Hokage no anime Naruto</string>
+	</dict>
+	<dict>
+		<key>3</key>
+		<string>Konohamaru</string>
+		<key>2</key>
+		<string>Moegi</string>
+		<key>1</key>
+		<string>Hinata</string>
+		<key>4</key>
+		<string>Udon</string>
+		<key>Pergunta</key>
+		<string>Qual o nome do jinchuuriki da bijuu Sanbi (Naruto) ?</string>
+	</dict>
+	<dict>
+		<key>3</key>
+		<string>Superman</string>
+		<key>2</key>
+		<string>Donald Blake</string>
+		<key>1</key>
+		<string>Flash</string>
+		<key>4</key>
+		<string>Capitão América</string>
+		<key>Pergunta</key>
+		<string>Qual desses personagens nunca levantou o martelo do Thor ?</string>
+	</dict>
+	<dict>
+		<key>3</key>
+		<string>Konohamaru</string>
+		<key>2</key>
+		<string>Moegi</string>
+		<key>1</key>
+		<string>Hinata</string>
+		<key>4</key>
+		<string>Udon</string>
+		<key>Pergunta</key>
+		<string>Qual desses personagens não foi discipulo de Ebisu (Naruto)</string>
+	</dict>
 </array>
 </plist>

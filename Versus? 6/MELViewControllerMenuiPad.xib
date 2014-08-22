@@ -23,7 +23,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sh5-W7-yTc">
-                    <rect key="frame" x="389" y="309" width="246" height="160"/>
+                    <rect key="frame" x="389" y="348" width="246" height="160"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" backgroundImage="Botao Jogar.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -33,7 +33,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jts-QV-0AW">
-                    <rect key="frame" x="389" y="443" width="246" height="160"/>
+                    <rect key="frame" x="389" y="531" width="246" height="160"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" backgroundImage="Botao Perfil.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -42,15 +42,14 @@
                         <action selector="BotaoPerfil:" destination="-1" eventType="touchUpInside" id="qMi-SB-XxY"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ae-cv-G7q">
-                    <rect key="frame" x="389" y="583" width="246" height="160"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zR-zP-Xzl">
+                    <rect key="frame" x="503" y="712" width="56" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" backgroundImage="Botao Score.png">
+                    <state key="normal" title="Ranking">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="BotaoRanking:" destination="-1" eventType="touchUpInside" id="M2r-a7-a4h"/>
-                        <action selector="BotaoScore:" destination="-1" eventType="touchUpInside" id="hXJ-zb-EPy"/>
+                        <action selector="reportScore:" destination="-1" eventType="touchUpInside" id="bU3-r3-l1l"/>
                     </connections>
                 </button>
             </subviews>
@@ -63,7 +62,6 @@
         <image name="BG Menu.png" width="640" height="1136"/>
         <image name="Botao Jogar.png" width="320" height="203"/>
         <image name="Botao Perfil.png" width="320" height="203"/>
-        <image name="Botao Score.png" width="320" height="203"/>
         <image name="Logo Menu.png" width="270" height="403"/>
     </resources>
 </document>

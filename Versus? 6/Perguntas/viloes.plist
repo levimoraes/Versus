@@ -136,7 +136,7 @@
 	</dict>
 	<dict>
 		<key>1</key>
-		<string>Ra's Al Ghul</string>
+		<string>Ra&apos;s Al Ghul</string>
 		<key>2</key>
 		<string>Sinestro</string>
 		<key>3</key>
@@ -241,6 +241,114 @@
 		<string>Barão Zemo</string>
 		<key>Pergunta</key>
 		<string>Qual destes citados nunca foi vilão do Capitão América?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Coringa</string>
+		<key>2</key>
+		<string>Bane</string>
+		<key>3</key>
+		<string>Lagarto</string>
+		<key>4</key>
+		<string>Zod</string>
+		<key>Pergunta</key>
+		<string>Qual vilão tem sua aparência semelhante à de um palhaço</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Coringa</string>
+		<key>2</key>
+		<string>Magneto</string>
+		<key>3</key>
+		<string>Ultron</string>
+		<key>4</key>
+		<string>Apocalipse</string>
+		<key>Pergunta</key>
+		<string>Em &quot;Piada Mortal&quot; quem é responsável pelo aleijamento de Bárbara Gordom</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Adamantium</string>
+		<key>2</key>
+		<string>Ferro</string>
+		<key>3</key>
+		<string>Vibranium</string>
+		<key>4</key>
+		<string>Titanio</string>
+		<key>Pergunta</key>
+		<string>De qual material é feito Ultron, um dos maiores vilões dos Vingadores</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Adão Negro</string>
+		<key>2</key>
+		<string>Sinestro</string>
+		<key>3</key>
+		<string>Caveira Vermelha</string>
+		<key>4</key>
+		<string>Harvey Dent</string>
+		<key>Pergunta</key>
+		<string>Qual desses personagens é um grande inimigo do herói Shazam</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Rei do Crime</string>
+		<key>2</key>
+		<string>Cabeça de Martelo</string>
+		<key>3</key>
+		<string>Rhino</string>
+		<key>4</key>
+		<string>Duende Verde</string>
+		<key>Pergunta</key>
+		<string>No mundo dos quadrinhos Wilson Fisk é conhecido como...</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Uxas</string>
+		<key>2</key>
+		<string>Stin</string>
+		<key>3</key>
+		<string>Fenon</string>
+		<key>4</key>
+		<string>Namor</string>
+		<key>Pergunta</key>
+		<string>Ao nascer em Apokolips Darkseid era chamado de </string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Galactus</string>
+		<key>2</key>
+		<string>Hera</string>
+		<key>3</key>
+		<string>Hades</string>
+		<key>4</key>
+		<string>Brainiac</string>
+		<key>Pergunta</key>
+		<string>Que vilão é conhecido como &quot;Devorador de Planetas&quot;</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Sauron</string>
+		<key>2</key>
+		<string>Saruman</string>
+		<key>3</key>
+		<string>Gandalf</string>
+		<key>4</key>
+		<string>Baurog</string>
+		<key>Pergunta</key>
+		<string>Responsável por todo o mal na Terra Média foi derrotado pelo Rei Isildur</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Jason</string>
+		<key>2</key>
+		<string>Freddy Krugger</string>
+		<key>3</key>
+		<string>Homem do Saco</string>
+		<key>4</key>
+		<string>Demolidor</string>
+		<key>Pergunta</key>
+		<string>Garoto que morreu afogado e mata as suas vítimas utilizando uma máscara de hóquei</string>
 	</dict>
 </array>
 </plist>

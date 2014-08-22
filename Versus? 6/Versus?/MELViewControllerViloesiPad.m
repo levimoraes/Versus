@@ -25,6 +25,14 @@
 - (IBAction)BotaoDesistir:(id)sender {
     NSLog(@"Desistir");
     MELViewControllerMenuiPad *menu = [[MELViewControllerMenuiPad alloc]init];
+    
+    NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+    NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+    [plistPerfil replaceObjectAtIndex:7 withObject:pontosPlist];
+    [plistPerfil replaceObjectAtIndex:5 withObject:@"0"];
+    
+    [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+    
     [menu setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
     [self presentViewController:menu animated:YES completion:nil];
 }

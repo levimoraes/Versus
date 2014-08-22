@@ -21,6 +21,7 @@
 
 -(void)authenticateLocalPlayer;
 -(void)reportScore;
+-(void)updateAchivements;
 
 @end
 
@@ -70,6 +71,80 @@
     };
 }
 
+//- (void) showLeaderboard: (NSString*) leaderboardID
+//
+//{
+//    
+//    GKGameCenterViewController *gameCenterController = [[GKGameCenterViewController alloc] init];
+//    
+//    if (gameCenterController != nil)
+//        
+//    {
+//        
+//        gameCenterController.gameCenterDelegate = self;
+//        
+//        gameCenterController.viewState = GKGameCenterViewControllerStateLeaderboards;
+//        
+//        gameCenterController.leaderboardTimeScope = GKLeaderboardTimeScopeToday;
+//        
+//        gameCenterController.leaderboardCategory = leaderboardID;
+//        
+//        [self presentViewController: gameCenterController animated: YES completion:nil];
+//        
+//    }
+//    
+//}
+
+- (void) showLeaderboard: (NSString*) leaderboardID
+
+{
+    
+    GKGameCenterViewController *gameCenterController = [[GKGameCenterViewController alloc] init];
+    
+    if (gameCenterController != nil)
+        
+    {
+        
+        gameCenterController.gameCenterDelegate = self;
+        
+        gameCenterController.viewState = GKGameCenterViewControllerStateAchievements;
+        
+        [self presentViewController: gameCenterController animated: YES completion:nil];
+        
+    }
+    
+}
+
+- (void) reportAchievementIdentifier: (NSString*) identifier percentComplete: (float) percent
+
+{
+    
+    GKAchievement *achievement = [[GKAchievement alloc] initWithIdentifier: identifier];
+    
+    if (achievement)
+        
+    {
+        
+        achievement.percentComplete = percent;
+        
+        [achievement reportAchievementWithCompletionHandler:^(NSError *error)
+         
+         {
+             
+             if (error != nil)
+                 
+             {
+                 
+                 NSLog(@"Error in reporting achievements: %@", error);
+                 
+             }
+             
+         }];
+        
+    }
+    
+}
+
 -(void)showLeaderboardAndAchievements:(BOOL)shouldShowLeaderboard
 {
     GKGameCenterViewController *gcViewController = [[GKGameCenterViewController alloc] init];
@@ -89,7 +164,43 @@
     
 }
 
--(void)reportScore{
+- (void) loadAchievements
+
+{    [GKAchievement loadAchievementsWithCompletionHandler:^(NSArray *achievements, NSError *error) {
+    
+    if (error != nil)
+        
+    {
+        
+        // Handle the error.
+        
+    }
+    
+    if (achievements != nil)
+        
+    {
+        
+        // Process the array of achievements.
+        
+    }
+    
+}];
+    
+}
+
+- (void)gameCenterViewControllerDidFinish:(GKGameCenterViewController *)gameCenterViewController
+
+{
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
+
+-(IBAction)reportScore:(id)sender
+{
+    
+    NSString *leaderboardId = @"melhoresResultadosHeroi";
     
     int is=0;
     while (is<3) {
@@ -100,18 +211,23 @@
     NSMutableArray *array = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
     NSString *string = [NSString stringWithFormat:@"%@",[array objectAtIndex:5]];
     
-    GKScore *score = [[GKScore alloc] initWithLeaderboardIdentifier:_leaderboardIdentifier];
+    GKScore *score = [[GKScore alloc] initWithLeaderboardIdentifier:leaderboardId];
     _score = atoll([string UTF8String]);
     score.value = _score;
+        NSArray *newArray = [[NSArray alloc]initWithObjects:score, nil];
+//        newArray = @[score,nil];
     
-    
-    [GKScore reportScores:@[score] withCompletionHandler:^(NSError *error) {
+        
+    [GKScore reportScores:newArray withCompletionHandler:^(NSError *error) {
         if (error != nil) {
             NSLog(@"Erro = %@", [error localizedDescription]);
         }
     }];
         is++;
     }
+    
+    
+    [self showLeaderboard:leaderboardId];
 }
 
 
@@ -173,19 +289,7 @@
     
    
     
-    GKLocalPlayer *localplayer = [GKLocalPlayer localPlayer];
-    [localplayer authenticateWithCompletionHandler:^(NSError *error) {
-        if (error) {
-            //DISABLE GAME CENTER FEATURES / SINGLEPLAYER
-            NSLog(@"Nao Loga");
-        }
-        else {
-            //ENABLE GAME CENTER FEATURES / MULTIPLAYER
-            NSLog(@"Logou");
-            
-        }
-    }];
-}
+  }
 
 - (void)didReceiveMemoryWarning
 {
