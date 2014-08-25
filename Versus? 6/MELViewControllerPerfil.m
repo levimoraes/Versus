@@ -40,7 +40,7 @@
 }
 
 - (IBAction)botaoVoltar:(id)sender {
-    [self salvarNick];
+   // [self salvarNick];
 
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -54,6 +54,7 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -66,7 +67,7 @@
     _acertosViloes.text = [array objectAtIndex:2];
     _errosViloes.text = [array objectAtIndex:3];
     _errosHerois.text = [array objectAtIndex:4];
-    _score.text = [array objectAtIndex:5];
+    _score.text = [array objectAtIndex:7];
     
     int total = [_acertosHerois.text intValue] + [_acertosViloes.text intValue] + [_errosHerois.text intValue] + [_errosViloes.text intValue];
     
@@ -99,14 +100,60 @@
 }
 
 -(void)configureHost{
-
+    // 1 - Set up view frame
+    CGRect parentRect = self.view.bounds;
+//    CGSize toolbarSize = self.toolbar.bounds.size;
+  //  parentRect = CGRectMake(parentRect.origin.x,
+    //                        (parentRect.origin.y + toolbarSize.height),
+      //                      parentRect.size.width,
+        //                    (parentRect.size.height - toolbarSize.height));
+    // 2 - Create host view
+    self.hostView = [(CPTGraphHostingView *) [CPTGraphHostingView alloc] initWithFrame:parentRect];
+    self.hostView.allowPinchScaling = NO;
+    [self.view addSubview:self.hostView];
 }
 
 -(void)configureGraph{
+    // 1 - Create and initialize graph
+    CPTGraph *graph = [[CPTXYGraph alloc] initWithFrame:self.hostView.bounds];
+    self.hostView.hostedGraph = graph;
+    graph.paddingLeft = 0.0f;
+    graph.paddingTop = 0.0f;
+    graph.paddingRight = 0.0f;
+    graph.paddingBottom = 0.0f;
+    graph.axisSet = nil;
+    // 2 - Set up text style
+    CPTMutableTextStyle *textStyle = [CPTMutableTextStyle textStyle];
+    textStyle.color = [CPTColor whiteColor];
+    textStyle.fontName = @"Chalkboard SE";
+    textStyle.fontSize = 20.0f;
+    // 3 - Configure title
+    NSString *title = @"Gráfico do seu progresso...";
+    graph.title = title;
+    graph.titleTextStyle = textStyle;
+    graph.titlePlotAreaFrameAnchor = CPTRectAnchorTop;
+    graph.titleDisplacement = CGPointMake(0.0f, -12.0f);
 
 }
 -(void)configureChart{
-
+    // 1 - Get reference to graph
+    CPTGraph *graph = self.hostView.hostedGraph;
+    // 2 - Create chart
+    CPTPieChart *pieChart = [[CPTPieChart alloc] init];
+    pieChart.dataSource = self;
+    pieChart.delegate = self;
+    pieChart.pieRadius = (self.hostView.bounds.size.height * 0.5) / 2;
+    pieChart.identifier = graph.title;
+    pieChart.startAngle = M_PI_4;
+    pieChart.sliceDirection = CPTPieDirectionClockwise;
+    // 3 - Create gradient
+    CPTGradient *overlayGradient = [[CPTGradient alloc] init];
+    overlayGradient.gradientType = CPTGradientTypeRadial;
+    overlayGradient = [overlayGradient addColorStop:[[CPTColor blackColor] colorWithAlphaComponent:0.0] atPosition:0.9];
+    overlayGradient = [overlayGradient addColorStop:[[CPTColor blackColor] colorWithAlphaComponent:0.4] atPosition:1.0];
+    pieChart.overlayFill = [CPTFill fillWithGradient:overlayGradient];
+    // 4 - Add chart to graph    
+    [graph addPlot:pieChart];
 }
 
 -(void)configureLegend{
@@ -116,12 +163,32 @@
 
 #pragma mark - CPTPlotDataSource methods
 -(NSUInteger)numberOfRecordsForPlot:(CPTPlot *)plot {
-    return 0;
+    return 4;
+
 }
 
 -(NSNumber *)numberForPlot:(CPTPlot *)plot field:(NSUInteger)fieldEnum recordIndex:(NSUInteger)index {
-    return 0;
-}
+    
+    NSMutableArray *array = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+    
+    switch (index) {
+        case 0:
+            return [[NSNumber alloc]initWithInt:[[array objectAtIndex:1] intValue]];
+            break;
+        case 1:
+            return [[NSNumber alloc]initWithInt:[[array objectAtIndex:2] intValue]];
+            break;
+        case 2:
+            return [[NSNumber alloc]initWithInt:[[array objectAtIndex:3] intValue]];
+            break;
+        case 3:
+            return [[NSNumber alloc]initWithInt:[[array objectAtIndex:4] intValue]];
+            break;
+        default:
+            return [NSDecimalNumber zero];
+            break;
+            }
+    }
 
 -(CPTLayer *)dataLabelForPlot:(CPTPlot *)plot recordIndex:(NSUInteger)index {
     return nil;

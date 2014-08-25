@@ -36,8 +36,12 @@
                     <nil key="highlightedColor"/>
                     <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m1v-uS-u9x">
+                    <rect key="frame" x="20" y="117" width="280" height="331"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </view>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaV-Kg-PR6">
-                    <rect key="frame" x="125" y="437" width="70" height="70"/>
+                    <rect key="frame" x="125" y="43" width="70" height="28"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                     <state key="normal" title="Voltar">
@@ -47,11 +51,6 @@
                         <action selector="botaoVoltar:" destination="-1" eventType="touchUpInside" id="mte-1e-fFN"/>
                     </connections>
                 </button>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m1v-uS-u9x">
-                    <rect key="frame" x="20" y="117" width="280" height="331"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
