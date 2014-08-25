@@ -11,9 +11,20 @@
 
 @interface MELViewControllerPerfil ()
 
+@property (strong, nonatomic) IBOutlet CPTGraphHostingView *hostView;
+
+
 @end
 
 @implementation MELViewControllerPerfil
+
+@synthesize hostView = hostView_;
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    //inicializando o plot
+    [self initPlot];
+}
 
 -(NSString*)caminhoPerfil
 {
@@ -76,6 +87,51 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - CHart behavior
+-(void) initPlot{
+    [self configureHost];
+    [self configureGraph];
+    [self configureChart];
+    [self configureLegend];
+}
+
+-(void)configureHost{
+
+}
+
+-(void)configureGraph{
+
+}
+-(void)configureChart{
+
+}
+
+-(void)configureLegend{
+
+}
+
+
+#pragma mark - CPTPlotDataSource methods
+-(NSUInteger)numberOfRecordsForPlot:(CPTPlot *)plot {
+    return 0;
+}
+
+-(NSNumber *)numberForPlot:(CPTPlot *)plot field:(NSUInteger)fieldEnum recordIndex:(NSUInteger)index {
+    return 0;
+}
+
+-(CPTLayer *)dataLabelForPlot:(CPTPlot *)plot recordIndex:(NSUInteger)index {
+    return nil;
+}
+
+-(NSString *)legendTitleForPieChart:(CPTPieChart *)pieChart recordIndex:(NSUInteger)index {
+    return @"";
+}
+
+#pragma mark - UIActionSheetDelegate methods
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
 }
 
 @end

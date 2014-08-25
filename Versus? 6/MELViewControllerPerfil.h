@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CorePlot-CocoaTouch.h"
+//#import "CPDConstants.h"
+//#import "CPDStockPriceStore.h"
 
-@interface MELViewControllerPerfil : UIViewController
+@interface MELViewControllerPerfil : UIViewController <CPTPlotDataSource, UIActionSheetDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *score;
 @property (weak, nonatomic) IBOutlet UITextField *editarNick;
 @property (weak, nonatomic) IBOutlet UILabel *acertosViloes;
