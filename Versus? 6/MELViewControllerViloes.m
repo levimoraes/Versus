@@ -28,7 +28,15 @@
     
     NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
     NSString *pontosPlist = [plistPerfil objectAtIndex:5];
-    [plistPerfil replaceObjectAtIndex:7 withObject:pontosPlist];
+    NSString *valorNaPlist = [plistPerfil objectAtIndex:7];
+    
+    
+    if ([valorNaPlist intValue] < [pontosPlist intValue]) {
+        [plistPerfil replaceObjectAtIndex:7 withObject:pontosPlist];
+        
+    }
+    
+    NSLog(@"%@",[plistPerfil objectAtIndex:7]);
     [plistPerfil replaceObjectAtIndex:5 withObject:@"0"];
     
     [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
