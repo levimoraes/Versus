@@ -388,6 +388,7 @@
 		34E0F6DC199A9C99005A1FD0 /* .h */ = {
 			isa = PBXGroup;
 			children = (
+				6DAED63B19A3DD9D00763378 /* CustomActionSheet.h */,
 				34E0F6D7199A9C8F005A1FD0 /* MELViewControllerMenu.h */,
 				34E0F6EA199A9FF1005A1FD0 /* MELViewControllerCategoria.h */,
 				34E0F6F8199AA4C2005A1FD0 /* MELViewControllerViloes.h */,
@@ -401,7 +402,6 @@
 			isa = PBXGroup;
 			children = (
 				34E0F6D8199A9C8F005A1FD0 /* MELViewControllerMenu.m */,
-				6DAED63B19A3DD9D00763378 /* CustomActionSheet.h */,
 				6DAED63C19A3DD9D00763378 /* CustomActionSheet.m */,
 				34E0F6EB199A9FF1005A1FD0 /* MELViewControllerCategoria.m */,
 				34E0F6F9199AA4C2005A1FD0 /* MELViewControllerViloes.m */,

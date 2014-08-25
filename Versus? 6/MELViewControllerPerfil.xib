@@ -6,8 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MELViewControllerPerfil">
             <connections>
-                <outlet property="hostBiew" destination="m1v-uS-u9x" id="0ZC-uW-uUK"/>
-                <outlet property="hostView" destination="m1v-uS-u9x" id="bUX-vX-xjC"/>
+                <outlet property="hostView" destination="m1v-uS-u9x" id="G6Q-5s-bjW"/>
                 <outlet property="score" destination="h5c-aL-xFH" id="ya3-UF-Epn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
