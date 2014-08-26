@@ -9,17 +9,22 @@
 #import "MELViewControllerMenuiPad.h"
 #import "MELViewControllerCategoriaiPad.h"
 #import "MELViewControllerPerfiliPad.h"
+#import "CustomActionSheet.h"
 
 @interface MELViewControllerMenuiPad ()
 
 @property (nonatomic) BOOL gameCenterEnabled;
 @property (nonatomic, strong) NSString *leaderboardIdentifier;
 @property (nonatomic) int64_t score;
-//@property (nonatomic, strong) CustomActionSheet *customActionSheet;
+@property (nonatomic) int64_t pergHeroi;
+@property (nonatomic) int64_t pergVilao;
+@property (nonatomic, strong) CustomActionSheet *customActionSheet;
+
 
 
 -(void)authenticateLocalPlayer;
 -(void)reportScore;
+-(void)updateAchivements;
 
 @end
 
@@ -188,7 +193,187 @@
         _score = atoll([string UTF8String]);
         score.value = _score;
         NSArray *newArray = [[NSArray alloc]initWithObjects:score, nil];
-        //        newArray = @[score,nil];
+        
+        GKScore *scorePerguntas = [[GKScore alloc] initWithLeaderboardIdentifier:leaderboardId];
+        NSString *numeroPergHeroi = [NSString stringWithFormat:@"%@",[array objectAtIndex:1]];
+        NSString *numeroPergVilao = [NSString stringWithFormat:@"%@",[array objectAtIndex:2]];
+        
+        
+        _pergHeroi = atoll([numeroPergHeroi UTF8String]);
+        _pergVilao = atoll([numeroPergVilao UTF8String]);
+        
+        
+        /* --------------------   HEROIS  --------------------------------------- */
+        
+        
+        //10 PERGUNTAS
+        if (_pergHeroi >= 10){
+            [self reportAchievementIdentifier:@"Achivements10perguntasHerois" percentComplete:100.00];
+            
+        }
+        if (_pergHeroi <10){
+            
+            float heroi = _pergHeroi;
+            numeroPergHeroi = [NSString stringWithFormat:@"%.1f",heroi*100/10];
+            
+            //   _pergHeroi = atoll([numeroPergHeroi UTF8String]);
+            [self reportAchievementIdentifier:@"Achivements10perguntasHerois" percentComplete:[numeroPergHeroi floatValue]];        }
+        
+        
+        //25 PERGUNTAS
+        
+        if (_pergHeroi >= 25){
+            [self reportAchievementIdentifier:@"Achivements25perguntasHerois" percentComplete:100.0];
+            
+        }
+        
+        if (_pergHeroi < 25)
+        {
+            
+            float heroi = _pergHeroi;
+            numeroPergHeroi = [NSString stringWithFormat:@"%.1f",heroi*100/25];
+            
+            //   _pergHeroi = atoll([numeroPergHeroi UTF8String]);
+            [self reportAchievementIdentifier:@"Achivements25perguntasHerois" percentComplete:[numeroPergHeroi floatValue]];
+        }
+        
+        //50 PERGUNTAS
+        
+        if (_pergHeroi >= 50){
+            [self reportAchievementIdentifier:@"Achivements50perguntasHerois" percentComplete:100.0];
+            
+        }
+        
+        if (_pergHeroi < 50)
+        {
+            float heroi = _pergHeroi;
+            numeroPergHeroi = [NSString stringWithFormat:@"%.1f",heroi*100/50];
+            
+            //     _pergHeroi = atoll([numeroPergHeroi UTF8String]);
+            [self reportAchievementIdentifier:@"Achivements50perguntasHerois" percentComplete:[numeroPergHeroi floatValue]];
+        }
+        
+        
+        //100 PERGUNTAS
+        
+        if (_pergHeroi >= 100){
+            [self reportAchievementIdentifier:@"Achivements100perguntasHerois" percentComplete:100.0];
+            
+        }
+        
+        if (_pergHeroi < 100)
+        {
+            float heroi = _pergHeroi;
+            numeroPergHeroi = [NSString stringWithFormat:@"%.1f",heroi];
+            
+            //    _pergHeroi = atoll([numeroPergHeroi UTF8String]);
+            [self reportAchievementIdentifier:@"Achivements100perguntasHerois" percentComplete:[numeroPergHeroi floatValue]];
+        }
+        
+        
+        //500 PERGUNTAS
+        
+        if (_pergHeroi >= 500){
+            [self reportAchievementIdentifier:@"Achivements500perguntasHerois" percentComplete:100.0];
+            
+        }
+        
+        if (_pergHeroi < 500)
+        {
+            float heroi = _pergHeroi;
+            numeroPergHeroi = [NSString stringWithFormat:@"%.1f",heroi*1000/500];
+            
+            //    _pergHeroi = atoll([numeroPergHeroi UTF8String]);
+            [self reportAchievementIdentifier:@"Achivements500perguntasHerois" percentComplete:[numeroPergHeroi floatValue]];
+        }
+        
+        
+        
+        //1000 PERGUNTAS
+        
+        if (_pergHeroi >= 1000){
+            [self reportAchievementIdentifier:@"Achivements1000perguntasHerois" percentComplete:100.0];
+            
+        }
+        
+        if (_pergHeroi < 1000)
+        {
+            float heroi = _pergHeroi;
+            numeroPergHeroi = [NSString stringWithFormat:@"%.1f",heroi/10];
+            
+            //    _pergHeroi = atoll([numeroPergHeroi UTF8String]);
+            [self reportAchievementIdentifier:@"Achivements1000perguntasHerois" percentComplete:[numeroPergHeroi floatValue]];
+        }
+        
+        
+        /*---------------------------- VILOES------------------------------------------*/
+        
+        
+        //10 PERGUNTAS
+        if (_pergVilao >= 10){
+            [self reportAchievementIdentifier:@"Achivements10perguntasVilao" percentComplete:100.00];
+            
+        }
+        if (_pergVilao <10){
+            
+            float vilao = _pergVilao;
+            numeroPergVilao = [NSString stringWithFormat:@"%.1f",vilao*100/10];
+            
+            //_pergVilao = atoll([numeroPergVilao UTF8String]);
+            [self reportAchievementIdentifier:@"Achivements10perguntasVilao" percentComplete:[numeroPergVilao floatValue]];        }
+        
+        //25 PERGUNTAS
+        if (_pergVilao >= 25){
+            [self reportAchievementIdentifier:@"Achivements25perguntasVilao" percentComplete:100.00];
+            
+        }
+        if (_pergVilao <25){
+            
+            float vilao = _pergVilao;
+            numeroPergVilao = [NSString stringWithFormat:@"%.1f",vilao*100/25];
+            
+            //_pergVilao = atoll([numeroPergVilao UTF8String]);
+            [self reportAchievementIdentifier:@"Achivements25perguntasVilao" percentComplete:[numeroPergVilao floatValue]];        }
+        
+        //50 PERGUNTAS
+        if (_pergVilao >= 50){
+            [self reportAchievementIdentifier:@"Achivements50perguntasVilao" percentComplete:100.00];
+            
+        }
+        if (_pergVilao <50){
+            
+            float vilao = _pergVilao;
+            numeroPergVilao = [NSString stringWithFormat:@"%.1f",vilao*100/50];
+            
+            //_pergVilao = atoll([numeroPergVilao UTF8String]);
+            [self reportAchievementIdentifier:@"Achivements50perguntasVilao" percentComplete:[numeroPergVilao floatValue]];        }
+        
+        //100 PERGUNTAS
+        if (_pergVilao >= 100){
+            [self reportAchievementIdentifier:@"Achivements100perguntasVilao" percentComplete:100.00];
+            
+        }
+        if (_pergVilao <100){
+            
+            float vilao = _pergVilao;
+            numeroPergVilao = [NSString stringWithFormat:@"%.1f",vilao];
+            
+            //_pergVilao = atoll([numeroPergVilao UTF8String]);
+            [self reportAchievementIdentifier:@"Achivements100perguntasVilao" percentComplete:[numeroPergVilao floatValue]];        }
+        
+        //1000 PERGUNTAS
+        if (_pergVilao >= 1000){
+            [self reportAchievementIdentifier:@"Achivements1000perguntasVilao" percentComplete:100.00];
+            
+        }
+        if (_pergVilao <1000){
+            
+            float vilao = _pergVilao;
+            numeroPergVilao = [NSString stringWithFormat:@"%.1f",vilao/10];
+            
+            //_pergVilao = atoll([numeroPergVilao UTF8String]);
+            [self reportAchievementIdentifier:@"Achivements1000perguntasVilao" percentComplete:[numeroPergVilao floatValue]];        }
+        
         
         
         [GKScore reportScores:newArray withCompletionHandler:^(NSError *error) {
@@ -201,6 +386,7 @@
     
     
     [self showLeaderboard:leaderboardId];
+
 }
 
 
@@ -233,6 +419,19 @@
     
     [self authenticateLocalPlayer];
     
+    GKLocalPlayer *localplayer = [GKLocalPlayer localPlayer];
+    [localplayer authenticateWithCompletionHandler:^(NSError *error) {
+        if (error) {
+            NSLog(@"NAO CONECTADO");
+            [_rankingButton setBackgroundImage:[UIImage imageNamed:@"GCSaturado.png"] forState:UIControlStateNormal];
+            [_rankingButton setEnabled:NO];
+        }
+        else {
+            NSLog(@"CONECTADO");
+            [_rankingButton setBackgroundImage:[UIImage imageNamed:@"Game-Center2.png"] forState:UIControlStateNormal];
+            [_rankingButton setEnabled:YES];
+        }
+    }];
     
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -254,13 +453,8 @@
         [testePlistArray writeToFile:[self caminhoPerfil] atomically:YES];
         
         NSLog(@"%@",[self caminhoPerfil]);
-        
-        
-        
-        
     }
-    
-    
+ 
     
 }
 

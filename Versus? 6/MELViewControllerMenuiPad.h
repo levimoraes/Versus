@@ -10,5 +10,6 @@
 #import <GameKit/GameKit.h>
 
 @interface MELViewControllerMenuiPad : UIViewController <UIApplicationDelegate,GKGameCenterControllerDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *rankingButton;
 
 @end

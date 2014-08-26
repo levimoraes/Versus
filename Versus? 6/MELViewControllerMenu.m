@@ -388,10 +388,6 @@
     
     [self showLeaderboard:leaderboardId];
 }
-
-
-
-
 -(NSString*)caminhoPerfil
 {
     
@@ -416,9 +412,6 @@
 
 - (void)viewDidLoad
 {
-    
-    
-    
     [self authenticateLocalPlayer];
     
     GKLocalPlayer *localplayer = [GKLocalPlayer localPlayer];
@@ -434,8 +427,6 @@
             [_rankingButton setEnabled:YES];
         }
     }];
-    
-    
     
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -457,14 +448,7 @@
         [testePlistArray writeToFile:[self caminhoPerfil] atomically:YES];
         
         NSLog(@"%@",[self caminhoPerfil]);
-        
-        
-        
-        
     }
-    
-    
-    
 }
 
 - (void)didReceiveMemoryWarning

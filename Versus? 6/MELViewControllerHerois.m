@@ -25,7 +25,6 @@
 }
 
 - (IBAction)BotaoDesistir:(id)sender {
-    NSLog(@"Desistir");
     MELViewControllerMenu *menu = [[MELViewControllerMenu alloc]init];
     
     NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
