@@ -26,6 +26,10 @@
     //inicializando o plot
     [self initPlot];
 }
+- (IBAction)back:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+
+}
 
 -(NSString*)caminhoPerfil
 {
@@ -42,7 +46,11 @@
 - (IBAction)botaoVoltar:(id)sender {
    // [self salvarNick];
 
-    [self dismissViewControllerAnimated:YES completion:nil];
+    MELViewControllerMenu *view = [[MELViewControllerMenu alloc]init];
+    
+//    [self dismissViewControllerAnimated:YES completion:nil];
+    [self presentViewController:view animated:YES completion:nil];
+
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

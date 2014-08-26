@@ -13,6 +13,7 @@
 @interface MELViewControllerMenu : UIViewController<UIApplicationDelegate,GKGameCenterControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *music;
 @property (nonatomic) NSString *musica;
+@property (weak, nonatomic) IBOutlet UIButton *rankingButton;
 
 
 -(void)authenticateLocalPlayer;

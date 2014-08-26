@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MELViewControllerMenu">
             <connections>
                 <outlet property="music" destination="TtS-r5-0SA" id="LSu-8q-e91"/>
+                <outlet property="rankingButton" destination="QGp-n6-K8C" id="lya-fm-wnH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -61,13 +62,13 @@
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGp-n6-K8C">
-                    <rect key="frame" x="137" y="465" width="56" height="30"/>
+                    <rect key="frame" x="229" y="483" width="65" height="65"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Ranking">
+                    <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="reportScore:" destination="-1" eventType="touchUpInside" id="IC9-eG-Cp7"/>
+                        <action selector="reportScore:" destination="-1" eventType="touchUpInside" id="4JQ-e6-Fy9"/>
                     </connections>
                 </button>
             </subviews>

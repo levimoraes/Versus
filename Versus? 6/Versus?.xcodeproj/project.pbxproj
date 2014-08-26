@@ -59,6 +59,8 @@
 		6DB882EC19A5106D005377DD /* Fundo Score Vilao.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DB882EA19A5106D005377DD /* Fundo Score Vilao.png */; };
 		6DB882ED19A5106D005377DD /* Fundo Score Heroi.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DB882EB19A5106D005377DD /* Fundo Score Heroi.png */; };
 		6DB882EF19A51BDC005377DD /* Menu Categoria iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DB882EE19A51BDC005377DD /* Menu Categoria iPad.png */; };
+		6DE5E81819AD243200F5F9A0 /* GC Saturado.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5E81719AD243200F5F9A0 /* GC Saturado.png */; };
+		6DE5E81A19AD244100F5F9A0 /* Game-Center2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5E81919AD244100F5F9A0 /* Game-Center2.png */; };
 		A95ADF4119ABB22000513C42 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A95ADF4019ABB22000513C42 /* libCorePlot-CocoaTouch.a */; };
 		A95ADF4319ABB2E200513C42 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95ADF4219ABB2E200513C42 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
@@ -141,6 +143,8 @@
 		6DB882EA19A5106D005377DD /* Fundo Score Vilao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fundo Score Vilao.png"; path = "Imagens/Fundo Score Vilao.png"; sourceTree = "<group>"; };
 		6DB882EB19A5106D005377DD /* Fundo Score Heroi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fundo Score Heroi.png"; path = "Imagens/Fundo Score Heroi.png"; sourceTree = "<group>"; };
 		6DB882EE19A51BDC005377DD /* Menu Categoria iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Menu Categoria iPad.png"; path = "Imagens/Menu Categoria iPad.png"; sourceTree = "<group>"; };
+		6DE5E81719AD243200F5F9A0 /* GC Saturado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GC Saturado.png"; sourceTree = "<group>"; };
+		6DE5E81919AD244100F5F9A0 /* Game-Center2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Game-Center2.png"; sourceTree = "<group>"; };
 		A95ADEF219ABB22000513C42 /* CorePlot-CocoaTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CorePlot-CocoaTouch.h"; sourceTree = "<group>"; };
 		A95ADEF319ABB22000513C42 /* CPTAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAnimation.h; sourceTree = "<group>"; };
 		A95ADEF419ABB22000513C42 /* CPTAnimationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAnimationOperation.h; sourceTree = "<group>"; };
@@ -310,6 +314,8 @@
 		34E0F69C199A9C5D005A1FD0 = {
 			isa = PBXGroup;
 			children = (
+				6DE5E81919AD244100F5F9A0 /* Game-Center2.png */,
+				6DE5E81719AD243200F5F9A0 /* GC Saturado.png */,
 				34E0F6A7199A9C5D005A1FD0 /* Frameworks */,
 				34E0F6F7199AA3F0005A1FD0 /* Perguntas */,
 				34E0F6DF199A9CE4005A1FD0 /* imagens */,
@@ -597,6 +603,7 @@
 				ORGANIZATIONNAME = "Eduardo Alves";
 				TargetAttributes = {
 					34E0F6A4199A9C5D005A1FD0 = {
+						DevelopmentTeam = FX8K75G44D;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 1;
@@ -648,10 +655,12 @@
 				34ABFE1B199D4FD400E29175 /* MELViewControllerViloesiPad.xib in Resources */,
 				34E0F6F2199AA312005A1FD0 /* BG Menu.png in Resources */,
 				34ABFE16199D4FB600E29175 /* MELViewControllerCategoriaiPad.xib in Resources */,
+				6DE5E81819AD243200F5F9A0 /* GC Saturado.png in Resources */,
 				34ABFE20199D4FF200E29175 /* MELViewControllerHeroisiPad.xib in Resources */,
 				34E0F6E9199A9F19005A1FD0 /* Botao Score.png in Resources */,
 				34E0F6E5199A9E51005A1FD0 /* Botao Perfil.png in Resources */,
 				34E0F709199AA547005A1FD0 /* Botao Vilao.png in Resources */,
+				6DE5E81A19AD244100F5F9A0 /* Game-Center2.png in Resources */,
 				34E0F6F6199AA3E9005A1FD0 /* viloes.plist in Resources */,
 				34E0F706199AA547005A1FD0 /* BG Heroi.png in Resources */,
 				34E0F6E3199A9D8B005A1FD0 /* Logo Menu.png in Resources */,
