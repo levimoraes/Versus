@@ -78,7 +78,6 @@
 //    _totalPerguntas.text = [NSString stringWithFormat:@"%i",total];
 }
 
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -90,7 +89,7 @@
     [self configureHost];
     [self configureGraph];
     [self configureChart];
-//    [self configureLegend];
+    [self configureLegend];
 }
 
 -(void)configureHost{
@@ -127,26 +126,8 @@
 //    graph.titleTextStyle = textStyle;
 //    graph.titlePlotAreaFrameAnchor = CPTRectAnchorTop;
 //    graph.titleDisplacement = CGPointMake(0.0f, -12.0f);
-
 }
 
-- (IBAction)zerar:(id)sender {
-    NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
-    
-    [plistPerfil replaceObjectAtIndex:0 withObject:@"0"];
-    [plistPerfil replaceObjectAtIndex:1 withObject:@"0"];
-    [plistPerfil replaceObjectAtIndex:2 withObject:@"0"];
-    [plistPerfil replaceObjectAtIndex:3 withObject:@"0"];
-    [plistPerfil replaceObjectAtIndex:4 withObject:@"0"];
-    
-    [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
-    
-    
-    MELViewControllerPerfil *view = [[MELViewControllerPerfil alloc]init];
-    
-    [self presentViewController:view animated:YES completion:nil];
-    
-}
 -(void)configureChart{
     // 1 - Get reference to graph
     CPTGraph *graph = self.hostView.hostedGraph;
@@ -168,19 +149,28 @@
     [graph addPlot:pieChart];
 }
 
-
--(IBAction)menu:(id)sender
-{
-    NSLog(@"aq");
-    MELViewControllerMenu *view = [[MELViewControllerMenu alloc]init];
-    [self presentViewController:view animated:YES completion:nil];
+-(void)configureLegend{
+    // 1 - Get graph instance
+    CPTGraph *graph = self.hostView.hostedGraph;
+    // 2 - Create legend
+    CPTLegend *theLegend = [CPTLegend legendWithGraph:graph];
+    // 3 - Configure legend
+    theLegend.numberOfColumns = 1;
+    theLegend.fill = [CPTFill fillWithColor:[CPTColor whiteColor]];
+    theLegend.borderLineStyle = [CPTLineStyle lineStyle];
+    theLegend.cornerRadius = 5.0;
+    // 4 - Add legend to graph
+    graph.legend = theLegend;
+    graph.legendAnchor = CPTRectAnchorRight;
+    CGFloat legendPadding = -(self.view.bounds.size.width / 8);
+    graph.legendDisplacement = CGPointMake(legendPadding, 0.0);
 
 }
 
 #pragma mark - CPTPlotDataSource methods
 -(NSUInteger)numberOfRecordsForPlot:(CPTPlot *)plot {
     return 4;
-
+    
 }
 
 -(NSNumber *)numberForPlot:(CPTPlot *)plot field:(NSUInteger)fieldEnum recordIndex:(NSUInteger)index {
@@ -203,19 +193,62 @@
         default:
             return [NSDecimalNumber zero];
             break;
-            }
     }
+}
 
 -(CPTLayer *)dataLabelForPlot:(CPTPlot *)plot recordIndex:(NSUInteger)index {
     return nil;
 }
 
 -(NSString *)legendTitleForPieChart:(CPTPieChart *)pieChart recordIndex:(NSUInteger)index {
-    return @"";
-}
+    NSMutableArray *array = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
 
+    switch (index) {
+        case 0:
+            return [NSString stringWithFormat:@"acerto herói: %d",[[array objectAtIndex:1] intValue]];
+            break;
+        case 1:
+            return [NSString stringWithFormat:@"acerto vilão: %d",[[array objectAtIndex:2] intValue]];
+            break;
+        case 2:
+            return [NSString stringWithFormat:@"erro vilão: %d",[[array objectAtIndex:3] intValue]];
+            break;
+        case 3:
+            return [NSString stringWithFormat:@"erro herói: %d",[[array objectAtIndex:4] intValue]];
+            break;
+    }
+    return @"N/A";
+}
 #pragma mark - UIActionSheetDelegate methods
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
 }
+
+- (IBAction)zerar:(id)sender {
+    NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+    
+    [plistPerfil replaceObjectAtIndex:0 withObject:@"0"];
+    [plistPerfil replaceObjectAtIndex:1 withObject:@"0"];
+    [plistPerfil replaceObjectAtIndex:2 withObject:@"0"];
+    [plistPerfil replaceObjectAtIndex:3 withObject:@"0"];
+    [plistPerfil replaceObjectAtIndex:4 withObject:@"0"];
+    
+    [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+    
+    
+    MELViewControllerPerfil *view = [[MELViewControllerPerfil alloc]init];
+    
+    [self presentViewController:view animated:YES completion:nil];
+    
+}
+
+-(IBAction)menu:(id)sender
+{
+    NSLog(@"aq");
+    MELViewControllerMenu *view = [[MELViewControllerMenu alloc]init];
+    [self presentViewController:view animated:YES completion:nil];
+
+}
+
+
 
 @end
