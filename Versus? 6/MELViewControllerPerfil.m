@@ -60,14 +60,11 @@
 - (void)viewDidLoad
 {
     
-    
-    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
     NSMutableArray *array = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
-    
-    
+
 
 //    _editarNick.text = [array objectAtIndex:0];
 //    _acertosHerois.text = [array objectAtIndex:1];
@@ -125,13 +122,14 @@
     textStyle.fontName = @"Chalkboard SE";
     textStyle.fontSize = 20.0f;
     // 3 - Configure title
-    NSString *title = @"Gráfico do seu progresso...";
-    graph.title = title;
-    graph.titleTextStyle = textStyle;
-    graph.titlePlotAreaFrameAnchor = CPTRectAnchorTop;
-    graph.titleDisplacement = CGPointMake(0.0f, -12.0f);
+//    NSString *title = @"Gráfico do seu progresso...";
+//    graph.title = title;
+//    graph.titleTextStyle = textStyle;
+//    graph.titlePlotAreaFrameAnchor = CPTRectAnchorTop;
+//    graph.titleDisplacement = CGPointMake(0.0f, -12.0f);
 
 }
+
 - (IBAction)zerar:(id)sender {
     NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
     
