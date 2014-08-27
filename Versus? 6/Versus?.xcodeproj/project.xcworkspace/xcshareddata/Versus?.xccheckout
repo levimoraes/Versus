@@ -12,6 +12,8 @@
 	<dict>
 		<key>3F202348-7314-4B25-8FA4-1F20FDD76DF9</key>
 		<string>https://github.com/levimoraes/Versus</string>
+		<key>F93E2203-7EED-43E5-BD1D-50E5E663C9EA</key>
+		<string>https://github.com/core-plot/core-plot</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Versus? 6/Versus?.xcodeproj/project.xcworkspace</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>3F202348-7314-4B25-8FA4-1F20FDD76DF9</key>
 		<string>../../..</string>
+		<key>F93E2203-7EED-43E5-BD1D-50E5E663C9EA</key>
+		<string>../../../../../../Desktop/core-plot</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/levimoraes/Versus</string>
@@ -28,6 +32,14 @@
 	<string>3F202348-7314-4B25-8FA4-1F20FDD76DF9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F93E2203-7EED-43E5-BD1D-50E5E663C9EA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>core-plot</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
