@@ -12,11 +12,7 @@
 //#import "CPDStockPriceStore.h"
 
 @interface MELViewControllerPerfil : UIViewController <CPTPlotDataSource, UIActionSheetDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *menuButton;
+@property (weak, nonatomic) IBOutlet UIButton *zerarButton;
 @property (weak, nonatomic) IBOutlet UILabel *score;
-@property (weak, nonatomic) IBOutlet UITextField *editarNick;
-@property (weak, nonatomic) IBOutlet UILabel *acertosViloes;
-@property (weak, nonatomic) IBOutlet UILabel *acertosHerois;
-@property (weak, nonatomic) IBOutlet UILabel *errosViloes;
-@property (weak, nonatomic) IBOutlet UILabel *errosHerois;
-@property (weak, nonatomic) IBOutlet UILabel *totalPerguntas;
 @end

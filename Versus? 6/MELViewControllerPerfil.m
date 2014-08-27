@@ -25,11 +25,12 @@
     [super viewDidAppear:animated];
     //inicializando o plot
     [self initPlot];
+    
+    
+    [self.view bringSubviewToFront:_menuButton];
+    [self.view bringSubviewToFront:_zerarButton];
 }
-- (IBAction)back:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
 
-}
 
 -(NSString*)caminhoPerfil
 {
@@ -43,15 +44,8 @@
     return fileName;
 }
 
-- (IBAction)botaoVoltar:(id)sender {
-   // [self salvarNick];
 
-    MELViewControllerMenu *view = [[MELViewControllerMenu alloc]init];
-    
-//    [self dismissViewControllerAnimated:YES completion:nil];
-    [self presentViewController:view animated:YES completion:nil];
 
-}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -65,33 +59,28 @@
 
 - (void)viewDidLoad
 {
+    
+    
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
     NSMutableArray *array = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+    
+    
 
-    _editarNick.text = [array objectAtIndex:0];
-    _acertosHerois.text = [array objectAtIndex:1];
-    _acertosViloes.text = [array objectAtIndex:2];
-    _errosViloes.text = [array objectAtIndex:3];
-    _errosHerois.text = [array objectAtIndex:4];
+//    _editarNick.text = [array objectAtIndex:0];
+//    _acertosHerois.text = [array objectAtIndex:1];
+//    _acertosViloes.text = [array objectAtIndex:2];
+//    _errosViloes.text = [array objectAtIndex:3];
+//    _errosHerois.text = [array objectAtIndex:4];
     _score.text = [array objectAtIndex:7];
     
-    int total = [_acertosHerois.text intValue] + [_acertosViloes.text intValue] + [_errosHerois.text intValue] + [_errosViloes.text intValue];
+//    int total = [_acertosHerois.text intValue] + [_acertosViloes.text intValue] + [_errosHerois.text intValue] + [_errosViloes.text intValue];
     
-    _totalPerguntas.text = [NSString stringWithFormat:@"%i",total];
+//    _totalPerguntas.text = [NSString stringWithFormat:@"%i",total];
 }
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    [_editarNick resignFirstResponder];
-}
-
--(void)salvarNick{
-    NSMutableArray *array = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
-//    [array insertObject:_editarNick.text atIndex:0];
-    [array replaceObjectAtIndex:0 withObject:_editarNick.text];
-    [array writeToFile:[self caminhoPerfil] atomically:YES];
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -104,7 +93,7 @@
     [self configureHost];
     [self configureGraph];
     [self configureChart];
-    [self configureLegend];
+//    [self configureLegend];
 }
 
 -(void)configureHost{
@@ -143,6 +132,23 @@
     graph.titleDisplacement = CGPointMake(0.0f, -12.0f);
 
 }
+- (IBAction)zerar:(id)sender {
+    NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+    
+    [plistPerfil replaceObjectAtIndex:0 withObject:@"0"];
+    [plistPerfil replaceObjectAtIndex:1 withObject:@"0"];
+    [plistPerfil replaceObjectAtIndex:2 withObject:@"0"];
+    [plistPerfil replaceObjectAtIndex:3 withObject:@"0"];
+    [plistPerfil replaceObjectAtIndex:4 withObject:@"0"];
+    
+    [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+    
+    
+    MELViewControllerPerfil *view = [[MELViewControllerPerfil alloc]init];
+    
+    [self presentViewController:view animated:YES completion:nil];
+    
+}
 -(void)configureChart{
     // 1 - Get reference to graph
     CPTGraph *graph = self.hostView.hostedGraph;
@@ -164,10 +170,14 @@
     [graph addPlot:pieChart];
 }
 
--(void)configureLegend{
+
+-(IBAction)menu:(id)sender
+{
+    NSLog(@"aq");
+    MELViewControllerMenu *view = [[MELViewControllerMenu alloc]init];
+    [self presentViewController:view animated:YES completion:nil];
 
 }
-
 
 #pragma mark - CPTPlotDataSource methods
 -(NSUInteger)numberOfRecordsForPlot:(CPTPlot *)plot {
