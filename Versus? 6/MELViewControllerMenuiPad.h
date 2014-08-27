@@ -11,5 +11,6 @@
 
 @interface MELViewControllerMenuiPad : UIViewController <UIApplicationDelegate,GKGameCenterControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *rankingButton;
+@property (weak, nonatomic) IBOutlet UIImageView *GC;
 
 @end

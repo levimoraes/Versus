@@ -425,11 +425,13 @@
             NSLog(@"NAO CONECTADO");
             [_rankingButton setBackgroundImage:[UIImage imageNamed:@"GCSaturado.png"] forState:UIControlStateNormal];
             [_rankingButton setEnabled:NO];
+            _GC.hidden=NO;
         }
         else {
             NSLog(@"CONECTADO");
             [_rankingButton setBackgroundImage:[UIImage imageNamed:@"Game-Center2.png"] forState:UIControlStateNormal];
             [_rankingButton setEnabled:YES];
+            _GC.hidden=YES;
         }
     }];
     

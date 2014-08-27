@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MELViewControllerMenuiPad">
             <connections>
+                <outlet property="GC" destination="cgX-fO-n6i" id="48c-l6-oS8"/>
                 <outlet property="rankingButton" destination="1zR-zP-Xzl" id="ZNO-IW-k4h"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -53,6 +54,10 @@
                         <action selector="reportScore:" destination="-1" eventType="touchUpInside" id="bU3-r3-l1l"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GC Saturado.png" translatesAutoresizingMaskIntoConstraints="NO" id="cgX-fO-n6i">
+                    <rect key="frame" x="914" y="658" width="90" height="90"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -63,6 +68,7 @@
         <image name="BG Menu.png" width="640" height="1136"/>
         <image name="Botao Jogar.png" width="320" height="203"/>
         <image name="Botao Perfil.png" width="320" height="203"/>
+        <image name="GC Saturado.png" width="1024" height="1024"/>
         <image name="Logo Menu.png" width="270" height="403"/>
     </resources>
 </document>
