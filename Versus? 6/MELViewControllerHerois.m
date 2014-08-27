@@ -345,7 +345,7 @@
     [self pegarPerguntaAleatoria];
     [self sortearKey];
     
-    NSArray *pergunta = [[NSArray alloc]initWithContentsOfFile:[self caminhoHerois]];
+    NSMutableArray *pergunta = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoHerois]];
     NSDictionary *questoes = [[NSDictionary alloc]initWithDictionary:[pergunta objectAtIndex:_nroQuestao]];
     
     _labelPergunta.text = [questoes objectForKey:@"Pergunta"];
@@ -375,11 +375,18 @@
 }
 
 -(void)pegarPerguntaAleatoria{
-    NSArray *pergunta = [[NSArray alloc]initWithContentsOfFile:[self caminhoHerois]];
+    NSMutableArray *pergunta = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoHerois]];
+    NSMutableArray *resto = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoHerois]];
     
-    int i = (int) [pergunta count];
+    NSLog(@"%d",[resto count]);
+    int i = (int) [resto count];
+    
+    
     
     _nroQuestao = arc4random() % i;
+
+    [resto removeObjectAtIndex:_nroQuestao];
+    NSLog(@"%d",[resto count]);
 }
 
 -(void)proximaPergunta{

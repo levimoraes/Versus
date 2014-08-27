@@ -57,8 +57,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-//    NSMutableArray *array = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
-//    _score.text = [array objectAtIndex:7];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -208,26 +207,58 @@
 }
 
 - (IBAction)zerar:(id)sender {
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
+                                                    message:@"Você realmente deseja apagar seus dados já coletados"
+                                                   delegate:self
+                                          cancelButtonTitle:@"Cancelar"
+                                          otherButtonTitles:@"OK",nil];
+    [alert show];
+    
     NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
     
-    [plistPerfil replaceObjectAtIndex:0 withObject:@"0"];
-    [plistPerfil replaceObjectAtIndex:1 withObject:@"0"];
-    [plistPerfil replaceObjectAtIndex:2 withObject:@"0"];
-    [plistPerfil replaceObjectAtIndex:3 withObject:@"0"];
-    [plistPerfil replaceObjectAtIndex:4 withObject:@"0"];
+}
+
+
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    // the user clicked OK
     
-    [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
     
+    if (buttonIndex == 0) {
+        // do something here...
+        
+        NSLog(@"Cancel");
+    }
     
-    MELViewControllerPerfil *view = [[MELViewControllerPerfil alloc]init];
-    
-    [self presentViewController:view animated:YES completion:nil];
+    else
+    {
+        
+        NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+        
+        [plistPerfil replaceObjectAtIndex:0 withObject:@"0"];
+        [plistPerfil replaceObjectAtIndex:1 withObject:@"0"];
+        [plistPerfil replaceObjectAtIndex:2 withObject:@"0"];
+        [plistPerfil replaceObjectAtIndex:3 withObject:@"0"];
+        [plistPerfil replaceObjectAtIndex:4 withObject:@"0"];
+        
+        [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+        
+        MELViewControllerPerfil *view = [[MELViewControllerPerfil alloc]init];
+        
+        [self presentViewController:view animated:YES completion:nil];
+        
+    }
 }
 
 -(IBAction)menu:(id)sender
 {
-    MELViewControllerMenu *view = [[MELViewControllerMenu alloc]init];
-    [self presentViewController:view animated:YES completion:nil];
+    MELViewControllerMenu *menu = [[MELViewControllerMenu alloc]init];
+    
+    [menu setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+    [self presentViewController:menu animated:YES completion:nil];
+    
+   // [self presentViewController:view animated:YES completion:nil];
 
 }
 @end

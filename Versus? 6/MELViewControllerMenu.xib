@@ -2,12 +2,10 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MELViewControllerMenu">
             <connections>
-                <outlet property="music" destination="TtS-r5-0SA" id="LSu-8q-e91"/>
                 <outlet property="rankingButton" destination="QGp-n6-K8C" id="lya-fm-wnH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -17,23 +15,17 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG Menu.png" translatesAutoresizingMaskIntoConstraints="NO" id="NSh-ca-mAv">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG Menu.png" translatesAutoresizingMaskIntoConstraints="NO" id="NSh-ca-mAv">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Menu.png" translatesAutoresizingMaskIntoConstraints="NO" id="MR2-0x-YIT">
-                    <rect key="frame" x="75" y="0.0" width="170" height="210"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo Menu.png" translatesAutoresizingMaskIntoConstraints="NO" id="MR2-0x-YIT">
+                    <rect key="frame" x="75" y="35" width="170" height="210"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="MR2-0x-YIT" secondAttribute="height" multiplier="17:21" id="bjm-e4-nNz"/>
-                    </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfw-ku-eZ7">
-                    <rect key="frame" x="60" y="212" width="200" height="120"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfw-ku-eZ7">
+                    <rect key="frame" x="60" y="247" width="200" height="120"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="120" id="xFs-W5-HJ7"/>
-                    </constraints>
                     <state key="normal" backgroundImage="Botao Jogar.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -41,8 +33,8 @@
                         <action selector="BotaoJogar:" destination="-1" eventType="touchUpInside" id="xfO-Ji-fjp"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyA-W4-JSt">
-                    <rect key="frame" x="60" y="320" width="200" height="120"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyA-W4-JSt">
+                    <rect key="frame" x="60" y="355" width="200" height="120"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" image="Botao Perfil.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -51,18 +43,8 @@
                         <action selector="BotaoPerfil:" destination="-1" eventType="touchUpInside" id="7xL-pK-dOM"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtS-r5-0SA">
-                    <rect key="frame" x="244" y="25" width="50" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="8Qf-nH-8bf"/>
-                    </constraints>
-                    <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGp-n6-K8C">
-                    <rect key="frame" x="229" y="483" width="65" height="65"/>
+                    <rect key="frame" x="235" y="483" width="65" height="65"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -71,29 +53,14 @@
                         <action selector="reportScore:" destination="-1" eventType="touchUpInside" id="4JQ-e6-Fy9"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cg4-Fx-0az">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.76000000000000001" colorSpace="calibratedRGB"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="MR2-0x-YIT" firstAttribute="centerX" secondItem="Cfw-ku-eZ7" secondAttribute="centerX" id="0R2-fV-N7Y"/>
-                <constraint firstItem="NSh-ca-mAv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2aa-7Y-KVS"/>
-                <constraint firstItem="TtS-r5-0SA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="3e9-Vt-52k"/>
-                <constraint firstItem="MR2-0x-YIT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="75" id="93U-Rb-EyR"/>
-                <constraint firstItem="lyA-W4-JSt" firstAttribute="height" secondItem="Cfw-ku-eZ7" secondAttribute="height" id="FBm-vN-2Lp"/>
-                <constraint firstItem="Cfw-ku-eZ7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="I3i-cH-w1w"/>
-                <constraint firstItem="Cfw-ku-eZ7" firstAttribute="leading" secondItem="lyA-W4-JSt" secondAttribute="leading" id="MWI-AX-MIE"/>
-                <constraint firstItem="Cfw-ku-eZ7" firstAttribute="trailing" secondItem="lyA-W4-JSt" secondAttribute="trailing" id="Pxh-bl-YJY"/>
-                <constraint firstAttribute="trailing" secondItem="TtS-r5-0SA" secondAttribute="trailing" constant="26" id="RgJ-Ot-fRD"/>
-                <constraint firstItem="NSh-ca-mAv" firstAttribute="centerX" secondItem="Cfw-ku-eZ7" secondAttribute="centerX" id="UVA-8a-MDf"/>
-                <constraint firstAttribute="bottom" secondItem="NSh-ca-mAv" secondAttribute="bottom" id="Xq7-db-Nyd"/>
-                <constraint firstItem="lyA-W4-JSt" firstAttribute="top" secondItem="Cfw-ku-eZ7" secondAttribute="bottom" constant="-12" id="YeQ-m0-WWt"/>
-                <constraint firstAttribute="trailing" secondItem="lyA-W4-JSt" secondAttribute="trailing" constant="60" id="YkY-1Q-bPY"/>
-                <constraint firstItem="MR2-0x-YIT" firstAttribute="top" secondItem="NSh-ca-mAv" secondAttribute="top" id="arK-lG-eXw"/>
-                <constraint firstItem="Cfw-ku-eZ7" firstAttribute="top" secondItem="MR2-0x-YIT" secondAttribute="bottom" constant="2" id="bQg-Wq-cBq"/>
-                <constraint firstItem="lyA-W4-JSt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="bka-HA-yqn"/>
-                <constraint firstItem="MR2-0x-YIT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qkU-58-jld"/>
-                <constraint firstAttribute="centerX" secondItem="MR2-0x-YIT" secondAttribute="centerX" id="wMa-ba-iEC"/>
-            </constraints>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>

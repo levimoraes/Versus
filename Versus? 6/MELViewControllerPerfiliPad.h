@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CorePlot-CocoaTouch.h"
 
-@interface MELViewControllerPerfiliPad : UIViewController
+@interface MELViewControllerPerfiliPad : UIViewController <CPTPlotDataSource, UIActionSheetDelegate,UIAlertViewDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *menuButton;
+@property (weak, nonatomic) IBOutlet UIButton *zerarButton;
 
 @end
