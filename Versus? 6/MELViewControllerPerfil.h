@@ -14,5 +14,4 @@
 @interface MELViewControllerPerfil : UIViewController <CPTPlotDataSource, UIActionSheetDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *menuButton;
 @property (weak, nonatomic) IBOutlet UIButton *zerarButton;
-@property (weak, nonatomic) IBOutlet UILabel *score;
 @end

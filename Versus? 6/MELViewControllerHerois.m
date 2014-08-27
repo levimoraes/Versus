@@ -324,7 +324,6 @@
     }
     
     [self performSelector:@selector(proximaPergunta) withObject:nil afterDelay:0.5];
-
 }
 
 
@@ -445,6 +444,4 @@
         [self performSelector:@selector(proximaPergunta) withObject:nil afterDelay:0.5];
     }
 }
-
-
 @end

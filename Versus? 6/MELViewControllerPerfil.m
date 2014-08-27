@@ -26,11 +26,9 @@
     //inicializando o plot
     [self initPlot];
     
-    
     [self.view bringSubviewToFront:_menuButton];
     [self.view bringSubviewToFront:_zerarButton];
 }
-
 
 -(NSString*)caminhoPerfil
 {
@@ -44,9 +42,6 @@
     return fileName;
 }
 
-
-
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -56,26 +51,14 @@
     return self;
 }
 
-
 - (void)viewDidLoad
 {
     
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    NSMutableArray *array = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
-
-
-//    _editarNick.text = [array objectAtIndex:0];
-//    _acertosHerois.text = [array objectAtIndex:1];
-//    _acertosViloes.text = [array objectAtIndex:2];
-//    _errosViloes.text = [array objectAtIndex:3];
-//    _errosHerois.text = [array objectAtIndex:4];
-    _score.text = [array objectAtIndex:7];
-    
-//    int total = [_acertosHerois.text intValue] + [_acertosViloes.text intValue] + [_errosHerois.text intValue] + [_errosViloes.text intValue];
-    
-//    _totalPerguntas.text = [NSString stringWithFormat:@"%i",total];
+//    NSMutableArray *array = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+//    _score.text = [array objectAtIndex:7];
 }
 
 - (void)didReceiveMemoryWarning
@@ -95,11 +78,6 @@
 -(void)configureHost{
     // 1 - Set up view frame
     CGRect parentRect = self.view.bounds;
-//    CGSize toolbarSize = self.toolbar.bounds.size;
-  //  parentRect = CGRectMake(parentRect.origin.x,
-    //                        (parentRect.origin.y + toolbarSize.height),
-      //                      parentRect.size.width,
-        //                    (parentRect.size.height - toolbarSize.height));
     // 2 - Create host view
     self.hostView = [(CPTGraphHostingView *) [CPTGraphHostingView alloc] initWithFrame:parentRect];
     self.hostView.allowPinchScaling = NO;
@@ -107,6 +85,11 @@
 }
 
 -(void)configureGraph{
+    NSMutableArray *array = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+    //_score.text = [array objectAtIndex:7];
+    NSString *titulo = [NSString stringWithFormat:@"Recorde: %@ pontos",[array objectAtIndex:7]];
+    
+    
     // 1 - Create and initialize graph
     CPTGraph *graph = [[CPTXYGraph alloc] initWithFrame:self.hostView.bounds];
     self.hostView.hostedGraph = graph;
@@ -121,11 +104,11 @@
     textStyle.fontName = @"Chalkboard SE";
     textStyle.fontSize = 20.0f;
     // 3 - Configure title
-//    NSString *title = @"Gráfico do seu progresso...";
-//    graph.title = title;
-//    graph.titleTextStyle = textStyle;
-//    graph.titlePlotAreaFrameAnchor = CPTRectAnchorTop;
-//    graph.titleDisplacement = CGPointMake(0.0f, -12.0f);
+    NSString *title = titulo;
+    graph.title = title;
+    graph.titleTextStyle = textStyle;
+    graph.titlePlotAreaFrameAnchor = CPTRectAnchorTop;
+    graph.titleDisplacement = CGPointMake(0.0f, -95.0f);
 }
 
 -(void)configureChart{
@@ -219,6 +202,7 @@
     }
     return @"N/A";
 }
+
 #pragma mark - UIActionSheetDelegate methods
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
 }
@@ -238,17 +222,12 @@
     MELViewControllerPerfil *view = [[MELViewControllerPerfil alloc]init];
     
     [self presentViewController:view animated:YES completion:nil];
-    
 }
 
 -(IBAction)menu:(id)sender
 {
-    NSLog(@"aq");
     MELViewControllerMenu *view = [[MELViewControllerMenu alloc]init];
     [self presentViewController:view animated:YES completion:nil];
 
 }
-
-
-
 @end

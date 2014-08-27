@@ -15,8 +15,6 @@
 @property (nonatomic) NSString *musica;
 @property (weak, nonatomic) IBOutlet UIButton *rankingButton;
 
-
 -(void)authenticateLocalPlayer;
 -(void)reportScore;
-
 @end
