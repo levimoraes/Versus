@@ -78,12 +78,14 @@
 }
 
 - (IBAction)BotaoHeroi:(id)sender {
+    [self sortearHerois];
     MELViewControllerHeroisiPad *vilao = [[MELViewControllerHeroisiPad alloc]init];
     [self presentViewController:vilao animated:YES completion:nil];
 
 }
 
 - (IBAction)BotaoVilao:(id)sender {
+    [self sortearViloes];
     MELViewControllerViloesiPad *vilao = [[MELViewControllerViloesiPad alloc]init];
     [self presentViewController:vilao animated:YES completion:nil];
 }
