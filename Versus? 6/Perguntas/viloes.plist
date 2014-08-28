@@ -350,5 +350,149 @@
 		<key>Pergunta</key>
 		<string>Garoto que morreu afogado e mata as suas vítimas utilizando uma máscara de hóquei</string>
 	</dict>
+	<dict>
+		<key>1</key>
+		<string>Syde</string>
+		<key>2</key>
+		<string>Clyde</string>
+		<key>3</key>
+		<string>Blinky</string>
+		<key>4</key>
+		<string>Inky</string>
+		<key>Pergunta</key>
+		<string>Qual destes não é um dos fantasmas do Pac-Man?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Tronhão Quase-Nada</string>
+		<key>2</key>
+		<string>Pistoleiro-Veloz</string>
+		<key>3</key>
+		<string>Racha-Cuca</string>
+		<key>4</key>
+		<string>Wgleyberton</string>
+		<key>Pergunta</key>
+		<string>Qual destes vilões do Chapolin tem uma enorme cicatriz no olho direito?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Tripa-Seca</string>
+		<key>2</key>
+		<string>Tonhão Quase-Nada</string>
+		<key>3</key>
+		<string>Almôndega</string>
+		<key>4</key>
+		<string>Chinesinho</string>
+		<key>Pergunta</key>
+		<string>Qual destes vilões do Chapolin é procurado internacionalmente?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Pancho</string>
+		<key>2</key>
+		<string>Pança Louca</string>
+		<key>3</key>
+		<string>Tchípulin</string>
+		<key>4</key>
+		<string>Symbato Yamasaki</string>
+		<key>Pergunta</key>
+		<string>Qual destes é um robô criado para serviços domésticos, mas que acabou louco por falta de parafusos na cabeça?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Zarm</string>
+		<key>2</key>
+		<string>Looten</string>
+		<key>3</key>
+		<string>Matreiro</string>
+		<key>4</key>
+		<string>Capitão Poluição</string>
+		<key>Pergunta</key>
+		<string>Qaul o principal inimigo de Gaia e Capitão Planeta?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Medo</string>
+		<key>2</key>
+		<string>Ambição</string>
+		<key>3</key>
+		<string>Ganância</string>
+		<key>4</key>
+		<string>Gula</string>
+		<key>Pergunta</key>
+		<string>Parallax se alimenta de que?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Apokolips</string>
+		<key>2</key>
+		<string>Daxam</string>
+		<key>3</key>
+		<string>Durla</string>
+		<key>4</key>
+		<string>Rann</string>
+		<key>Pergunta</key>
+		<string>Qual destes planetas é governado por Darkseid?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Uxas</string>
+		<key>2</key>
+		<string>Drax</string>
+		<key>3</key>
+		<string>Loki</string>
+		<key>4</key>
+		<string>Krann</string>
+		<key>Pergunta</key>
+		<string>Como Darkseid era chamado antes de apresentar poderes semidivinos?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Segundo</string>
+		<key>2</key>
+		<string>Primeiro</string>
+		<key>3</key>
+		<string>Terceiro</string>
+		<key>4</key>
+		<string>Quarto</string>
+		<key>Pergunta</key>
+		<string>Professor Zoom é conhecido como qual Flash Reverso?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Batman</string>
+		<key>2</key>
+		<string>Superman</string>
+		<key>3</key>
+		<string>Flash</string>
+		<key>4</key>
+		<string>Aquaman</string>
+		<key>Pergunta</key>
+		<string>Mariposa Assassina é o supervilão de qual herói?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Selene</string>
+		<key>2</key>
+		<string>Apocalipse</string>
+		<key>3</key>
+		<string>Wolverine</string>
+		<key>4</key>
+		<string>Professor X</string>
+		<key>Pergunta</key>
+		<string>Qual destes mutantes é o mais velho?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Apocalipse</string>
+		<key>2</key>
+		<string>Magneto</string>
+		<key>3</key>
+		<string>Fanático</string>
+		<key>4</key>
+		<string>Psylocke</string>
+		<key>Pergunta</key>
+		<string>Qual vilão contaminou o filho de Ciclope com o Virus Legado?</string>
+	</dict>
 </array>
 </plist>

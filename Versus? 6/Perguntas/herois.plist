@@ -363,5 +363,149 @@ Contar a Tia May</string>
 		<key>Pergunta</key>
 		<string>Qual desses personagens não foi discipulo de Ebisu (Naruto)</string>
 	</dict>
+	<dict>
+		<key>3</key>
+		<string>Winston Wade Wilson</string>
+		<key>2</key>
+		<string>Wilson Wade Winston</string>
+		<key>1</key>
+		<string>Wade Winston Wilson</string>
+		<key>4</key>
+		<string>Wade Wilson Winston</string>
+		<key>Pergunta</key>
+		<string>Qual o nome completo de Deadpool?</string>
+	</dict>
+	<dict>
+		<key>3</key>
+		<string>3</string>
+		<key>2</key>
+		<string>1</string>
+		<key>1</key>
+		<string>2</string>
+		<key>4</key>
+		<string>6</string>
+		<key>Pergunta</key>
+		<string>Quantas ex-esposas Deadpool possui?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Exterminador</string>
+		<key>2</key>
+		<string>Batman</string>
+		<key>3</key>
+		<string>Lanterna Verde</string>
+		<key>4</key>
+		<string>Flash</string>
+		<key>Pergunta</key>
+		<string>O verdadeiro nome de Deadpool foi inspirado em qual personagem da DC?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Não é possível</string>
+		<key>2</key>
+		<string>Decapitado</string>
+		<key>3</key>
+		<string>Queimado</string>
+		<key>4</key>
+		<string>Com uma doença terminal</string>
+		<key>Pergunta</key>
+		<string>Como é possivel matar Deadpool?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Vaca</string>
+		<key>2</key>
+		<string>Cachorro</string>
+		<key>3</key>
+		<string>Porco</string>
+		<key>4</key>
+		<string>Gato</string>
+		<key>Pergunta</key>
+		<string>Deadpool tem medo de qual destes animais?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Walter Kovac</string>
+		<key>2</key>
+		<string>Walter Wade</string>
+		<key>3</key>
+		<string>Wilson Kovac</string>
+		<key>4</key>
+		<string>Kovac Wade</string>
+		<key>Pergunta</key>
+		<string>Qual o verdadeiro nome de Rorscharc?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>1986</string>
+		<key>2</key>
+		<string>1988</string>
+		<key>3</key>
+		<string>1981</string>
+		<key>4</key>
+		<string>1983</string>
+		<key>Pergunta</key>
+		<string>Whatchmen foi lançado pela DC em que ano?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Capitão Átomo</string>
+		<key>2</key>
+		<string>Homem Formiga</string>
+		<key>3</key>
+		<string>Capitão Caverna</string>
+		<key>4</key>
+		<string>Batman</string>
+		<key>Pergunta</key>
+		<string>Dr. Manhattan foi baseado em que personagem?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>50 anos</string>
+		<key>2</key>
+		<string>40 anos</string>
+		<key>3</key>
+		<string>45 anos</string>
+		<key>4</key>
+		<string>55 anos</string>
+		<key>Pergunta</key>
+		<string>Com quantos anos Frodo partiu para sua jornada?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>1990</string>
+		<key>2</key>
+		<string>2000</string>
+		<key>3</key>
+		<string>2002</string>
+		<key>4</key>
+		<string>1995</string>
+		<key>Pergunta</key>
+		<string>Em que ano foi criado o Capitão Planeta?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Amor</string>
+		<key>2</key>
+		<string>Coração</string>
+		<key>3</key>
+		<string>Fogo</string>
+		<key>4</key>
+		<string>Água</string>
+		<key>Pergunta</key>
+		<string>Qual destes não faz parte da combinação para o surgimento do Capitão Planeta?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Azmuth</string>
+		<key>2</key>
+		<string>Gothan</string>
+		<key>3</key>
+		<string>Louten</string>
+		<key>4</key>
+		<string>Azamutis</string>
+		<key>Pergunta</key>
+		<string>Como se chama o criado do Omnitrix?</string>
+	</dict>
 </array>
 </plist>

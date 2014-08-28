@@ -360,8 +360,6 @@
 		34E0F69C199A9C5D005A1FD0 = {
 			isa = PBXGroup;
 			children = (
-				6DE5E81919AD244100F5F9A0 /* Game-Center2.png */,
-				6DE5E81719AD243200F5F9A0 /* GC Saturado.png */,
 				34E0F6A7199A9C5D005A1FD0 /* Frameworks */,
 				34E0F6F7199AA3F0005A1FD0 /* Perguntas */,
 				34E0F6DF199A9CE4005A1FD0 /* imagens */,
@@ -478,6 +476,8 @@
 		34E0F6DF199A9CE4005A1FD0 /* imagens */ = {
 			isa = PBXGroup;
 			children = (
+				6DE5E81919AD244100F5F9A0 /* Game-Center2.png */,
+				6DE5E81719AD243200F5F9A0 /* GC Saturado.png */,
 				6DB882EA19A5106D005377DD /* Fundo Score Vilao.png */,
 				6DB882EE19A51BDC005377DD /* Menu Categoria iPad.png */,
 				6DB882EB19A5106D005377DD /* Fundo Score Heroi.png */,

@@ -408,9 +408,9 @@
             break;
             
         default:
-            _key1 = @"1";
+            _key1 = @"3";
             _key2 = @"2";
-            _key3 = @"3";
+            _key3 = @"1";
             _key4 = @"4";
             break;
     }

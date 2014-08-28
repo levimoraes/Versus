@@ -10,11 +10,7 @@
 #import "MELViewControllerMenu.h"
 
 @interface MELViewControllerPerfil ()
-
 @property (strong, nonatomic) IBOutlet CPTGraphHostingView *hostView;
-
-
-
 @end
 
 @implementation MELViewControllerPerfil
