@@ -47,8 +47,9 @@
     NSMutableArray *perguntas = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoHerois]];
     
     _ordemPerg = [[NSMutableArray alloc]init];
-    while (_ordemPerg.count < perguntas.count-1) {
-        int randomNumber = arc4random() % perguntas.count-1;
+    while (_ordemPerg.count < perguntas.count) {
+        int randomNumber = arc4random() % perguntas.count;
+        NSLog(@"%i",randomNumber);
         if (![_ordemPerg containsObject:[NSString stringWithFormat:@"%d",randomNumber]])       {
             [_ordemPerg addObject:[NSString stringWithFormat:@"%d",randomNumber]];
         }
@@ -62,8 +63,8 @@
     NSMutableArray *perguntas = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoVilao]];
     
     _ordemPerg = [[NSMutableArray alloc]init];
-    while (_ordemPerg.count < perguntas.count-1) {
-        int randomNumber = arc4random() % perguntas.count-1;
+    while (_ordemPerg.count < perguntas.count) {
+        int randomNumber = arc4random() % perguntas.count;
         if (![_ordemPerg containsObject:[NSString stringWithFormat:@"%d",randomNumber]])       {
             [_ordemPerg addObject:[NSString stringWithFormat:@"%d",randomNumber]];
         }
