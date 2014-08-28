@@ -359,15 +359,18 @@
 }
 
 -(void)pegarPerguntaAleatoria{
-    NSArray *pergunta = [[NSArray alloc]initWithContentsOfFile:[self caminhoVilao]];
+    NSMutableArray *nros = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoOrdem]];
     
-    int i = (int) [pergunta count];
+    _nroQuestao = [[nros objectAtIndex:0] intValue];
     
-    _nroQuestao = arc4random() % i;
+    [nros addObject:[nros objectAtIndex:0]];
+    [nros removeObjectAtIndex:0];
+    
+    [nros writeToFile:[self caminhoOrdem] atomically:YES];
 }
 
 -(void)proximaPergunta{
-    
+    _barraTempo = NULL;
     MELViewControllerViloesiPad *heroi = [[MELViewControllerViloesiPad alloc]init];
     [heroi setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
     [self presentViewController:heroi animated:YES completion:nil];
@@ -426,6 +429,18 @@
         [_opcao4 setHidden:YES];
         [self performSelector:@selector(proximaPergunta) withObject:nil afterDelay:0.5];
     }
+}
+
+-(NSString*)caminhoOrdem
+{
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains
+    (NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    NSString *fileName = [NSString stringWithFormat:@"%@/ordem.plist",documentsDirectory];
+    
+    return fileName;
 }
 
 @end

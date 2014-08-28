@@ -35,12 +35,34 @@
     return fileName;
 }
 
+-(NSString*)caminhoVilao
+{
+    NSString *pathStr = [[NSBundle mainBundle] bundlePath];
+    NSString *caminho = [pathStr stringByAppendingPathComponent:@"viloes.plist"];
+    return caminho;
+}
+
 -(void)sortearHerois{
     NSMutableArray *perguntas = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoHerois]];
     
     _ordemPerg = [[NSMutableArray alloc]init];
-    while (_ordemPerg.count < perguntas.count) {
-        int randomNumber = 1 + arc4random() % perguntas.count;
+    while (_ordemPerg.count < perguntas.count-1) {
+        int randomNumber = arc4random() % perguntas.count-1;
+        if (![_ordemPerg containsObject:[NSString stringWithFormat:@"%d",randomNumber]])       {
+            [_ordemPerg addObject:[NSString stringWithFormat:@"%d",randomNumber]];
+        }
+        continue;
+    }
+    
+    [_ordemPerg writeToFile:[self caminhoOrdem] atomically:YES];
+}
+
+-(void)sortearViloes{
+    NSMutableArray *perguntas = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoVilao]];
+    
+    _ordemPerg = [[NSMutableArray alloc]init];
+    while (_ordemPerg.count < perguntas.count-1) {
+        int randomNumber = arc4random() % perguntas.count-1;
         if (![_ordemPerg containsObject:[NSString stringWithFormat:@"%d",randomNumber]])       {
             [_ordemPerg addObject:[NSString stringWithFormat:@"%d",randomNumber]];
         }

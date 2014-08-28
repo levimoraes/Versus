@@ -12,11 +12,21 @@
 
 
 @interface MELViewControllerHerois ()
-
+@property (nonatomic) UIRefreshControl *refreshControl;
 @end
 
 @implementation MELViewControllerHerois
-
+-(NSString*)caminhoOrdem
+{
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains
+    (NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    NSString *fileName = [NSString stringWithFormat:@"%@/ordem.plist",documentsDirectory];
+    
+    return fileName;
+}
 -(NSString*)caminhoHerois
 {
     NSString *pathStr = [[NSBundle mainBundle] bundlePath];
@@ -36,8 +46,6 @@
         [plistPerfil replaceObjectAtIndex:7 withObject:pontosPlist];
         
     }
-    
-    NSLog(@"%@",[plistPerfil objectAtIndex:7]);
     [plistPerfil replaceObjectAtIndex:5 withObject:@"0"];
     
     [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
@@ -50,8 +58,6 @@
 - (IBAction)opcao1:(id)sender {
     [_opcao1 setEnabled:NO];
     
-    NSLog(@"Opcao 1");
-    
     NSArray *pergunta = [[NSArray alloc]initWithContentsOfFile:[self caminhoHerois]];
     NSDictionary *questoes = [[NSDictionary alloc]initWithDictionary:[pergunta objectAtIndex:_nroQuestao]];
     
@@ -59,8 +65,6 @@
     NSArray *array = [questoes allKeysForObject:resposta1];
     
     NSString *change =[NSString stringWithFormat:@"%@",[array objectAtIndex:0]];
-    NSLog(@"%@",change);
-    
     if ([change isEqualToString:@"1"]){
         
         [_opcao1 setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
@@ -119,8 +123,6 @@
 - (IBAction)opcao2:(id)sender {
     [_opcao2 setEnabled:NO];
     
-    NSLog(@"Opcao 2");
-    
     NSArray *pergunta = [[NSArray alloc]initWithContentsOfFile:[self caminhoHerois]];
     NSDictionary *questoes = [[NSDictionary alloc]initWithDictionary:[pergunta objectAtIndex:_nroQuestao]];
     
@@ -128,7 +130,6 @@
     NSArray *array = [questoes allKeysForObject:resposta1];
     
     NSString *change =[NSString stringWithFormat:@"%@",[array objectAtIndex:0]];
-    NSLog(@"%@",change);
     
     if ([change isEqualToString:@"1"]){
         
@@ -189,8 +190,6 @@
 - (IBAction)opcao3:(id)sender {
     [_opcao3 setEnabled:NO];
     
-    NSLog(@"Opcao 3");
-    
     NSArray *pergunta = [[NSArray alloc]initWithContentsOfFile:[self caminhoHerois]];
     NSDictionary *questoes = [[NSDictionary alloc]initWithDictionary:[pergunta objectAtIndex:_nroQuestao]];
     
@@ -198,7 +197,6 @@
     NSArray *array = [questoes allKeysForObject:resposta1];
     
     NSString *change =[NSString stringWithFormat:@"%@",[array objectAtIndex:0]];
-    NSLog(@"%@",change);
     
     if ([change isEqualToString:@"1"]){
         
@@ -259,8 +257,6 @@
 - (IBAction)opcao4:(id)sender {
     
     [_opcao4 setEnabled:NO];
-    NSLog(@"Opcao 4");
-    
     NSArray *pergunta = [[NSArray alloc]initWithContentsOfFile:[self caminhoHerois]];
     NSDictionary *questoes = [[NSDictionary alloc]initWithDictionary:[pergunta objectAtIndex:_nroQuestao]];
     
@@ -268,7 +264,6 @@
     NSArray *array = [questoes allKeysForObject:resposta1];
     
     NSString *change =[NSString stringWithFormat:@"%@",[array objectAtIndex:0]];
-    NSLog(@"%@",change);
     
     if ([change isEqualToString:@"1"]){
         
@@ -322,7 +317,6 @@
         _labelScore.text = pontosPlist;
         
     }
-    
     [self performSelector:@selector(proximaPergunta) withObject:nil afterDelay:0.5];
 }
 
@@ -375,22 +369,18 @@
 }
 
 -(void)pegarPerguntaAleatoria{
-    NSMutableArray *pergunta = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoHerois]];
-    NSMutableArray *resto = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoHerois]];
+    NSMutableArray *nros = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoOrdem]];
     
-    NSLog(@"%d",[resto count]);
-    int i = (int) [resto count];
+    _nroQuestao = [[nros objectAtIndex:0] intValue];
     
+    [nros addObject:[nros objectAtIndex:0]];
+    [nros removeObjectAtIndex:0];
     
-    
-    _nroQuestao = arc4random() % i;
-
-    [resto removeObjectAtIndex:_nroQuestao];
-    NSLog(@"%d",[resto count]);
+    [nros writeToFile:[self caminhoOrdem] atomically:YES];
 }
 
 -(void)proximaPergunta{
-    
+    _barraTempo = NULL;
     MELViewControllerHerois *heroi = [[MELViewControllerHerois alloc]init];
     [heroi setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
     [self presentViewController:heroi animated:YES completion:nil];
@@ -400,32 +390,39 @@
     int i = arc4random() % 4;
     
     switch (i) {
-        case 1:
+        case 0:
             _key1 = @"1";
             _key2 = @"4";
             _key3 = @"2";
             _key4 = @"3";
             break;
             
-        case 2:
+        case 1:
             _key1 = @"3";
             _key2 = @"1";
             _key3 = @"4";
             _key4 = @"2";
             break;
             
-        case 3:
+        case 2:
             _key1 = @"2";
             _key2 = @"3";
             _key3 = @"1";
             _key4 = @"4";
             break;
             
-        case 4:
+        case 3:
             _key1 = @"4";
             _key2 = @"2";
             _key3 = @"3";
             _key4 = @"1";
+            break;
+            
+        case 4:
+            _key1 = @"4";
+            _key2 = @"3";
+            _key3 = @"1";
+            _key4 = @"2";
             break;
             
         default:
@@ -450,5 +447,6 @@
         
         [self performSelector:@selector(proximaPergunta) withObject:nil afterDelay:0.5];
     }
+    
 }
 @end

@@ -12,10 +12,66 @@
 #import "MELViewControllerHeroisiPad.h"
 
 @interface MELViewControllerCategoriaiPad ()
-
+@property (nonatomic) NSMutableArray *ordemPerg;
 @end
 
 @implementation MELViewControllerCategoriaiPad
+
+-(NSString*)caminhoHerois
+{
+    NSString *pathStr = [[NSBundle mainBundle] bundlePath];
+    NSString *caminho = [pathStr stringByAppendingPathComponent:@"herois.plist"];
+    return caminho;
+}
+
+-(NSString*)caminhoOrdem
+{
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains
+    (NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    NSString *fileName = [NSString stringWithFormat:@"%@/ordem.plist",documentsDirectory];
+    
+    return fileName;
+}
+
+-(NSString*)caminhoVilao
+{
+    NSString *pathStr = [[NSBundle mainBundle] bundlePath];
+    NSString *caminho = [pathStr stringByAppendingPathComponent:@"viloes.plist"];
+    return caminho;
+}
+
+-(void)sortearHerois{
+    NSMutableArray *perguntas = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoHerois]];
+    
+    _ordemPerg = [[NSMutableArray alloc]init];
+    while (_ordemPerg.count < perguntas.count-1) {
+        int randomNumber = arc4random() % perguntas.count-1;
+        if (![_ordemPerg containsObject:[NSString stringWithFormat:@"%d",randomNumber]])       {
+            [_ordemPerg addObject:[NSString stringWithFormat:@"%d",randomNumber]];
+        }
+        continue;
+    }
+    
+    [_ordemPerg writeToFile:[self caminhoOrdem] atomically:YES];
+}
+
+-(void)sortearViloes{
+    NSMutableArray *perguntas = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoVilao]];
+    
+    _ordemPerg = [[NSMutableArray alloc]init];
+    while (_ordemPerg.count < perguntas.count-1) {
+        int randomNumber = arc4random() % perguntas.count-1;
+        if (![_ordemPerg containsObject:[NSString stringWithFormat:@"%d",randomNumber]])       {
+            [_ordemPerg addObject:[NSString stringWithFormat:@"%d",randomNumber]];
+        }
+        continue;
+    }
+    
+    [_ordemPerg writeToFile:[self caminhoOrdem] atomically:YES];
+}
 
 - (IBAction)BotaoVoltar:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];

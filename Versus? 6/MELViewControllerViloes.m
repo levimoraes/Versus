@@ -15,6 +15,18 @@
 
 @implementation MELViewControllerViloes
 
+-(NSString*)caminhoOrdem
+{
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains
+    (NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    NSString *fileName = [NSString stringWithFormat:@"%@/ordem.plist",documentsDirectory];
+    
+    return fileName;
+}
+
 -(NSString*)caminhoVilao
 {
     NSString *pathStr = [[NSBundle mainBundle] bundlePath];
@@ -35,7 +47,6 @@
         
     }
     
-    NSLog(@"%@",[plistPerfil objectAtIndex:7]);
     [plistPerfil replaceObjectAtIndex:5 withObject:@"0"];
     
     [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
@@ -46,7 +57,6 @@
 
 - (IBAction)Opcao1:(id)sender {
     [_opcao1 setEnabled:NO];
-    NSLog(@"Opcao 1");
     
     NSArray *pergunta = [[NSArray alloc]initWithContentsOfFile:[self caminhoVilao]];
     NSDictionary *questoes = [[NSDictionary alloc]initWithDictionary:[pergunta objectAtIndex:_nroQuestao]];
@@ -55,7 +65,6 @@
     NSArray *array = [questoes allKeysForObject:resposta1];
     
     NSString *change =[NSString stringWithFormat:@"%@",[array objectAtIndex:0]];
-    NSLog(@"%@",change);
     
     if ([change isEqualToString:@"1"]){
         
@@ -114,7 +123,6 @@
 
 - (IBAction)opcao2:(id)sender {
     [_opcao2 setEnabled:NO];
-    NSLog(@"Opcao 2");
     
     NSArray *pergunta = [[NSArray alloc]initWithContentsOfFile:[self caminhoVilao]];
     NSDictionary *questoes = [[NSDictionary alloc]initWithDictionary:[pergunta objectAtIndex:_nroQuestao]];
@@ -123,7 +131,6 @@
     NSArray *array = [questoes allKeysForObject:resposta1];
     
     NSString *change =[NSString stringWithFormat:@"%@",[array objectAtIndex:0]];
-    NSLog(@"%@",change);
     
     if ([change isEqualToString:@"1"]){
         
@@ -182,8 +189,6 @@
 - (IBAction)opcao3:(id)sender {
     [_opcao3 setEnabled:NO];
     
-    NSLog(@"Opcao 3");
-    
     NSArray *pergunta = [[NSArray alloc]initWithContentsOfFile:[self caminhoVilao]];
     NSDictionary *questoes = [[NSDictionary alloc]initWithDictionary:[pergunta objectAtIndex:_nroQuestao]];
     
@@ -191,7 +196,6 @@
     NSArray *array = [questoes allKeysForObject:resposta1];
     
     NSString *change =[NSString stringWithFormat:@"%@",[array objectAtIndex:0]];
-    NSLog(@"%@",change);
     
     if ([change isEqualToString:@"1"]){
         
@@ -250,7 +254,6 @@
 - (IBAction)opcao4:(id)sender {
    [_opcao4 setEnabled:NO];
     
-    NSLog(@"Opcao 4");
     NSArray *pergunta = [[NSArray alloc]initWithContentsOfFile:[self caminhoVilao]];
     NSDictionary *questoes = [[NSDictionary alloc]initWithDictionary:[pergunta objectAtIndex:_nroQuestao]];
     
@@ -258,7 +261,6 @@
     NSArray *array = [questoes allKeysForObject:resposta1];
     
     NSString *change =[NSString stringWithFormat:@"%@",[array objectAtIndex:0]];
-    NSLog(@"%@",change);
     
     if ([change isEqualToString:@"1"]){
         
@@ -361,15 +363,18 @@
 }
 
 -(void)pegarPerguntaAleatoria{
-    NSArray *pergunta = [[NSArray alloc]initWithContentsOfFile:[self caminhoVilao]];
+    NSMutableArray *nros = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoOrdem]];
     
-    int i = (int) [pergunta count];
+    _nroQuestao = [[nros objectAtIndex:0] intValue];
     
-    _nroQuestao = arc4random() % i;
+    [nros addObject:[nros objectAtIndex:0]];
+    [nros removeObjectAtIndex:0];
+    
+    [nros writeToFile:[self caminhoOrdem] atomically:YES];
 }
 
 -(void)proximaPergunta{
-    
+    _barraTempo = NULL;
     MELViewControllerViloes *heroi = [[MELViewControllerViloes alloc]init];
     [heroi setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
     [self presentViewController:heroi animated:YES completion:nil];

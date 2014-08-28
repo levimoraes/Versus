@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <GameKit/GameKit.h>
 
-@interface MELViewControllerHerois : UIViewController
+@interface MELViewControllerHerois : UIViewController 
 @property (weak, nonatomic) IBOutlet UIProgressView *barraTempo;
 @property (weak, nonatomic) NSTimer *timer;
 @property (weak, nonatomic) IBOutlet UIButton *opcao4;
