@@ -208,7 +208,7 @@
 
 - (IBAction)zerar:(id)sender {
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Zerar Progresso"
                                                     message:@"Você realmente deseja apagar seus dados já coletados"
                                                    delegate:self
                                           cancelButtonTitle:@"Cancelar"
@@ -245,7 +245,7 @@
         [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
         
         MELViewControllerPerfil *view = [[MELViewControllerPerfil alloc]init];
-        
+        [view setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
         [self presentViewController:view animated:YES completion:nil];
         
     }
@@ -257,8 +257,5 @@
     
     [menu setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
     [self presentViewController:menu animated:YES completion:nil];
-    
-   // [self presentViewController:view animated:YES completion:nil];
-
 }
 @end

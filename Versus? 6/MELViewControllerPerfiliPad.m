@@ -212,7 +212,7 @@
 
 - (IBAction)zerar:(id)sender {
    
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Zerar Progresso"
                                                     message:@"Você realmente deseja apagar seus dados já coletados"
                                                    delegate:self
                                           cancelButtonTitle:@"Cancelar"
@@ -249,16 +249,14 @@
         [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
         
         MELViewControllerPerfiliPad *view = [[MELViewControllerPerfiliPad alloc]init];
-        
+        [view setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
         [self presentViewController:view animated:YES completion:nil];
-    
     }
 }
 
 -(IBAction)menu:(id)sender
 {
     MELViewControllerMenuiPad *menu = [[MELViewControllerMenuiPad alloc]init];
-   // [self presentViewController:view animated:YES completion:nil];
     [menu setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
     [self presentViewController:menu animated:YES completion:nil];
 }

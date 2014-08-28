@@ -77,7 +77,7 @@
                     <rect key="frame" x="20" y="346" width="227" height="90"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="23"/>
-                    <state key="normal" title="Desistir" backgroundImage="Fundo Score Vilao.png">
+                    <state key="normal" title="Terminar" backgroundImage="Fundo Score Vilao.png">
                         <color key="titleColor" red="1" green="0.95564576572809623" blue="0.99122052484944889" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
