@@ -377,6 +377,8 @@
     [nros removeObjectAtIndex:0];
     
     [nros writeToFile:[self caminhoOrdem] atomically:YES];
+    
+    NSLog(@"Questão = %i",_nroQuestao);
 }
 
 -(void)proximaPergunta{
@@ -437,6 +439,8 @@
 
 -(void)tempo {
     _barraTempo.progress += 0.001;
+    //Para teste
+    //_barraTempo.progress += 0.1;
     
     if (_barraTempo.progress == 1){
         [_timer invalidate];

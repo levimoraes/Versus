@@ -434,6 +434,7 @@
 
 -(void)tempo {
     _barraTempo.progress += 0.001;
+//        _barraTempo.progress += 0.1;
     
     if (_barraTempo.progress == 1){
         [_timer invalidate];

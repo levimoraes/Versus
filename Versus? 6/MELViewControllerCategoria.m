@@ -75,6 +75,7 @@
 
 - (IBAction)BotaoVilao:(id)sender {
     MELViewControllerViloes *vilao = [[MELViewControllerViloes alloc]init];
+    [self sortearViloes];
     [self presentViewController:vilao animated:YES completion:nil];
 }
 - (IBAction)BotaoHeroi:(id)sender {
