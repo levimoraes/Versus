@@ -428,6 +428,24 @@
         }
     }];
     
+    //animando a imagem de fundo do menu
+    NSArray *imageNames = @[@"BG Menu.png", @"BGMenu2.png"];
+    
+    NSMutableArray *images = [[NSMutableArray alloc] init];
+    for (int i = 0; i < imageNames.count; i++) {
+        [images addObject:[UIImage imageNamed:[imageNames objectAtIndex:i]]];
+    }
+    
+    // Slow motion animation
+    UIImageView *slowAnimationImageView = [[UIImageView alloc] initWithFrame:(self.view.frame)];
+    slowAnimationImageView.animationImages = images;
+    slowAnimationImageView.animationDuration = 1;
+    
+    [self.view addSubview:slowAnimationImageView];
+    [self.view sendSubviewToBack:slowAnimationImageView];
+    [slowAnimationImageView startAnimating];
+    
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
