@@ -11,17 +11,17 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>3915A7FAEF49519B1D8AF66BF1314EA186C869BE</key>
-		<string>https://github.com/levimoraes/Versus</string>
+		<string>http://github.com/levimoraes/Versus</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Versus? 6/Versus?.xcodeproj/project.xcworkspace</string>
+	<string>Versus? 6/Versus?.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3915A7FAEF49519B1D8AF66BF1314EA186C869BE</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/levimoraes/Versus</string>
+	<string>http://github.com/levimoraes/Versus</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
