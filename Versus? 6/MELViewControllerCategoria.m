@@ -16,6 +16,10 @@
 @end
 
 @implementation MELViewControllerCategoria
+
+AVAudioPlayer *music;
+AVAudioPlayer *music2;
+
 -(NSString*)caminhoHerois
 {
     NSString *pathStr = [[NSBundle mainBundle] bundlePath];
@@ -74,16 +78,28 @@
 }
 
 - (IBAction)BotaoVilao:(id)sender {
+    [music stop];
+    
+    NSURL *musicFile2;
+    musicFile2 = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"vilao" ofType:@"m4a"]];
+    
+    music2 = [[AVAudioPlayer alloc]initWithContentsOfURL:musicFile2 error:nil];
+    music2.volume = 0.5;
+    music2.numberOfLoops=10;
+    [music2 play];
+    
     MELViewControllerViloes *vilao = [[MELViewControllerViloes alloc]init];
     [self sortearViloes];
     [self presentViewController:vilao animated:YES completion:nil];
 }
 - (IBAction)BotaoHeroi:(id)sender {
+    [music stop];
     MELViewControllerHerois *heroi = [[MELViewControllerHerois alloc]init];
     [self sortearHerois];
     [self presentViewController:heroi animated:YES completion:nil];
 }
 - (IBAction)BotaoVoltar:(id)sender {
+    [music stop];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -100,6 +116,18 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    NSURL *musicFile;
+    musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"categoria" ofType:@"m4a"]];
+    
+    music = [[AVAudioPlayer alloc]initWithContentsOfURL:musicFile error:nil];
+    music.volume = 0.5;
+    music.numberOfLoops=10;
+    [music play];
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -15,6 +15,8 @@
 
 @implementation MELViewControllerViloes
 
+AVAudioPlayer *music;
+
 -(NSString*)caminhoOrdem
 {
     
@@ -35,6 +37,8 @@
 }
 
 - (IBAction)BotaoDesistir:(id)sender {
+    [music stop];
+    
     MELViewControllerMenu *menu = [[MELViewControllerMenu alloc]init];
     
     NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
@@ -327,6 +331,15 @@
 
 - (void)viewDidLoad
 {
+    NSURL *musicFile;
+    musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"vilao" ofType:@"m4a"]];
+    
+    music = [[AVAudioPlayer alloc]initWithContentsOfURL:musicFile error:nil];
+    music.volume = 0.5;
+    music.numberOfLoops=10;
+    //[music play];
+    
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
@@ -349,6 +362,13 @@
     _labelScore.text = [plistPerfil objectAtIndex:5];
     
 }
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    
+    
+}
+
 
 -(NSString*)caminhoPerfil
 {

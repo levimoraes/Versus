@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MELViewControllerHerois.m"
-            timestampString = "430871252.424819"
+            timestampString = "434398396.183285"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "377"
-            endingLineNumber = "377"
+            startingLineNumber = "378"
+            endingLineNumber = "378"
             landmarkName = "-pegarPerguntaAleatoria"
             landmarkType = "5">
          </BreakpointContent>

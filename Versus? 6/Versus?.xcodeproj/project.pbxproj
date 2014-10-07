@@ -59,6 +59,10 @@
 		6DB882EC19A5106D005377DD /* Fundo Score Vilao.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DB882EA19A5106D005377DD /* Fundo Score Vilao.png */; };
 		6DB882ED19A5106D005377DD /* Fundo Score Heroi.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DB882EB19A5106D005377DD /* Fundo Score Heroi.png */; };
 		6DB882EF19A51BDC005377DD /* Menu Categoria iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DB882EE19A51BDC005377DD /* Menu Categoria iPad.png */; };
+		6DDA412719E46D85007B2BF1 /* music.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6DDA412619E46D85007B2BF1 /* music.m4a */; };
+		6DDA412919E46F00007B2BF1 /* heroi.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6DDA412819E46F00007B2BF1 /* heroi.m4a */; };
+		6DDA412B19E46F19007B2BF1 /* categoria.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6DDA412A19E46F19007B2BF1 /* categoria.m4a */; };
+		6DDA412D19E46F36007B2BF1 /* vilao.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6DDA412C19E46F36007B2BF1 /* vilao.m4a */; };
 		6DE5E81819AD243200F5F9A0 /* GC Saturado.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5E81719AD243200F5F9A0 /* GC Saturado.png */; };
 		6DE5E81A19AD244100F5F9A0 /* Game-Center2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5E81919AD244100F5F9A0 /* Game-Center2.png */; };
 		A95ADF4319ABB2E200513C42 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95ADF4219ABB2E200513C42 /* QuartzCore.framework */; };
@@ -146,6 +150,10 @@
 		6DB882EA19A5106D005377DD /* Fundo Score Vilao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fundo Score Vilao.png"; path = "Imagens/Fundo Score Vilao.png"; sourceTree = "<group>"; };
 		6DB882EB19A5106D005377DD /* Fundo Score Heroi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fundo Score Heroi.png"; path = "Imagens/Fundo Score Heroi.png"; sourceTree = "<group>"; };
 		6DB882EE19A51BDC005377DD /* Menu Categoria iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Menu Categoria iPad.png"; path = "Imagens/Menu Categoria iPad.png"; sourceTree = "<group>"; };
+		6DDA412619E46D85007B2BF1 /* music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = music.m4a; sourceTree = "<group>"; };
+		6DDA412819E46F00007B2BF1 /* heroi.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = heroi.m4a; sourceTree = "<group>"; };
+		6DDA412A19E46F19007B2BF1 /* categoria.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = categoria.m4a; sourceTree = "<group>"; };
+		6DDA412C19E46F36007B2BF1 /* vilao.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = vilao.m4a; sourceTree = "<group>"; };
 		6DE5E81719AD243200F5F9A0 /* GC Saturado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GC Saturado.png"; sourceTree = "<group>"; };
 		6DE5E81919AD244100F5F9A0 /* Game-Center2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Game-Center2.png"; sourceTree = "<group>"; };
 		A95ADF4219ABB2E200513C42 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -503,6 +511,10 @@
 		34E0F6F7199AA3F0005A1FD0 /* Perguntas */ = {
 			isa = PBXGroup;
 			children = (
+				6DDA412819E46F00007B2BF1 /* heroi.m4a */,
+				6DDA412619E46D85007B2BF1 /* music.m4a */,
+				6DDA412A19E46F19007B2BF1 /* categoria.m4a */,
+				6DDA412C19E46F36007B2BF1 /* vilao.m4a */,
 				34E0F6F3199AA3E9005A1FD0 /* herois.plist */,
 				34E0F6F4199AA3E9005A1FD0 /* viloes.plist */,
 			);
@@ -746,12 +758,15 @@
 				34130DD2199D2A780059276B /* MELViewControllerPerfil.xib in Resources */,
 				34E0F6F5199AA3E9005A1FD0 /* herois.plist in Resources */,
 				34E0F707199AA547005A1FD0 /* BG Vilao.png in Resources */,
+				6DDA412719E46D85007B2BF1 /* music.m4a in Resources */,
 				34E0F701199AA4E3005A1FD0 /* MELViewControllerHerois.xib in Resources */,
 				A9D9525E19AE59EB00B28EA3 /* CPTNumericData+TypeConversions_Generation.py in Resources */,
 				34E0F6FC199AA4C2005A1FD0 /* MELViewControllerViloes.xib in Resources */,
+				6DDA412B19E46F19007B2BF1 /* categoria.m4a in Resources */,
 				34ABFE11199D4CF200E29175 /* MELViewControllerMenuiPad.xib in Resources */,
 				34E0F70C199AA58B005A1FD0 /* Fundo Pergunta Heroi.png in Resources */,
 				34E0F70D199AA58B005A1FD0 /* Fundo Pergunta Vilao.png in Resources */,
+				6DDA412D19E46F36007B2BF1 /* vilao.m4a in Resources */,
 				34E0F6EE199A9FF1005A1FD0 /* MELViewControllerCategoria.xib in Resources */,
 				34E0F6DB199A9C8F005A1FD0 /* MELViewControllerMenu.xib in Resources */,
 				34ABFE1B199D4FD400E29175 /* MELViewControllerViloesiPad.xib in Resources */,
@@ -765,6 +780,7 @@
 				6DE5E81A19AD244100F5F9A0 /* Game-Center2.png in Resources */,
 				A9D9528419AE59EB00B28EA3 /* license.txt in Resources */,
 				34E0F6F6199AA3E9005A1FD0 /* viloes.plist in Resources */,
+				6DDA412919E46F00007B2BF1 /* heroi.m4a in Resources */,
 				34E0F706199AA547005A1FD0 /* BG Heroi.png in Resources */,
 				34E0F6E3199A9D8B005A1FD0 /* Logo Menu.png in Resources */,
 				34E0F6B3199A9C5D005A1FD0 /* InfoPlist.strings in Resources */,

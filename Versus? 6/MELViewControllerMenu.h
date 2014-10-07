@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <GameKit/GameKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 
 @interface MELViewControllerMenu : UIViewController<UIApplicationDelegate,GKGameCenterControllerDelegate>

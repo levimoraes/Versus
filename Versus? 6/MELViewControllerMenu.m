@@ -11,6 +11,7 @@
 #import "MELViewControllerPerfil.h"
 #import "CustomActionSheet.h"
 
+
 @interface MELViewControllerMenu ()
 
 @property (nonatomic) BOOL gameCenterEnabled;
@@ -30,12 +31,15 @@
 
 @implementation MELViewControllerMenu
 
+AVAudioPlayer *music;
+
 - (IBAction)BotaoPerfil:(id)sender {
     MELViewControllerPerfil *perfil = [[MELViewControllerPerfil alloc]init];
     [self presentViewController:perfil animated:YES completion:nil];
 }
 
 - (IBAction)BotaoJogar:(id)sender {
+    [music stop];
     MELViewControllerCategoria *categoria = [[MELViewControllerCategoria alloc]init];
     [self presentViewController:categoria animated:YES completion:nil];
 }
@@ -401,6 +405,19 @@
 }
 
 
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    NSURL *musicFile;
+    musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"music" ofType:@"m4a"]];
+    
+    music = [[AVAudioPlayer alloc]initWithContentsOfURL:musicFile error:nil];
+    music.volume = 0.5;
+    music.numberOfLoops=10;
+    [music play];
+
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -412,6 +429,9 @@
 
 - (void)viewDidLoad
 {
+    
+    
+    
     [self authenticateLocalPlayer];
     
     GKLocalPlayer *localplayer = [GKLocalPlayer localPlayer];
@@ -439,7 +459,7 @@
     // Slow motion animation
     UIImageView *slowAnimationImageView = [[UIImageView alloc] initWithFrame:(self.view.frame)];
     slowAnimationImageView.animationImages = images;
-    slowAnimationImageView.animationDuration = 1;
+    slowAnimationImageView.animationDuration = 0.5;
     
     [self.view addSubview:slowAnimationImageView];
     [self.view sendSubviewToBack:slowAnimationImageView];
@@ -448,6 +468,8 @@
     
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    
     
     NSMutableArray *testePlistArray = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
     if(testePlistArray == nil){
