@@ -17,6 +17,23 @@
 
 AVAudioPlayer *music;
 
+-(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if(self) {
+        
+        NSURL *musicFile;
+        musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"vilao" ofType:@"m4a"]];
+        music = [[AVAudioPlayer alloc]initWithContentsOfURL:musicFile error:nil];
+        music.volume = 0.5;
+        music.numberOfLoops=10;
+        [music play];
+        
+    }
+    return self;
+    
+}
+
 -(NSString*)caminhoOrdem
 {
     
@@ -36,9 +53,9 @@ AVAudioPlayer *music;
     return caminho;
 }
 
-- (IBAction)BotaoDesistir:(id)sender {
+-(void)Desistir
+{
     [music stop];
-    
     MELViewControllerMenu *menu = [[MELViewControllerMenu alloc]init];
     
     NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
@@ -106,7 +123,22 @@ AVAudioPlayer *music;
         //Pontuação
         NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
         NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+        NSString *vidasPlist =[plistPerfil objectAtIndex:8];
+        
         int pontos = [pontosPlist intValue];
+        int vidas = [vidasPlist intValue];
+        
+        if (vidas-1<0) {
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Game Over" message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alert show];
+            [self Desistir];
+        }
+        else{
+            vidas--;
+            vidasPlist = [NSString stringWithFormat:@"%d",vidas];
+            [plistPerfil replaceObjectAtIndex:8 withObject:vidasPlist];
+            [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+        }
         pontos -= 10;
         pontosPlist = [NSString stringWithFormat:@"%d",pontos];
         
@@ -171,7 +203,22 @@ AVAudioPlayer *music;
         //Pontuação
         NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
         NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+        NSString *vidasPlist =[plistPerfil objectAtIndex:8];
+        
         int pontos = [pontosPlist intValue];
+        int vidas = [vidasPlist intValue];
+        
+        if (vidas-1<0) {
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Game Over" message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alert show];
+            [self Desistir];
+        }
+        else{
+            vidas--;
+            vidasPlist = [NSString stringWithFormat:@"%d",vidas];
+            [plistPerfil replaceObjectAtIndex:8 withObject:vidasPlist];
+            [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+        }
         pontos -= 10;
         pontosPlist = [NSString stringWithFormat:@"%d",pontos];
         
@@ -236,7 +283,22 @@ AVAudioPlayer *music;
         //Pontuação
         NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
         NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+        NSString *vidasPlist =[plistPerfil objectAtIndex:8];
+        
         int pontos = [pontosPlist intValue];
+        int vidas = [vidasPlist intValue];
+        
+        if (vidas-1<0) {
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Game Over" message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alert show];
+            [self Desistir];
+        }
+        else{
+            vidas--;
+            vidasPlist = [NSString stringWithFormat:@"%d",vidas];
+            [plistPerfil replaceObjectAtIndex:8 withObject:vidasPlist];
+            [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+        }
         pontos -= 10;
         pontosPlist = [NSString stringWithFormat:@"%d",pontos];
         
@@ -301,7 +363,22 @@ AVAudioPlayer *music;
         //Pontuação
         NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
         NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+        NSString *vidasPlist =[plistPerfil objectAtIndex:8];
+        
         int pontos = [pontosPlist intValue];
+        int vidas = [vidasPlist intValue];
+        
+        if (vidas-1<0) {
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Game Over" message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alert show];
+            [self Desistir];
+        }
+        else{
+            vidas--;
+            vidasPlist = [NSString stringWithFormat:@"%d",vidas];
+            [plistPerfil replaceObjectAtIndex:8 withObject:vidasPlist];
+            [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+        }
         pontos -= 10;
         pontosPlist = [NSString stringWithFormat:@"%d",pontos];
         
@@ -318,15 +395,6 @@ AVAudioPlayer *music;
     }
     
     [self performSelector:@selector(proximaPergunta) withObject:nil afterDelay:0.5];
-}
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
 }
 
 - (void)viewDidLoad

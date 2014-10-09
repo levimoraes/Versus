@@ -16,6 +16,26 @@
 @end
 
 @implementation MELViewControllerHerois
+
+AVAudioPlayer *music;
+
+-(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if(self) {
+        
+        NSURL *musicFile;
+        musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"heroi" ofType:@"m4a"]];
+        music = [[AVAudioPlayer alloc]initWithContentsOfURL:musicFile error:nil];
+        music.volume = 0.5;
+        music.numberOfLoops=10;
+        [music play];
+        
+    }
+    return self;
+}
+
+
 -(NSString*)caminhoOrdem
 {
     
@@ -55,6 +75,28 @@
 
 }
 
+-(void)Desistir
+{
+    MELViewControllerMenu *menu = [[MELViewControllerMenu alloc]init];
+    
+    NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+    NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+    NSString *valorNaPlist = [plistPerfil objectAtIndex:7];
+    
+    
+    if ([valorNaPlist intValue] < [pontosPlist intValue]) {
+        [plistPerfil replaceObjectAtIndex:7 withObject:pontosPlist];
+        
+    }
+    [plistPerfil replaceObjectAtIndex:5 withObject:@"0"];
+    
+    [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+    
+    [menu setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+    [self presentViewController:menu animated:YES completion:nil];
+    
+}
+
 - (IBAction)opcao1:(id)sender {
     [_opcao1 setEnabled:NO];
     
@@ -73,9 +115,24 @@
         [_opcao4 setHidden:YES];
         
         //Pontuação
+        
         NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
         NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+        NSString *vidasPlist =[plistPerfil objectAtIndex:8];
+        
         int pontos = [pontosPlist intValue];
+        int vidas = [vidasPlist intValue];
+        
+        if (vidas-1<0) {
+            [self Desistir];
+        }
+        else{
+            vidas--;
+            vidasPlist = [NSString stringWithFormat:@"%d",vidas];
+            [plistPerfil replaceObjectAtIndex:8 withObject:vidasPlist];
+            [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+        }
+        
         pontos += 10;
         pontosPlist = [NSString stringWithFormat:@"%d",pontos];
         
@@ -100,7 +157,20 @@
         //Pontuação
         NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
         NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+        NSString *vidasPlist =[plistPerfil objectAtIndex:8];
+        
         int pontos = [pontosPlist intValue];
+        int vidas = [vidasPlist intValue];
+        
+        if (vidas-1<0) {
+            [self Desistir];
+        }
+        else{
+            vidas--;
+            vidasPlist = [NSString stringWithFormat:@"%d",vidas];
+            [plistPerfil replaceObjectAtIndex:8 withObject:vidasPlist];
+            [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+        }
         pontos -= 10;
         pontosPlist = [NSString stringWithFormat:@"%d",pontos];
         
@@ -167,7 +237,20 @@
         //Pontuação
         NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
         NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+        NSString *vidasPlist =[plistPerfil objectAtIndex:8];
+        
         int pontos = [pontosPlist intValue];
+        int vidas = [vidasPlist intValue];
+        
+        if (vidas-1<0) {
+            [self Desistir];
+        }
+        else{
+            vidas--;
+            vidasPlist = [NSString stringWithFormat:@"%d",vidas];
+            [plistPerfil replaceObjectAtIndex:8 withObject:vidasPlist];
+            [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+        }
         pontos -= 10;
         pontosPlist = [NSString stringWithFormat:@"%d",pontos];
         
@@ -234,7 +317,20 @@
         //Pontuação
         NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
         NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+        NSString *vidasPlist =[plistPerfil objectAtIndex:8];
+        
         int pontos = [pontosPlist intValue];
+        int vidas = [vidasPlist intValue];
+        
+        if (vidas-1<0) {
+            [self Desistir];
+        }
+        else{
+            vidas--;
+            vidasPlist = [NSString stringWithFormat:@"%d",vidas];
+            [plistPerfil replaceObjectAtIndex:8 withObject:vidasPlist];
+            [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+        }
         pontos -= 10;
         pontosPlist = [NSString stringWithFormat:@"%d",pontos];
         
@@ -301,7 +397,20 @@
         //Pontuação
         NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
         NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+        NSString *vidasPlist =[plistPerfil objectAtIndex:8];
+        
         int pontos = [pontosPlist intValue];
+        int vidas = [vidasPlist intValue];
+        
+        if (vidas-1<0) {
+            [self Desistir];
+        }
+        else{
+            vidas--;
+            vidasPlist = [NSString stringWithFormat:@"%d",vidas];
+            [plistPerfil replaceObjectAtIndex:8 withObject:vidasPlist];
+            [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+        }
         pontos -= 10;
         pontosPlist = [NSString stringWithFormat:@"%d",pontos];
         
@@ -318,16 +427,6 @@
         
     }
     [self performSelector:@selector(proximaPergunta) withObject:nil afterDelay:0.5];
-}
-
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
 }
 
 - (void)viewDidLoad

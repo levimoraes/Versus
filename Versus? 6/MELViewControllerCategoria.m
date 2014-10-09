@@ -18,7 +18,6 @@
 @implementation MELViewControllerCategoria
 
 AVAudioPlayer *music;
-AVAudioPlayer *music2;
 
 -(NSString*)caminhoHerois
 {
@@ -35,6 +34,18 @@ AVAudioPlayer *music2;
     NSString *documentsDirectory = [paths objectAtIndex:0];
     
     NSString *fileName = [NSString stringWithFormat:@"%@/ordem.plist",documentsDirectory];
+    
+    return fileName;
+}
+
+-(NSString*)caminhoPerfil
+{
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains
+    (NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    NSString *fileName = [NSString stringWithFormat:@"%@/perfil.plist",documentsDirectory];
     
     return fileName;
 }
@@ -79,14 +90,9 @@ AVAudioPlayer *music2;
 
 - (IBAction)BotaoVilao:(id)sender {
     [music stop];
-    
-    NSURL *musicFile2;
-    musicFile2 = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"vilao" ofType:@"m4a"]];
-    
-    music2 = [[AVAudioPlayer alloc]initWithContentsOfURL:musicFile2 error:nil];
-    music2.volume = 0.5;
-    music2.numberOfLoops=10;
-    [music2 play];
+    NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+    [plistPerfil insertObject:@"3" atIndex:8];
+    [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
     
     MELViewControllerViloes *vilao = [[MELViewControllerViloes alloc]init];
     [self sortearViloes];
@@ -94,6 +100,10 @@ AVAudioPlayer *music2;
 }
 - (IBAction)BotaoHeroi:(id)sender {
     [music stop];
+    NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+    [plistPerfil insertObject:@"3" atIndex:8];
+    [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+    
     MELViewControllerHerois *heroi = [[MELViewControllerHerois alloc]init];
     [self sortearHerois];
     [self presentViewController:heroi animated:YES completion:nil];
