@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A386a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <objects>
@@ -15,15 +16,12 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG Menu.png" translatesAutoresizingMaskIntoConstraints="NO" id="NSh-ca-mAv">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo Menu.png" translatesAutoresizingMaskIntoConstraints="NO" id="MR2-0x-YIT">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LogoMenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="MR2-0x-YIT" userLabel="LogoMenu.png">
                     <rect key="frame" x="75" y="35" width="170" height="210"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfw-ku-eZ7">
                     <rect key="frame" x="60" y="247" width="200" height="120"/>
-                    <state key="normal" backgroundImage="Botao Jogar.png">
+                    <state key="normal" backgroundImage="BotaoJogar.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -32,7 +30,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyA-W4-JSt">
                     <rect key="frame" x="60" y="355" width="200" height="120"/>
-                    <state key="normal" image="Botao Perfil.png">
+                    <state key="normal" image="BotaoPerfil.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -58,10 +56,9 @@
         </view>
     </objects>
     <resources>
-        <image name="BG Menu.png" width="640" height="1136"/>
-        <image name="Botao Jogar.png" width="320" height="203"/>
-        <image name="Botao Perfil.png" width="320" height="203"/>
-        <image name="Logo Menu.png" width="270" height="403"/>
+        <image name="BotaoJogar.png" width="320" height="203"/>
+        <image name="BotaoPerfil.png" width="320" height="203"/>
+        <image name="LogoMenu.png" width="270" height="403"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -34,31 +34,16 @@
 		34E0F6CE199A9C5D005A1FD0 /* Versus_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0F6CD199A9C5D005A1FD0 /* Versus_Tests.m */; };
 		34E0F6DA199A9C8F005A1FD0 /* MELViewControllerMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0F6D8199A9C8F005A1FD0 /* MELViewControllerMenu.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		34E0F6DB199A9C8F005A1FD0 /* MELViewControllerMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F6D9199A9C8F005A1FD0 /* MELViewControllerMenu.xib */; };
-		34E0F6E3199A9D8B005A1FD0 /* Logo Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F6E2199A9D8B005A1FD0 /* Logo Menu.png */; };
-		34E0F6E5199A9E51005A1FD0 /* Botao Perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F6E4199A9E51005A1FD0 /* Botao Perfil.png */; };
-		34E0F6E7199A9F0A005A1FD0 /* Botao Jogar.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F6E6199A9F0A005A1FD0 /* Botao Jogar.png */; };
-		34E0F6E9199A9F19005A1FD0 /* Botao Score.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F6E8199A9F19005A1FD0 /* Botao Score.png */; };
 		34E0F6ED199A9FF1005A1FD0 /* MELViewControllerCategoria.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0F6EB199A9FF1005A1FD0 /* MELViewControllerCategoria.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		34E0F6EE199A9FF1005A1FD0 /* MELViewControllerCategoria.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F6EC199A9FF1005A1FD0 /* MELViewControllerCategoria.xib */; };
-		34E0F6F0199AA01D005A1FD0 /* menu categoria.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F6EF199AA01D005A1FD0 /* menu categoria.png */; };
-		34E0F6F2199AA312005A1FD0 /* BG Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F6F1199AA312005A1FD0 /* BG Menu.png */; };
 		34E0F6F5199AA3E9005A1FD0 /* herois.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F6F3199AA3E9005A1FD0 /* herois.plist */; };
 		34E0F6F6199AA3E9005A1FD0 /* viloes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F6F4199AA3E9005A1FD0 /* viloes.plist */; };
 		34E0F6FB199AA4C2005A1FD0 /* MELViewControllerViloes.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0F6F9199AA4C2005A1FD0 /* MELViewControllerViloes.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		34E0F6FC199AA4C2005A1FD0 /* MELViewControllerViloes.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F6FA199AA4C2005A1FD0 /* MELViewControllerViloes.xib */; };
 		34E0F700199AA4E3005A1FD0 /* MELViewControllerHerois.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0F6FE199AA4E3005A1FD0 /* MELViewControllerHerois.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		34E0F701199AA4E3005A1FD0 /* MELViewControllerHerois.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F6FF199AA4E3005A1FD0 /* MELViewControllerHerois.xib */; };
-		34E0F706199AA547005A1FD0 /* BG Heroi.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F702199AA547005A1FD0 /* BG Heroi.png */; };
-		34E0F707199AA547005A1FD0 /* BG Vilao.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F703199AA547005A1FD0 /* BG Vilao.png */; };
-		34E0F708199AA547005A1FD0 /* Botao Heroi.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F704199AA547005A1FD0 /* Botao Heroi.png */; };
-		34E0F709199AA547005A1FD0 /* Botao Vilao.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F705199AA547005A1FD0 /* Botao Vilao.png */; };
-		34E0F70C199AA58B005A1FD0 /* Fundo Pergunta Heroi.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F70A199AA58B005A1FD0 /* Fundo Pergunta Heroi.png */; };
-		34E0F70D199AA58B005A1FD0 /* Fundo Pergunta Vilao.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F70B199AA58B005A1FD0 /* Fundo Pergunta Vilao.png */; };
 		34FDFEC1199BD9E800627E26 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FDFEC0199BD9E800627E26 /* AVFoundation.framework */; };
 		6DAED63D19A3DD9D00763378 /* CustomActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAED63C19A3DD9D00763378 /* CustomActionSheet.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		6DB882EC19A5106D005377DD /* Fundo Score Vilao.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DB882EA19A5106D005377DD /* Fundo Score Vilao.png */; };
-		6DB882ED19A5106D005377DD /* Fundo Score Heroi.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DB882EB19A5106D005377DD /* Fundo Score Heroi.png */; };
-		6DB882EF19A51BDC005377DD /* Menu Categoria iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DB882EE19A51BDC005377DD /* Menu Categoria iPad.png */; };
 		6DDA412719E46D85007B2BF1 /* music.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6DDA412619E46D85007B2BF1 /* music.m4a */; };
 		6DDA412919E46F00007B2BF1 /* heroi.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6DDA412819E46F00007B2BF1 /* heroi.m4a */; };
 		6DDA412B19E46F19007B2BF1 /* categoria.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6DDA412A19E46F19007B2BF1 /* categoria.m4a */; };
@@ -66,10 +51,23 @@
 		6DE5E81819AD243200F5F9A0 /* GC Saturado.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5E81719AD243200F5F9A0 /* GC Saturado.png */; };
 		6DE5E81A19AD244100F5F9A0 /* Game-Center2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5E81919AD244100F5F9A0 /* Game-Center2.png */; };
 		A95ADF4319ABB2E200513C42 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95ADF4219ABB2E200513C42 /* QuartzCore.framework */; };
-		A980762B19D9F4FC00190FF4 /* BGMenu2.png in Resources */ = {isa = PBXBuildFile; fileRef = A980762A19D9F4FC00190FF4 /* BGMenu2.png */; };
 		A9D94E7519AE565100B28EA3 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D94E7419AE565100B28EA3 /* libCorePlot-CocoaTouch.a */; };
 		A9D9525E19AE59EB00B28EA3 /* CPTNumericData+TypeConversions_Generation.py in Resources */ = {isa = PBXBuildFile; fileRef = A9D951C219AE59EB00B28EA3 /* CPTNumericData+TypeConversions_Generation.py */; };
 		A9D9528419AE59EB00B28EA3 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = A9D9520E19AE59EB00B28EA3 /* license.txt */; };
+		A9DF2C8519E7058C008BDD46 /* BGMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2C7B19E7058C008BDD46 /* BGMenu.png */; };
+		A9DF2C8619E7058C008BDD46 /* BGMenu2.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2C7C19E7058C008BDD46 /* BGMenu2.png */; };
+		A9DF2C8719E7058C008BDD46 /* BGPerguntas.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2C7D19E7058C008BDD46 /* BGPerguntas.png */; };
+		A9DF2C8819E7058C008BDD46 /* Botao.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2C7E19E7058C008BDD46 /* Botao.png */; };
+		A9DF2C8B19E7058C008BDD46 /* BotaoJogar.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2C8119E7058C008BDD46 /* BotaoJogar.png */; };
+		A9DF2C8C19E7058C008BDD46 /* BotaoPerfil.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2C8219E7058C008BDD46 /* BotaoPerfil.png */; };
+		A9DF2C8E19E7058C008BDD46 /* Escolhaseulado.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2C8419E7058C008BDD46 /* Escolhaseulado.png */; };
+		A9DF2C9019E705BC008BDD46 /* LogoMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2C8F19E705BC008BDD46 /* LogoMenu.png */; };
+		A9DF2CDF19E70E6F008BDD46 /* BotaoHeroi.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2CDD19E70E6F008BDD46 /* BotaoHeroi.png */; };
+		A9DF2CE019E70E6F008BDD46 /* BotaoVilao.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2CDE19E70E6F008BDD46 /* BotaoVilao.png */; };
+		A9DF2CE519E70F97008BDD46 /* Pergunta.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2CE119E70F97008BDD46 /* Pergunta.png */; };
+		A9DF2CE619E70F97008BDD46 /* Score.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2CE219E70F97008BDD46 /* Score.png */; };
+		A9DF2CE719E70F97008BDD46 /* Tempo.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2CE319E70F97008BDD46 /* Tempo.png */; };
+		A9DF2CE819E70F97008BDD46 /* Vida.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2CE419E70F97008BDD46 /* Vida.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,15 +119,9 @@
 		34E0F6D7199A9C8F005A1FD0 /* MELViewControllerMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MELViewControllerMenu.h; sourceTree = "<group>"; };
 		34E0F6D8199A9C8F005A1FD0 /* MELViewControllerMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MELViewControllerMenu.m; sourceTree = "<group>"; };
 		34E0F6D9199A9C8F005A1FD0 /* MELViewControllerMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MELViewControllerMenu.xib; sourceTree = "<group>"; };
-		34E0F6E2199A9D8B005A1FD0 /* Logo Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Logo Menu.png"; path = "Imagens/Logo Menu.png"; sourceTree = "<group>"; };
-		34E0F6E4199A9E51005A1FD0 /* Botao Perfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Botao Perfil.png"; path = "Imagens/Botao Perfil.png"; sourceTree = "<group>"; };
-		34E0F6E6199A9F0A005A1FD0 /* Botao Jogar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Botao Jogar.png"; path = "Imagens/Botao Jogar.png"; sourceTree = "<group>"; };
-		34E0F6E8199A9F19005A1FD0 /* Botao Score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Botao Score.png"; path = "Imagens/Botao Score.png"; sourceTree = "<group>"; };
 		34E0F6EA199A9FF1005A1FD0 /* MELViewControllerCategoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MELViewControllerCategoria.h; sourceTree = "<group>"; };
 		34E0F6EB199A9FF1005A1FD0 /* MELViewControllerCategoria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MELViewControllerCategoria.m; sourceTree = "<group>"; };
 		34E0F6EC199A9FF1005A1FD0 /* MELViewControllerCategoria.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MELViewControllerCategoria.xib; sourceTree = "<group>"; };
-		34E0F6EF199AA01D005A1FD0 /* menu categoria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu categoria.png"; path = "Imagens/menu categoria.png"; sourceTree = "<group>"; };
-		34E0F6F1199AA312005A1FD0 /* BG Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BG Menu.png"; path = "Imagens/BG Menu.png"; sourceTree = "<group>"; };
 		34E0F6F3199AA3E9005A1FD0 /* herois.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = herois.plist; path = Perguntas/herois.plist; sourceTree = "<group>"; };
 		34E0F6F4199AA3E9005A1FD0 /* viloes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = viloes.plist; path = Perguntas/viloes.plist; sourceTree = "<group>"; };
 		34E0F6F8199AA4C2005A1FD0 /* MELViewControllerViloes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MELViewControllerViloes.h; sourceTree = "<group>"; };
@@ -138,18 +130,9 @@
 		34E0F6FD199AA4E3005A1FD0 /* MELViewControllerHerois.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MELViewControllerHerois.h; sourceTree = "<group>"; };
 		34E0F6FE199AA4E3005A1FD0 /* MELViewControllerHerois.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MELViewControllerHerois.m; sourceTree = "<group>"; };
 		34E0F6FF199AA4E3005A1FD0 /* MELViewControllerHerois.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MELViewControllerHerois.xib; sourceTree = "<group>"; };
-		34E0F702199AA547005A1FD0 /* BG Heroi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BG Heroi.png"; path = "Imagens/BG Heroi.png"; sourceTree = "<group>"; };
-		34E0F703199AA547005A1FD0 /* BG Vilao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BG Vilao.png"; path = "Imagens/BG Vilao.png"; sourceTree = "<group>"; };
-		34E0F704199AA547005A1FD0 /* Botao Heroi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Botao Heroi.png"; path = "Imagens/Botao Heroi.png"; sourceTree = "<group>"; };
-		34E0F705199AA547005A1FD0 /* Botao Vilao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Botao Vilao.png"; path = "Imagens/Botao Vilao.png"; sourceTree = "<group>"; };
-		34E0F70A199AA58B005A1FD0 /* Fundo Pergunta Heroi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fundo Pergunta Heroi.png"; path = "Imagens/Fundo Pergunta Heroi.png"; sourceTree = "<group>"; };
-		34E0F70B199AA58B005A1FD0 /* Fundo Pergunta Vilao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fundo Pergunta Vilao.png"; path = "Imagens/Fundo Pergunta Vilao.png"; sourceTree = "<group>"; };
 		34FDFEC0199BD9E800627E26 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6DAED63B19A3DD9D00763378 /* CustomActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomActionSheet.h; sourceTree = "<group>"; };
 		6DAED63C19A3DD9D00763378 /* CustomActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomActionSheet.m; sourceTree = "<group>"; };
-		6DB882EA19A5106D005377DD /* Fundo Score Vilao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fundo Score Vilao.png"; path = "Imagens/Fundo Score Vilao.png"; sourceTree = "<group>"; };
-		6DB882EB19A5106D005377DD /* Fundo Score Heroi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fundo Score Heroi.png"; path = "Imagens/Fundo Score Heroi.png"; sourceTree = "<group>"; };
-		6DB882EE19A51BDC005377DD /* Menu Categoria iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Menu Categoria iPad.png"; path = "Imagens/Menu Categoria iPad.png"; sourceTree = "<group>"; };
 		6DDA412619E46D85007B2BF1 /* music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = music.m4a; sourceTree = "<group>"; };
 		6DDA412819E46F00007B2BF1 /* heroi.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = heroi.m4a; sourceTree = "<group>"; };
 		6DDA412A19E46F19007B2BF1 /* categoria.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = categoria.m4a; sourceTree = "<group>"; };
@@ -157,7 +140,6 @@
 		6DE5E81719AD243200F5F9A0 /* GC Saturado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GC Saturado.png"; sourceTree = "<group>"; };
 		6DE5E81919AD244100F5F9A0 /* Game-Center2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Game-Center2.png"; sourceTree = "<group>"; };
 		A95ADF4219ABB2E200513C42 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		A980762A19D9F4FC00190FF4 /* BGMenu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BGMenu2.png; path = Imagens/BGMenu2.png; sourceTree = "<group>"; };
 		A9D94E6319AE533600B28EA3 /* CPTGraphHostingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGraphHostingView.h; sourceTree = "<group>"; };
 		A9D94E6619AE533600B28EA3 /* CPTPlatformSpecificCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlatformSpecificCategories.h; sourceTree = "<group>"; };
 		A9D94E6819AE533600B28EA3 /* CPTPlatformSpecificDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlatformSpecificDefines.h; sourceTree = "<group>"; };
@@ -281,6 +263,20 @@
 		A9D9521019AE59EB00B28EA3 /* NSCoderExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCoderExtensions.h; sourceTree = "<group>"; };
 		A9D9521219AE59EB00B28EA3 /* NSDecimalNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDecimalNumberExtensions.h; sourceTree = "<group>"; };
 		A9D9521419AE59EB00B28EA3 /* NSNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNumberExtensions.h; sourceTree = "<group>"; };
+		A9DF2C7B19E7058C008BDD46 /* BGMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BGMenu.png; path = Imagens/BGMenu.png; sourceTree = "<group>"; };
+		A9DF2C7C19E7058C008BDD46 /* BGMenu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BGMenu2.png; path = Imagens/BGMenu2.png; sourceTree = "<group>"; };
+		A9DF2C7D19E7058C008BDD46 /* BGPerguntas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BGPerguntas.png; path = Imagens/BGPerguntas.png; sourceTree = "<group>"; };
+		A9DF2C7E19E7058C008BDD46 /* Botao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Botao.png; path = Imagens/Botao.png; sourceTree = "<group>"; };
+		A9DF2C8119E7058C008BDD46 /* BotaoJogar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotaoJogar.png; path = Imagens/BotaoJogar.png; sourceTree = "<group>"; };
+		A9DF2C8219E7058C008BDD46 /* BotaoPerfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotaoPerfil.png; path = Imagens/BotaoPerfil.png; sourceTree = "<group>"; };
+		A9DF2C8419E7058C008BDD46 /* Escolhaseulado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Escolhaseulado.png; path = Imagens/Escolhaseulado.png; sourceTree = "<group>"; };
+		A9DF2C8F19E705BC008BDD46 /* LogoMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LogoMenu.png; path = Imagens/LogoMenu.png; sourceTree = "<group>"; };
+		A9DF2CDD19E70E6F008BDD46 /* BotaoHeroi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotaoHeroi.png; path = Imagens/BotaoHeroi.png; sourceTree = "<group>"; };
+		A9DF2CDE19E70E6F008BDD46 /* BotaoVilao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotaoVilao.png; path = Imagens/BotaoVilao.png; sourceTree = "<group>"; };
+		A9DF2CE119E70F97008BDD46 /* Pergunta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pergunta.png; path = Imagens/Pergunta.png; sourceTree = "<group>"; };
+		A9DF2CE219E70F97008BDD46 /* Score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Score.png; path = Imagens/Score.png; sourceTree = "<group>"; };
+		A9DF2CE319E70F97008BDD46 /* Tempo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tempo.png; path = Imagens/Tempo.png; sourceTree = "<group>"; };
+		A9DF2CE419E70F97008BDD46 /* Vida.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Vida.png; path = Imagens/Vida.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -486,24 +482,22 @@
 		34E0F6DF199A9CE4005A1FD0 /* imagens */ = {
 			isa = PBXGroup;
 			children = (
-				A980762A19D9F4FC00190FF4 /* BGMenu2.png */,
+				A9DF2CE119E70F97008BDD46 /* Pergunta.png */,
+				A9DF2CE219E70F97008BDD46 /* Score.png */,
+				A9DF2CE319E70F97008BDD46 /* Tempo.png */,
+				A9DF2CE419E70F97008BDD46 /* Vida.png */,
+				A9DF2CDD19E70E6F008BDD46 /* BotaoHeroi.png */,
+				A9DF2CDE19E70E6F008BDD46 /* BotaoVilao.png */,
+				A9DF2C8F19E705BC008BDD46 /* LogoMenu.png */,
+				A9DF2C7B19E7058C008BDD46 /* BGMenu.png */,
+				A9DF2C7C19E7058C008BDD46 /* BGMenu2.png */,
+				A9DF2C7D19E7058C008BDD46 /* BGPerguntas.png */,
+				A9DF2C7E19E7058C008BDD46 /* Botao.png */,
+				A9DF2C8119E7058C008BDD46 /* BotaoJogar.png */,
+				A9DF2C8219E7058C008BDD46 /* BotaoPerfil.png */,
+				A9DF2C8419E7058C008BDD46 /* Escolhaseulado.png */,
 				6DE5E81919AD244100F5F9A0 /* Game-Center2.png */,
 				6DE5E81719AD243200F5F9A0 /* GC Saturado.png */,
-				6DB882EA19A5106D005377DD /* Fundo Score Vilao.png */,
-				6DB882EE19A51BDC005377DD /* Menu Categoria iPad.png */,
-				6DB882EB19A5106D005377DD /* Fundo Score Heroi.png */,
-				34E0F70A199AA58B005A1FD0 /* Fundo Pergunta Heroi.png */,
-				34E0F70B199AA58B005A1FD0 /* Fundo Pergunta Vilao.png */,
-				34E0F702199AA547005A1FD0 /* BG Heroi.png */,
-				34E0F703199AA547005A1FD0 /* BG Vilao.png */,
-				34E0F704199AA547005A1FD0 /* Botao Heroi.png */,
-				34E0F705199AA547005A1FD0 /* Botao Vilao.png */,
-				34E0F6EF199AA01D005A1FD0 /* menu categoria.png */,
-				34E0F6F1199AA312005A1FD0 /* BG Menu.png */,
-				34E0F6E8199A9F19005A1FD0 /* Botao Score.png */,
-				34E0F6E6199A9F0A005A1FD0 /* Botao Jogar.png */,
-				34E0F6E4199A9E51005A1FD0 /* Botao Perfil.png */,
-				34E0F6E2199A9D8B005A1FD0 /* Logo Menu.png */,
 			);
 			name = imagens;
 			sourceTree = "<group>";
@@ -750,43 +744,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A980762B19D9F4FC00190FF4 /* BGMenu2.png in Resources */,
-				34E0F6F0199AA01D005A1FD0 /* menu categoria.png in Resources */,
-				34E0F6E7199A9F0A005A1FD0 /* Botao Jogar.png in Resources */,
-				34E0F708199AA547005A1FD0 /* Botao Heroi.png in Resources */,
-				6DB882ED19A5106D005377DD /* Fundo Score Heroi.png in Resources */,
 				34130DD2199D2A780059276B /* MELViewControllerPerfil.xib in Resources */,
+				A9DF2C8B19E7058C008BDD46 /* BotaoJogar.png in Resources */,
+				A9DF2CE619E70F97008BDD46 /* Score.png in Resources */,
 				34E0F6F5199AA3E9005A1FD0 /* herois.plist in Resources */,
-				34E0F707199AA547005A1FD0 /* BG Vilao.png in Resources */,
 				6DDA412719E46D85007B2BF1 /* music.m4a in Resources */,
 				34E0F701199AA4E3005A1FD0 /* MELViewControllerHerois.xib in Resources */,
+				A9DF2C9019E705BC008BDD46 /* LogoMenu.png in Resources */,
 				A9D9525E19AE59EB00B28EA3 /* CPTNumericData+TypeConversions_Generation.py in Resources */,
 				34E0F6FC199AA4C2005A1FD0 /* MELViewControllerViloes.xib in Resources */,
+				A9DF2C8619E7058C008BDD46 /* BGMenu2.png in Resources */,
 				6DDA412B19E46F19007B2BF1 /* categoria.m4a in Resources */,
 				34ABFE11199D4CF200E29175 /* MELViewControllerMenuiPad.xib in Resources */,
-				34E0F70C199AA58B005A1FD0 /* Fundo Pergunta Heroi.png in Resources */,
-				34E0F70D199AA58B005A1FD0 /* Fundo Pergunta Vilao.png in Resources */,
 				6DDA412D19E46F36007B2BF1 /* vilao.m4a in Resources */,
 				34E0F6EE199A9FF1005A1FD0 /* MELViewControllerCategoria.xib in Resources */,
 				34E0F6DB199A9C8F005A1FD0 /* MELViewControllerMenu.xib in Resources */,
+				A9DF2C8C19E7058C008BDD46 /* BotaoPerfil.png in Resources */,
+				A9DF2C8E19E7058C008BDD46 /* Escolhaseulado.png in Resources */,
 				34ABFE1B199D4FD400E29175 /* MELViewControllerViloesiPad.xib in Resources */,
-				34E0F6F2199AA312005A1FD0 /* BG Menu.png in Resources */,
+				A9DF2CE019E70E6F008BDD46 /* BotaoVilao.png in Resources */,
+				A9DF2C8819E7058C008BDD46 /* Botao.png in Resources */,
 				34ABFE16199D4FB600E29175 /* MELViewControllerCategoriaiPad.xib in Resources */,
+				A9DF2C8519E7058C008BDD46 /* BGMenu.png in Resources */,
 				6DE5E81819AD243200F5F9A0 /* GC Saturado.png in Resources */,
+				A9DF2CDF19E70E6F008BDD46 /* BotaoHeroi.png in Resources */,
 				34ABFE20199D4FF200E29175 /* MELViewControllerHeroisiPad.xib in Resources */,
-				34E0F6E9199A9F19005A1FD0 /* Botao Score.png in Resources */,
-				34E0F6E5199A9E51005A1FD0 /* Botao Perfil.png in Resources */,
-				34E0F709199AA547005A1FD0 /* Botao Vilao.png in Resources */,
+				A9DF2CE519E70F97008BDD46 /* Pergunta.png in Resources */,
+				A9DF2CE719E70F97008BDD46 /* Tempo.png in Resources */,
+				A9DF2CE819E70F97008BDD46 /* Vida.png in Resources */,
 				6DE5E81A19AD244100F5F9A0 /* Game-Center2.png in Resources */,
 				A9D9528419AE59EB00B28EA3 /* license.txt in Resources */,
+				A9DF2C8719E7058C008BDD46 /* BGPerguntas.png in Resources */,
 				34E0F6F6199AA3E9005A1FD0 /* viloes.plist in Resources */,
 				6DDA412919E46F00007B2BF1 /* heroi.m4a in Resources */,
-				34E0F706199AA547005A1FD0 /* BG Heroi.png in Resources */,
-				34E0F6E3199A9D8B005A1FD0 /* Logo Menu.png in Resources */,
 				34E0F6B3199A9C5D005A1FD0 /* InfoPlist.strings in Resources */,
 				34E0F6BB199A9C5D005A1FD0 /* Images.xcassets in Resources */,
-				6DB882EF19A51BDC005377DD /* Menu Categoria iPad.png in Resources */,
-				6DB882EC19A5106D005377DD /* Fundo Score Vilao.png in Resources */,
 				34ABFE25199D501100E29175 /* MELViewControllerPerfiliPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
