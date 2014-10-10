@@ -140,8 +140,8 @@
     // 4 - Add legend to graph
     graph.legend = theLegend;
     graph.legendAnchor = CPTRectAnchorRight;
-    CGFloat legendPadding = -(self.view.bounds.size.width / 8);
-    graph.legendDisplacement = CGPointMake(legendPadding, 0.0);
+    CGFloat legendPadding = -(self.view.bounds.size.width / 3.25);
+    graph.legendDisplacement = CGPointMake(legendPadding, -220.0);
 
 }
 
