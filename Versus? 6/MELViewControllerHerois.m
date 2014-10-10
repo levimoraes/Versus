@@ -121,18 +121,6 @@ AVAudioPlayer *music;
         NSString *vidasPlist =[plistPerfil objectAtIndex:8];
         
         int pontos = [pontosPlist intValue];
-        int vidas = [vidasPlist intValue];
-        
-        if (vidas-1<0) {
-            [self Desistir];
-        }
-        else{
-            vidas--;
-            vidasPlist = [NSString stringWithFormat:@"%d",vidas];
-            [plistPerfil replaceObjectAtIndex:8 withObject:vidasPlist];
-            [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
-        }
-        
         pontos += 10;
         pontosPlist = [NSString stringWithFormat:@"%d",pontos];
         
