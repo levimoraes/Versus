@@ -51,6 +51,7 @@
 		6DE5E81819AD243200F5F9A0 /* GC Saturado.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5E81719AD243200F5F9A0 /* GC Saturado.png */; };
 		6DE5E81A19AD244100F5F9A0 /* Game-Center2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5E81919AD244100F5F9A0 /* Game-Center2.png */; };
 		A95ADF4319ABB2E200513C42 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95ADF4219ABB2E200513C42 /* QuartzCore.framework */; };
+		A9C9102419E863CC008AC7CE /* LogoVS.png in Resources */ = {isa = PBXBuildFile; fileRef = A9C9102319E863CC008AC7CE /* LogoVS.png */; };
 		A9D94E7519AE565100B28EA3 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D94E7419AE565100B28EA3 /* libCorePlot-CocoaTouch.a */; };
 		A9D9525E19AE59EB00B28EA3 /* CPTNumericData+TypeConversions_Generation.py in Resources */ = {isa = PBXBuildFile; fileRef = A9D951C219AE59EB00B28EA3 /* CPTNumericData+TypeConversions_Generation.py */; };
 		A9D9528419AE59EB00B28EA3 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = A9D9520E19AE59EB00B28EA3 /* license.txt */; };
@@ -61,7 +62,6 @@
 		A9DF2C8B19E7058C008BDD46 /* BotaoJogar.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2C8119E7058C008BDD46 /* BotaoJogar.png */; };
 		A9DF2C8C19E7058C008BDD46 /* BotaoPerfil.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2C8219E7058C008BDD46 /* BotaoPerfil.png */; };
 		A9DF2C8E19E7058C008BDD46 /* Escolhaseulado.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2C8419E7058C008BDD46 /* Escolhaseulado.png */; };
-		A9DF2C9019E705BC008BDD46 /* LogoMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2C8F19E705BC008BDD46 /* LogoMenu.png */; };
 		A9DF2CDF19E70E6F008BDD46 /* BotaoHeroi.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2CDD19E70E6F008BDD46 /* BotaoHeroi.png */; };
 		A9DF2CE019E70E6F008BDD46 /* BotaoVilao.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2CDE19E70E6F008BDD46 /* BotaoVilao.png */; };
 		A9DF2CE519E70F97008BDD46 /* Pergunta.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2CE119E70F97008BDD46 /* Pergunta.png */; };
@@ -140,6 +140,7 @@
 		6DE5E81719AD243200F5F9A0 /* GC Saturado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GC Saturado.png"; sourceTree = "<group>"; };
 		6DE5E81919AD244100F5F9A0 /* Game-Center2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Game-Center2.png"; sourceTree = "<group>"; };
 		A95ADF4219ABB2E200513C42 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A9C9102319E863CC008AC7CE /* LogoVS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LogoVS.png; path = Imagens/LogoVS.png; sourceTree = "<group>"; };
 		A9D94E6319AE533600B28EA3 /* CPTGraphHostingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGraphHostingView.h; sourceTree = "<group>"; };
 		A9D94E6619AE533600B28EA3 /* CPTPlatformSpecificCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlatformSpecificCategories.h; sourceTree = "<group>"; };
 		A9D94E6819AE533600B28EA3 /* CPTPlatformSpecificDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlatformSpecificDefines.h; sourceTree = "<group>"; };
@@ -270,7 +271,6 @@
 		A9DF2C8119E7058C008BDD46 /* BotaoJogar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotaoJogar.png; path = Imagens/BotaoJogar.png; sourceTree = "<group>"; };
 		A9DF2C8219E7058C008BDD46 /* BotaoPerfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotaoPerfil.png; path = Imagens/BotaoPerfil.png; sourceTree = "<group>"; };
 		A9DF2C8419E7058C008BDD46 /* Escolhaseulado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Escolhaseulado.png; path = Imagens/Escolhaseulado.png; sourceTree = "<group>"; };
-		A9DF2C8F19E705BC008BDD46 /* LogoMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LogoMenu.png; path = Imagens/LogoMenu.png; sourceTree = "<group>"; };
 		A9DF2CDD19E70E6F008BDD46 /* BotaoHeroi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotaoHeroi.png; path = Imagens/BotaoHeroi.png; sourceTree = "<group>"; };
 		A9DF2CDE19E70E6F008BDD46 /* BotaoVilao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotaoVilao.png; path = Imagens/BotaoVilao.png; sourceTree = "<group>"; };
 		A9DF2CE119E70F97008BDD46 /* Pergunta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pergunta.png; path = Imagens/Pergunta.png; sourceTree = "<group>"; };
@@ -482,13 +482,13 @@
 		34E0F6DF199A9CE4005A1FD0 /* imagens */ = {
 			isa = PBXGroup;
 			children = (
+				A9C9102319E863CC008AC7CE /* LogoVS.png */,
 				A9DF2CE119E70F97008BDD46 /* Pergunta.png */,
 				A9DF2CE219E70F97008BDD46 /* Score.png */,
 				A9DF2CE319E70F97008BDD46 /* Tempo.png */,
 				A9DF2CE419E70F97008BDD46 /* Vida.png */,
 				A9DF2CDD19E70E6F008BDD46 /* BotaoHeroi.png */,
 				A9DF2CDE19E70E6F008BDD46 /* BotaoVilao.png */,
-				A9DF2C8F19E705BC008BDD46 /* LogoMenu.png */,
 				A9DF2C7B19E7058C008BDD46 /* BGMenu.png */,
 				A9DF2C7C19E7058C008BDD46 /* BGMenu2.png */,
 				A9DF2C7D19E7058C008BDD46 /* BGPerguntas.png */,
@@ -751,12 +751,12 @@
 				34E0F6F5199AA3E9005A1FD0 /* herois.plist in Resources */,
 				6DDA412719E46D85007B2BF1 /* music.m4a in Resources */,
 				34E0F701199AA4E3005A1FD0 /* MELViewControllerHerois.xib in Resources */,
-				A9DF2C9019E705BC008BDD46 /* LogoMenu.png in Resources */,
 				A9D9525E19AE59EB00B28EA3 /* CPTNumericData+TypeConversions_Generation.py in Resources */,
 				34E0F6FC199AA4C2005A1FD0 /* MELViewControllerViloes.xib in Resources */,
 				A9DF2C8619E7058C008BDD46 /* BGMenu2.png in Resources */,
 				6DDA412B19E46F19007B2BF1 /* categoria.m4a in Resources */,
 				34ABFE11199D4CF200E29175 /* MELViewControllerMenuiPad.xib in Resources */,
+				A9C9102419E863CC008AC7CE /* LogoVS.png in Resources */,
 				6DDA412D19E46F36007B2BF1 /* vilao.m4a in Resources */,
 				34E0F6EE199A9FF1005A1FD0 /* MELViewControllerCategoria.xib in Resources */,
 				34E0F6DB199A9C8F005A1FD0 /* MELViewControllerMenu.xib in Resources */,
