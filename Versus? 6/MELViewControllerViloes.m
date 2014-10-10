@@ -420,6 +420,7 @@ AVAudioPlayer *music;
     NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
     
     _labelScore.text = [plistPerfil objectAtIndex:5];
+    _labelVidas.text = [plistPerfil objectAtIndex:8];
     
 }
 

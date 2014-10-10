@@ -57,6 +57,14 @@ AVAudioPlayer *music;
     return caminho;
 }
 
+
+-(void)zerarScore{
+    NSString *score = [NSString stringWithFormat:@"0"];
+    NSMutableArray *perfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+    [perfil insertObject:score atIndex:5];
+    [perfil writeToFile:[self caminhoPerfil] atomically:YES];
+}
+
 -(void)sortearHerois{
     NSMutableArray *perguntas = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoHerois]];
     
@@ -90,6 +98,7 @@ AVAudioPlayer *music;
 
 - (IBAction)BotaoVilao:(id)sender {
     [music stop];
+    [self zerarScore];
     NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
     [plistPerfil insertObject:@"3" atIndex:8];
     [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
@@ -100,6 +109,8 @@ AVAudioPlayer *music;
 }
 - (IBAction)BotaoHeroi:(id)sender {
     [music stop];
+    [self zerarScore];
+    
     NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
     [plistPerfil insertObject:@"3" atIndex:8];
     [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];

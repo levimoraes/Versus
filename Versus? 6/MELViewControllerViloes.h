@@ -11,6 +11,7 @@
 
 @interface MELViewControllerViloes : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *labelVidas;
 @property (weak, nonatomic) IBOutlet UIProgressView *barraTempo;
 @property (weak, nonatomic) NSTimer *timer;
 @property (weak, nonatomic) IBOutlet UIButton *opcao4;

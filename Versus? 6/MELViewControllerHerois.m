@@ -54,27 +54,6 @@ AVAudioPlayer *music;
     return caminho;
 }
 
-- (IBAction)BotaoDesistir:(id)sender {
-    MELViewControllerMenu *menu = [[MELViewControllerMenu alloc]init];
-    
-    NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
-    NSString *pontosPlist = [plistPerfil objectAtIndex:5];
-    NSString *valorNaPlist = [plistPerfil objectAtIndex:7];
-
-    
-    if ([valorNaPlist intValue] < [pontosPlist intValue]) {
-        [plistPerfil replaceObjectAtIndex:7 withObject:pontosPlist];
-        
-    }
-    [plistPerfil replaceObjectAtIndex:5 withObject:@"0"];
-    
-    [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
-    
-    [menu setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
-    [self presentViewController:menu animated:YES completion:nil];
-
-}
-
 -(void)Desistir
 {
     MELViewControllerMenu *menu = [[MELViewControllerMenu alloc]init];
@@ -441,6 +420,7 @@ AVAudioPlayer *music;
     NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
     
     _labelScore.text = [plistPerfil objectAtIndex:5];
+    _labelVidas.text = [plistPerfil objectAtIndex:8];
     
 }
 

@@ -17,6 +17,23 @@
 
 @synthesize hostView = hostView_;
 
+- (void)colocarRecorde {
+    
+    NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+    NSString *pontosPlist = [plistPerfil objectAtIndex:5];
+    NSString *valorNaPlist = [plistPerfil objectAtIndex:7];
+    
+    
+    if ([valorNaPlist intValue] < [pontosPlist intValue]) {
+        [plistPerfil replaceObjectAtIndex:7 withObject:pontosPlist];
+        
+    }
+    [plistPerfil replaceObjectAtIndex:5 withObject:@"0"];
+    
+    [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+    
+}
+
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     //inicializando o plot
@@ -52,6 +69,7 @@
     
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self colocarRecorde];
     
 
 }

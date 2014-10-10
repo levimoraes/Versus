@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <objects>
@@ -9,6 +10,7 @@
                 <outlet property="barraTempo" destination="Bfs-hQ-CjM" id="siV-X7-oYG"/>
                 <outlet property="labelPergunta" destination="ZLZ-Kz-WaF" id="qqT-ZT-8rA"/>
                 <outlet property="labelScore" destination="gvd-QA-8Or" id="7qJ-eH-iMO"/>
+                <outlet property="labelVidas" destination="zFA-Pa-1GW" id="U9H-RG-dyg"/>
                 <outlet property="opcao1" destination="Tvt-vS-DgA" id="8Es-28-0Sr"/>
                 <outlet property="opcao2" destination="Jy3-Df-wX9" id="xcb-sd-BLl"/>
                 <outlet property="opcao3" destination="YC9-mV-nFU" id="n6J-Le-TwB"/>
@@ -102,6 +104,12 @@
                     <color key="progressTintColor" red="0.93333339689999995" green="0.15686275059999999" blue="0.1019607931" alpha="1" colorSpace="deviceRGB"/>
                     <color key="trackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </progressView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFA-Pa-1GW">
+                    <rect key="frame" x="55" y="516" width="42" height="39"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
         </view>
