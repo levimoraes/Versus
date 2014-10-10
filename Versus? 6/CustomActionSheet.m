@@ -46,13 +46,6 @@
     return self;
 }
 
-
-#pragma mark - Public method implementation
-
-
-
-#pragma mark - UIActionSheet Delegate method implementation
-
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
     NSString *buttonTitle = [_actionSheet buttonTitleAtIndex:buttonIndex];
     

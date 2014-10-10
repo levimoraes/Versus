@@ -507,5 +507,125 @@ Contar a Tia May</string>
 		<key>Pergunta</key>
 		<string>Como se chama o criado do Omnitrix?</string>
 	</dict>
+	<dict>
+		<key>1</key>
+		<string>Azul</string>
+		<key>2</key>
+		<string>Verde</string>
+		<key>3</key>
+		<string>Amarelo</string>
+		<key>4</key>
+		<string>Branco</string>
+		<key>Pergunta</key>
+		<string>Qual a cor do genio do Aladdin ?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Dippy Dawg</string>
+		<key>2</key>
+		<string>Max</string>
+		<key>3</key>
+		<string>Bafo</string>
+		<key>4</key>
+		<string>Wasalsky</string>
+		<key>Pergunta</key>
+		<string>Qual o nome original do Pateta ?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Gilberto</string>
+		<key>2</key>
+		<string>Max</string>
+		<key>3</key>
+		<string>Marley</string>
+		<key>4</key>
+		<string>Kyle</string>
+		<key>Pergunta</key>
+		<string>Qual o nome do sobrinho do Pateta</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Terk</string>
+		<key>2</key>
+		<string>Jennifer</string>
+		<key>3</key>
+		<string>Viola</string>
+		<key>4</key>
+		<string>Cheetah</string>
+		<key>Pergunta</key>
+		<string>Qual o nome da gorilinha azul amiga de Tarzan ?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Tantor</string>
+		<key>2</key>
+		<string>Tommy</string>
+		<key>3</key>
+		<string>Jimmy</string>
+		<key>4</key>
+		<string>Terry</string>
+		<key>Pergunta</key>
+		<string>Qual o nome do elefante neurótico amigo de Tarzan ?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Edward</string>
+		<key>2</key>
+		<string>Terry</string>
+		<key>3</key>
+		<string>John</string>
+		<key>4</key>
+		<string>Pooh</string>
+		<key>Pergunta</key>
+		<string>Qual o primeiro nome do Ursinho Puff?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>66 cm</string>
+		<key>2</key>
+		<string>1,55 m</string>
+		<key>3</key>
+		<string>97 cm</string>
+		<key>4</key>
+		<string>1,23 m</string>
+		<key>Pergunta</key>
+		<string>Qual a altura de Mestre Yoda?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>objeto-sujeito-verbo</string>
+		<key>2</key>
+		<string>sujeito-objeto-verbo</string>
+		<key>3</key>
+		<string>verbo-sujeito-objeto</string>
+		<key>4</key>
+		<string>verbo-objeto-sujeito</string>
+		<key>Pergunta</key>
+		<string>Qual era o formato de fala do Mestre Yoda?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Yoda</string>
+		<key>2</key>
+		<string>Anakin Skywalker</string>
+		<key>3</key>
+		<string>Obi Wan</string>
+		<key>4</key>
+		<string>Darth Wader</string>
+		<key>Pergunta</key>
+		<string>Obi-Wan foi treinado por quem na infância?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Bulma</string>
+		<key>2</key>
+		<string>Anakin Skywalker</string>
+		<key>3</key>
+		<string>Obi Wan</string>
+		<key>4</key>
+		<string>Darth Wader</string>
+		<key>Pergunta</key>
+		<string>Quem foi o primeiro humano que Goku viu após seu falecido vovô?</string>
+	</dict>
 </array>
 </plist>
