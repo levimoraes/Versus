@@ -253,7 +253,7 @@ Contar a Tia May</string>
 		<key>4</key>
 		<string>Penguin</string>
 		<key>Pergunta</key>
-		<string>O pernalonga é um...</string>
+		<string>O pernalonga é um...?</string>
 	</dict>
 	<dict>
 		<key>1</key>
@@ -325,7 +325,7 @@ Contar a Tia May</string>
 		<key>4</key>
 		<string>Minato</string>
 		<key>Pergunta</key>
-		<string>Qual o nome do segundo Hokage no anime Naruto</string>
+		<string>Qual o nome do segundo Hokage no anime Naruto?</string>
 	</dict>
 	<dict>
 		<key>3</key>
@@ -361,7 +361,7 @@ Contar a Tia May</string>
 		<key>4</key>
 		<string>Udon</string>
 		<key>Pergunta</key>
-		<string>Qual desses personagens não foi discipulo de Ebisu (Naruto)</string>
+		<string>Qual desses personagens não foi discipulo de Ebisu (Naruto)?</string>
 	</dict>
 	<dict>
 		<key>3</key>
@@ -541,7 +541,7 @@ Contar a Tia May</string>
 		<key>4</key>
 		<string>Kyle</string>
 		<key>Pergunta</key>
-		<string>Qual o nome do sobrinho do Pateta</string>
+		<string>Qual o nome do sobrinho do Pateta?</string>
 	</dict>
 	<dict>
 		<key>1</key>
@@ -626,6 +626,222 @@ Contar a Tia May</string>
 		<string>Titis</string>
 		<key>Pergunta</key>
 		<string>Quem foi o primeiro humano que Goku viu após seu falecido vovô?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>97</string>
+		<key>2</key>
+		<string>184</string>
+		<key>3</key>
+		<string>53</string>
+		<key>4</key>
+		<string>85</string>
+		<key>Pergunta</key>
+		<string>Quantos &quot;Kamehameha`s&quot; Goku lançou entre o início de Dragon Ball e o final de Dragon Ball Z?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Taitsu</string>
+		<key>2</key>
+		<string>Bulme</string>
+		<key>3</key>
+		<string>Lina</string>
+		<key>4</key>
+		<string>Mirana</string>
+		<key>Pergunta</key>
+		<string>Qual o nome da irmã mais velha de Bulma?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Gohan</string>
+		<key>2</key>
+		<string>Goten</string>
+		<key>3</key>
+		<string>Trunks</string>
+		<key>4</key>
+		<string>Goku</string>
+		<key>Pergunta</key>
+		<string>Qual o nome do Grande Saiya Man?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>2</string>
+		<key>2</key>
+		<string>0</string>
+		<key>3</key>
+		<string>10000</string>
+		<key>4</key>
+		<string>8000</string>
+		<key>Pergunta</key>
+		<string>Goku nasceu com quanto de poder de luta?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>De 8 em 8 anos</string>
+		<key>2</key>
+		<string>De 1 em 1 ano</string>
+		<key>3</key>
+		<string>De 5 em 5 anos</string>
+		<key>4</key>
+		<string>De 10 em 10 anos</string>
+		<key>Pergunta</key>
+		<string>De quantos em quantos anos a lua aparece no Planeta Vegeta?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Yunzabit</string>
+		<key>2</key>
+		<string>Lukibi</string>
+		<key>3</key>
+		<string>Tatink</string>
+		<key>4</key>
+		<string>Namek</string>
+		<key>Pergunta</key>
+		<string>Onde estava a nave que Kami Sama utilizou para chegar a Terra?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Rei</string>
+		<key>2</key>
+		<string>Demônio</string>
+		<key>3</key>
+		<string>Ódio</string>
+		<key>4</key>
+		<string>Cavaleiro</string>
+		<key>Pergunta</key>
+		<string>O que significa Picolo da língua Nameka em português?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Pigero</string>
+		<key>2</key>
+		<string>Linp</string>
+		<key>3</key>
+		<string>Teris</string>
+		<key>4</key>
+		<string>Lothus</string>
+		<key>Pergunta</key>
+		<string>Qual o nome do grupo de orfãos que Goahn foi resgatado após a tempestade no mar?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Gregory</string>
+		<key>2</key>
+		<string>Vegas</string>
+		<key>3</key>
+		<string>Cielo</string>
+		<key>4</key>
+		<string>Sien</string>
+		<key>Pergunta</key>
+		<string>Qual o nome do guardião do Senhor Kaiô?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Aparelho de Som</string>
+		<key>2</key>
+		<string>Geladeira</string>
+		<key>3</key>
+		<string>Churrasqueira</string>
+		<key>4</key>
+		<string>Banheiro</string>
+		<key>Pergunta</key>
+		<string>Quando Goku estava prestes a viajar para Namekusei, que item faltava na sua nave no qual o Dr. Briefs estava implantando?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Makangô Sapô</string>
+		<key>2</key>
+		<string>Mankô Tenro</string>
+		<key>3</key>
+		<string>Senpoy</string>
+		<key>4</key>
+		<string>Tendôu Tenru</string>
+		<key>Pergunta</key>
+		<string>Qual o nome do ataque especial de Picolo?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Com a nave das forças especiais G-Nyu</string>
+		<key>2</key>
+		<string>Com a nave de Freeza</string>
+		<key>3</key>
+		<string>Com o teletransporte</string>
+		<key>4</key>
+		<string>Com a ajuda de Gohan</string>
+		<key>Pergunta</key>
+		<string>Como Goku conseguiu escapar da explosão do planeta Namekusei quando o mesmo estava prestes a explodir?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>No dia mais claro...</string>
+		<key>2</key>
+		<string>No dia mais escuro...</string>
+		<key>3</key>
+		<string>Na noite mais escura...</string>
+		<key>4</key>
+		<string>Na noite mais clara...</string>
+		<key>Pergunta</key>
+		<string>Como começa o juramento dos Lanternas-Verdes?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Thanagariana</string>
+		<key>2</key>
+		<string>Amazonas</string>
+		<key>3</key>
+		<string>Kendriana</string>
+		<key>4</key>
+		<string>Tenrubin</string>
+		<key>Pergunta</key>
+		<string>Qual a descendência da Mulher Gavião?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Kendra</string>
+		<key>2</key>
+		<string>Tânia</string>
+		<key>3</key>
+		<string>Stellar</string>
+		<key>4</key>
+		<string>Trint</string>
+		<key>Pergunta</key>
+		<string>Qual o nome da Mulher Gavião?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Ovo de Yoshi</string>
+		<key>2</key>
+		<string>Sua foto</string>
+		<key>3</key>
+		<string>Foto de sua mãe</string>
+		<key>4</key>
+		<string>O Mario</string>
+		<key>Pergunta</key>
+		<string>Qual o emblema do Yoshi?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Como meio de transporte</string>
+		<key>2</key>
+		<string>Para dar pulos mais altos</string>
+		<key>3</key>
+		<string>Para matar inimigos</string>
+		<key>4</key>
+		<string>Para andar mais rapido</string>
+		<key>Pergunta</key>
+		<string>Qual a utilidade de Yoshi para Mario?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Yoshisaur</string>
+		<key>2</key>
+		<string>Yoshiharu</string>
+		<key>3</key>
+		<string>Yoshikun</string>
+		<key>4</key>
+		<string>Yoshisaru</string>
+		<key>Pergunta</key>
+		<string>Qual o verdadeiro nome de Yoshi?</string>
 	</dict>
 </array>
 </plist>

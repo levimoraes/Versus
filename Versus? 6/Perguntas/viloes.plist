@@ -252,7 +252,7 @@
 		<key>4</key>
 		<string>Zod</string>
 		<key>Pergunta</key>
-		<string>Qual vilão tem sua aparência semelhante à de um palhaço</string>
+		<string>Qual vilão tem sua aparência semelhante à de um palhaço?</string>
 	</dict>
 	<dict>
 		<key>1</key>
@@ -264,7 +264,7 @@
 		<key>4</key>
 		<string>Apocalipse</string>
 		<key>Pergunta</key>
-		<string>Em &quot;Piada Mortal&quot; quem é responsável pelo aleijamento de Bárbara Gordom</string>
+		<string>Em &quot;Piada Mortal&quot; quem é responsável pelo aleijamento de Bárbara Gordom?</string>
 	</dict>
 	<dict>
 		<key>1</key>
@@ -276,7 +276,7 @@
 		<key>4</key>
 		<string>Titanio</string>
 		<key>Pergunta</key>
-		<string>De qual material é feito Ultron, um dos maiores vilões dos Vingadores</string>
+		<string>De qual material é feito Ultron, um dos maiores vilões dos Vingadores?</string>
 	</dict>
 	<dict>
 		<key>1</key>
@@ -288,7 +288,7 @@
 		<key>4</key>
 		<string>Harvey Dent</string>
 		<key>Pergunta</key>
-		<string>Qual desses personagens é um grande inimigo do herói Shazam</string>
+		<string>Qual desses personagens é um grande inimigo do herói Shazam?</string>
 	</dict>
 	<dict>
 		<key>1</key>
@@ -312,7 +312,7 @@
 		<key>4</key>
 		<string>Namor</string>
 		<key>Pergunta</key>
-		<string>Ao nascer em Apokolips Darkseid era chamado de </string>
+		<string>Ao nascer em Apokolips Darkseid era chamado de...</string>
 	</dict>
 	<dict>
 		<key>1</key>
@@ -324,7 +324,7 @@
 		<key>4</key>
 		<string>Brainiac</string>
 		<key>Pergunta</key>
-		<string>Que vilão é conhecido como &quot;Devorador de Planetas&quot;</string>
+		<string>Que vilão é conhecido como &quot;Devorador de Planetas&quot;?</string>
 	</dict>
 	<dict>
 		<key>1</key>
@@ -336,7 +336,7 @@
 		<key>4</key>
 		<string>Baurog</string>
 		<key>Pergunta</key>
-		<string>Responsável por todo o mal na Terra Média foi derrotado pelo Rei Isildur</string>
+		<string>Responsável por todo o mal na Terra Média foi derrotado pelo Rei Isildur?</string>
 	</dict>
 	<dict>
 		<key>1</key>
@@ -348,7 +348,7 @@
 		<key>4</key>
 		<string>Demolidor</string>
 		<key>Pergunta</key>
-		<string>Garoto que morreu afogado e mata as suas vítimas utilizando uma máscara de hóquei</string>
+		<string>Qual garoto que morreu afogado e mata as suas vítimas utilizando uma máscara de hóquei?</string>
 	</dict>
 	<dict>
 		<key>1</key>
@@ -364,7 +364,7 @@
 	</dict>
 	<dict>
 		<key>1</key>
-		<string>Tronhão Quase-Nada</string>
+		<string>Tonhão Quase-Nada</string>
 		<key>2</key>
 		<string>Pistoleiro-Veloz</string>
 		<key>3</key>
@@ -408,7 +408,7 @@
 		<key>4</key>
 		<string>Capitão Poluição</string>
 		<key>Pergunta</key>
-		<string>Qaul o principal inimigo de Gaia e Capitão Planeta?</string>
+		<string>Qual o principal inimigo de Gaia e Capitão Planeta?</string>
 	</dict>
 	<dict>
 		<key>1</key>
@@ -493,6 +493,162 @@
 		<string>Psylocke</string>
 		<key>Pergunta</key>
 		<string>Qual vilão contaminou o filho de Ciclope com o Virus Legado?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Patacôncio</string>
+		<key>2</key>
+		<string>Patati</string>
+		<key>3</key>
+		<string>Patata</string>
+		<key>4</key>
+		<string>Pataque</string>
+		<key>Pergunta</key>
+		<string>Quem é o maior adversário de Tio Patinhas?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Jafar</string>
+		<key>2</key>
+		<string>Jafoi</string>
+		<key>3</key>
+		<string>Jaia</string>
+		<key>4</key>
+		<string>Naovai</string>
+		<key>Pergunta</key>
+		<string>Qual o nome do vilão no filme Aladdin?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Gazin</string>
+		<key>2</key>
+		<string>Gazao</string>
+		<key>3</key>
+		<string>Garin</string>
+		<key>4</key>
+		<string>Gatin</string>
+		<key>Pergunta</key>
+		<string>Qual o nome do ladrão ajudante de Jafar?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Anakin</string>
+		<key>2</key>
+		<string>Obi</string>
+		<key>3</key>
+		<string>Yon</string>
+		<key>4</key>
+		<string>Luke</string>
+		<key>Pergunta</key>
+		<string>Qual o verdadeiro nome de Darth Vader?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Paragus</string>
+		<key>2</key>
+		<string>Bardock</string>
+		<key>3</key>
+		<string>Lotun</string>
+		<key>4</key>
+		<string>Baran</string>
+		<key>Pergunta</key>
+		<string>Qual o nome do pai de Broly?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Pela cauda</string>
+		<key>2</key>
+		<string>Pelo ki</string>
+		<key>3</key>
+		<string>Pela boca</string>
+		<key>4</key>
+		<string>Pelos olhos</string>
+		<key>Pergunta</key>
+		<string>Como Cell absorve as pessoas?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Waluigi</string>
+		<key>2</key>
+		<string>Devil Luigi</string>
+		<key>3</key>
+		<string>Dark Luigi</string>
+		<key>4</key>
+		<string>Lui</string>
+		<key>Pergunta</key>
+		<string>Qual o nome da versão má de Luigi?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Wario</string>
+		<key>2</key>
+		<string>Dark Mario</string>
+		<key>3</key>
+		<string>Devil Mario</string>
+		<key>4</key>
+		<string>Levi</string>
+		<key>Pergunta</key>
+		<string>Qual o nome da versão má de Mario?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>GTA</string>
+		<key>2</key>
+		<string>Watch Dogs</string>
+		<key>3</key>
+		<string>Far Cry</string>
+		<key>4</key>
+		<string>Dead Island</string>
+		<key>Pergunta</key>
+		<string>Qual o jogo com recorde de uso da palavra &quot;Fuck&quot;?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Glados</string>
+		<key>2</key>
+		<string>Lucy</string>
+		<key>3</key>
+		<string>Téia</string>
+		<key>4</key>
+		<string>Glenn</string>
+		<key>Pergunta</key>
+		<string>Qual o nome da IA que desafia o jogador em &quot;Portal&quot;?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Wind Waker</string>
+		<key>2</key>
+		<string>Waker Wind</string>
+		<key>3</key>
+		<string>Fire San</string>
+		<key>4</key>
+		<string>San Fire</string>
+		<key>Pergunta</key>
+		<string>Qual o nome da espada de Ganon?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Gary</string>
+		<key>2</key>
+		<string>Carlos</string>
+		<key>3</key>
+		<string>Susan</string>
+		<key>4</key>
+		<string>Marco</string>
+		<key>Pergunta</key>
+		<string>Quem deu o nome de &quot;Ash-Boy&quot; para Ash?</string>
+	</dict>
+	<dict>
+		<key>1</key>
+		<string>Cinza</string>
+		<key>2</key>
+		<string>Vermelho</string>
+		<key>3</key>
+		<string>Azul</string>
+		<key>4</key>
+		<string>Preto</string>
+		<key>Pergunta</key>
+		<string>Qual a cor das machas dos Creeper&apos;s em Minecraft?</string>
 	</dict>
 </array>
 </plist>
