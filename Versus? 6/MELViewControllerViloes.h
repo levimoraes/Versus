@@ -10,7 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 
 @interface MELViewControllerViloes : UIViewController
-
+@property (weak, nonatomic) IBOutlet UILabel *labelTempo;
 @property (weak, nonatomic) IBOutlet UILabel *labelVidas;
 @property (weak, nonatomic) IBOutlet UIProgressView *barraTempo;
 @property (weak, nonatomic) NSTimer *timer;

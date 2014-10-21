@@ -15,6 +15,9 @@
 
 @implementation MELViewControllerViloes
 
+int tempo2 = 10;
+NSTimer *timer3;
+
 AVAudioPlayer *music;
 
 -(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -403,6 +406,9 @@ AVAudioPlayer *music;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    [timer3 invalidate];
+    timer3 = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timer) userInfo:nil repeats:YES];
+    
     [self pegarPerguntaAleatoria];
     [self sortearKey];
     
@@ -423,6 +429,20 @@ AVAudioPlayer *music;
     _labelVidas.text = [plistPerfil objectAtIndex:8];
     
 }
+
+-(void)timer
+{
+    tempo2--;
+    
+    if(tempo2 <= 0){
+        tempo2 = NULL;
+        tempo2 = 10;
+    }
+    
+    NSString *tempoStr = [[NSString alloc] initWithFormat:@"%d",tempo2];
+    _labelTempo.text = tempoStr;
+}
+
 
 -(NSString*)caminhoPerfil
 {

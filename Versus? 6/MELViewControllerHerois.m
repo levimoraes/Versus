@@ -17,6 +17,9 @@
 
 @implementation MELViewControllerHerois
 
+int tempo = 10;
+NSTimer *timer2;
+
 AVAudioPlayer *music;
 
 -(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -403,6 +406,10 @@ AVAudioPlayer *music;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    [timer2 invalidate];
+    timer2 = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timer) userInfo:nil repeats:YES];
+    
+    
     [self pegarPerguntaAleatoria];
     [self sortearKey];
     
@@ -422,6 +429,19 @@ AVAudioPlayer *music;
     _labelScore.text = [plistPerfil objectAtIndex:5];
     _labelVidas.text = [plistPerfil objectAtIndex:8];
     
+}
+
+-(void)timer
+{
+    tempo--;
+    
+    if(tempo <= 0){
+        tempo = NULL;
+        tempo = 10;
+    }
+        
+    NSString *tempoStr = [[NSString alloc] initWithFormat:@"%d",tempo];
+    _labelTempo.text = tempoStr;
 }
 
 -(NSString*)caminhoPerfil
