@@ -223,11 +223,11 @@
 
 - (IBAction)zerar:(id)sender {
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Zerar Progresso"
-                                                    message:@"Você realmente deseja apagar seus dados já coletados"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Limpar Progresso?"
+                                                    message:@""
                                                    delegate:self
-                                          cancelButtonTitle:@"Cancelar"
-                                          otherButtonTitles:@"OK",nil];
+                                          cancelButtonTitle:@"Não"
+                                          otherButtonTitles:@"Sim",nil];
     [alert show];
     
     NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];

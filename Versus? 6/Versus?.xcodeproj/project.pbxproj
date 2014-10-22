@@ -44,10 +44,6 @@
 		34E0F701199AA4E3005A1FD0 /* MELViewControllerHerois.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F6FF199AA4E3005A1FD0 /* MELViewControllerHerois.xib */; };
 		34FDFEC1199BD9E800627E26 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FDFEC0199BD9E800627E26 /* AVFoundation.framework */; };
 		6DAED63D19A3DD9D00763378 /* CustomActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAED63C19A3DD9D00763378 /* CustomActionSheet.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		6DDA412719E46D85007B2BF1 /* music.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6DDA412619E46D85007B2BF1 /* music.m4a */; };
-		6DDA412919E46F00007B2BF1 /* heroi.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6DDA412819E46F00007B2BF1 /* heroi.m4a */; };
-		6DDA412B19E46F19007B2BF1 /* categoria.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6DDA412A19E46F19007B2BF1 /* categoria.m4a */; };
-		6DDA412D19E46F36007B2BF1 /* vilao.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6DDA412C19E46F36007B2BF1 /* vilao.m4a */; };
 		6DE5E81819AD243200F5F9A0 /* GC Saturado.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5E81719AD243200F5F9A0 /* GC Saturado.png */; };
 		6DE5E81A19AD244100F5F9A0 /* Game-Center2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5E81919AD244100F5F9A0 /* Game-Center2.png */; };
 		A95ADF4319ABB2E200513C42 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95ADF4219ABB2E200513C42 /* QuartzCore.framework */; };
@@ -134,10 +130,6 @@
 		34FDFEC0199BD9E800627E26 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6DAED63B19A3DD9D00763378 /* CustomActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomActionSheet.h; sourceTree = "<group>"; };
 		6DAED63C19A3DD9D00763378 /* CustomActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomActionSheet.m; sourceTree = "<group>"; };
-		6DDA412619E46D85007B2BF1 /* music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = music.m4a; sourceTree = "<group>"; };
-		6DDA412819E46F00007B2BF1 /* heroi.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = heroi.m4a; sourceTree = "<group>"; };
-		6DDA412A19E46F19007B2BF1 /* categoria.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = categoria.m4a; sourceTree = "<group>"; };
-		6DDA412C19E46F36007B2BF1 /* vilao.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = vilao.m4a; sourceTree = "<group>"; };
 		6DE5E81719AD243200F5F9A0 /* GC Saturado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GC Saturado.png"; sourceTree = "<group>"; };
 		6DE5E81919AD244100F5F9A0 /* Game-Center2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Game-Center2.png"; sourceTree = "<group>"; };
 		A95ADF4219ABB2E200513C42 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -508,10 +500,6 @@
 		34E0F6F7199AA3F0005A1FD0 /* Perguntas */ = {
 			isa = PBXGroup;
 			children = (
-				6DDA412819E46F00007B2BF1 /* heroi.m4a */,
-				6DDA412619E46D85007B2BF1 /* music.m4a */,
-				6DDA412A19E46F19007B2BF1 /* categoria.m4a */,
-				6DDA412C19E46F36007B2BF1 /* vilao.m4a */,
 				34E0F6F3199AA3E9005A1FD0 /* herois.plist */,
 				34E0F6F4199AA3E9005A1FD0 /* viloes.plist */,
 			);
@@ -753,15 +741,12 @@
 				A9DF2C8B19E7058C008BDD46 /* BotaoJogar.png in Resources */,
 				A9DF2CE619E70F97008BDD46 /* Score.png in Resources */,
 				34E0F6F5199AA3E9005A1FD0 /* herois.plist in Resources */,
-				6DDA412719E46D85007B2BF1 /* music.m4a in Resources */,
 				34E0F701199AA4E3005A1FD0 /* MELViewControllerHerois.xib in Resources */,
 				A9D9525E19AE59EB00B28EA3 /* CPTNumericData+TypeConversions_Generation.py in Resources */,
 				34E0F6FC199AA4C2005A1FD0 /* MELViewControllerViloes.xib in Resources */,
 				A9DF2C8619E7058C008BDD46 /* BGMenu2.png in Resources */,
-				6DDA412B19E46F19007B2BF1 /* categoria.m4a in Resources */,
 				34ABFE11199D4CF200E29175 /* MELViewControllerMenuiPad.xib in Resources */,
 				A9C9102419E863CC008AC7CE /* LogoVS.png in Resources */,
-				6DDA412D19E46F36007B2BF1 /* vilao.m4a in Resources */,
 				34E0F6EE199A9FF1005A1FD0 /* MELViewControllerCategoria.xib in Resources */,
 				34E0F6DB199A9C8F005A1FD0 /* MELViewControllerMenu.xib in Resources */,
 				A9DF2C8C19E7058C008BDD46 /* BotaoPerfil.png in Resources */,
@@ -782,7 +767,6 @@
 				A9CE718019F8286F00DBDA69 /* musicaVersus.m4a in Resources */,
 				A9DF2C8719E7058C008BDD46 /* BGPerguntas.png in Resources */,
 				34E0F6F6199AA3E9005A1FD0 /* viloes.plist in Resources */,
-				6DDA412919E46F00007B2BF1 /* heroi.m4a in Resources */,
 				34E0F6B3199A9C5D005A1FD0 /* InfoPlist.strings in Resources */,
 				34E0F6BB199A9C5D005A1FD0 /* Images.xcassets in Resources */,
 				34ABFE25199D501100E29175 /* MELViewControllerPerfiliPad.xib in Resources */,
