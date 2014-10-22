@@ -132,7 +132,7 @@ NSTimer *timer3;
         int vidas = [vidasPlist intValue];
         
         if (vidas-1<0) {
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Game Over" message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Fim de Jogo" message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alert show];
             [self Desistir];
         }

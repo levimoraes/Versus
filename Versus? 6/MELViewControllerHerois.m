@@ -27,12 +27,12 @@ AVAudioPlayer *music;
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if(self) {
         
-        NSURL *musicFile;
-        musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"heroi" ofType:@"m4a"]];
-        music = [[AVAudioPlayer alloc]initWithContentsOfURL:musicFile error:nil];
-        music.volume = 0.5;
-        music.numberOfLoops=10;
-        [music play];
+//        NSURL *musicFile;
+//        musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"heroi" ofType:@"m4a"]];
+//        music = [[AVAudioPlayer alloc]initWithContentsOfURL:musicFile error:nil];
+//        music.volume = 0.5;
+//        music.numberOfLoops=10;
+//        [music play];
         
     }
     return self;
