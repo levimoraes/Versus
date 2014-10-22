@@ -39,7 +39,7 @@ AVAudioPlayer *music;
 }
 
 - (IBAction)BotaoJogar:(id)sender {
-    [music stop];
+//    [music st??op];
     MELViewControllerCategoria *categoria = [[MELViewControllerCategoria alloc]init];
     [self presentViewController:categoria animated:YES completion:nil];
 }
@@ -409,7 +409,7 @@ AVAudioPlayer *music;
 -(void)viewWillAppear:(BOOL)animated
 {
     NSURL *musicFile;
-    musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"music" ofType:@"m4a"]];
+    musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"musicaVersus" ofType:@"m4a"]];
     
     music = [[AVAudioPlayer alloc]initWithContentsOfURL:musicFile error:nil];
     music.volume = 0.5;

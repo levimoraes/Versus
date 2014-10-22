@@ -18,24 +18,24 @@
 int tempo2 = 10;
 NSTimer *timer3;
 
-AVAudioPlayer *music;
-
--(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if(self) {
-        
-        NSURL *musicFile;
-        musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"vilao" ofType:@"m4a"]];
-        music = [[AVAudioPlayer alloc]initWithContentsOfURL:musicFile error:nil];
-        music.volume = 0.5;
-        music.numberOfLoops=10;
-        [music play];
-        
-    }
-    return self;
-    
-}
+////AVAudioPlayer *music;
+//
+//-(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+//    
+//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+//    if(self) {
+//        
+//        NSURL *musicFile;
+////        musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"vilao" ofType:@"m4a"]];
+////        music = [[AVAudioPlayer alloc]initWithContentsOfURL:musicFile error:nil];
+////        music.volume = 0.5;
+////        music.numberOfLoops=10;
+////        [music play];
+//
+//    }
+//    return self;
+//    
+//}
 
 -(NSString*)caminhoOrdem
 {
@@ -58,7 +58,7 @@ AVAudioPlayer *music;
 
 -(void)Desistir
 {
-    [music stop];
+//    [music stop];
     MELViewControllerMenu *menu = [[MELViewControllerMenu alloc]init];
     
     NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
@@ -402,7 +402,7 @@ AVAudioPlayer *music;
 
 - (void)viewDidLoad
 {
-    [music play];
+//    [music play];
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     

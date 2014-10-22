@@ -52,6 +52,7 @@
 		6DE5E81A19AD244100F5F9A0 /* Game-Center2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5E81919AD244100F5F9A0 /* Game-Center2.png */; };
 		A95ADF4319ABB2E200513C42 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95ADF4219ABB2E200513C42 /* QuartzCore.framework */; };
 		A9C9102419E863CC008AC7CE /* LogoVS.png in Resources */ = {isa = PBXBuildFile; fileRef = A9C9102319E863CC008AC7CE /* LogoVS.png */; };
+		A9CE718019F8286F00DBDA69 /* musicaVersus.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A9CE717F19F8286F00DBDA69 /* musicaVersus.m4a */; };
 		A9D94E7519AE565100B28EA3 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D94E7419AE565100B28EA3 /* libCorePlot-CocoaTouch.a */; };
 		A9D9525E19AE59EB00B28EA3 /* CPTNumericData+TypeConversions_Generation.py in Resources */ = {isa = PBXBuildFile; fileRef = A9D951C219AE59EB00B28EA3 /* CPTNumericData+TypeConversions_Generation.py */; };
 		A9D9528419AE59EB00B28EA3 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = A9D9520E19AE59EB00B28EA3 /* license.txt */; };
@@ -141,6 +142,7 @@
 		6DE5E81919AD244100F5F9A0 /* Game-Center2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Game-Center2.png"; sourceTree = "<group>"; };
 		A95ADF4219ABB2E200513C42 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A9C9102319E863CC008AC7CE /* LogoVS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LogoVS.png; path = Imagens/LogoVS.png; sourceTree = "<group>"; };
+		A9CE717F19F8286F00DBDA69 /* musicaVersus.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = musicaVersus.m4a; sourceTree = "<group>"; };
 		A9D94E6319AE533600B28EA3 /* CPTGraphHostingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGraphHostingView.h; sourceTree = "<group>"; };
 		A9D94E6619AE533600B28EA3 /* CPTPlatformSpecificCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlatformSpecificCategories.h; sourceTree = "<group>"; };
 		A9D94E6819AE533600B28EA3 /* CPTPlatformSpecificDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlatformSpecificDefines.h; sourceTree = "<group>"; };
@@ -366,6 +368,7 @@
 		34E0F69C199A9C5D005A1FD0 = {
 			isa = PBXGroup;
 			children = (
+				A9CE717F19F8286F00DBDA69 /* musicaVersus.m4a */,
 				34E0F6A7199A9C5D005A1FD0 /* Frameworks */,
 				34E0F6F7199AA3F0005A1FD0 /* Perguntas */,
 				34E0F6DF199A9CE4005A1FD0 /* imagens */,
@@ -710,7 +713,7 @@
 				ORGANIZATIONNAME = "Eduardo Alves";
 				TargetAttributes = {
 					34E0F6A4199A9C5D005A1FD0 = {
-						DevelopmentTeam = FX8K75G44D;
+						DevelopmentTeam = A6AD9VPY62;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 1;
@@ -718,6 +721,7 @@
 						};
 					};
 					34E0F6BF199A9C5D005A1FD0 = {
+						DevelopmentTeam = A6AD9VPY62;
 						TestTargetID = 34E0F6A4199A9C5D005A1FD0;
 					};
 				};
@@ -775,6 +779,7 @@
 				A9DF2CE819E70F97008BDD46 /* Vida.png in Resources */,
 				6DE5E81A19AD244100F5F9A0 /* Game-Center2.png in Resources */,
 				A9D9528419AE59EB00B28EA3 /* license.txt in Resources */,
+				A9CE718019F8286F00DBDA69 /* musicaVersus.m4a in Resources */,
 				A9DF2C8719E7058C008BDD46 /* BGPerguntas.png in Resources */,
 				34E0F6F6199AA3E9005A1FD0 /* viloes.plist in Resources */,
 				6DDA412919E46F00007B2BF1 /* heroi.m4a in Resources */,
@@ -939,12 +944,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d549be79-5614-4133-a72a-63fdb1340e93";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -963,12 +969,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d549be79-5614-4133-a72a-63fdb1340e93";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

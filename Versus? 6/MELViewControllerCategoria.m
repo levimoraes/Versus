@@ -17,7 +17,7 @@
 
 @implementation MELViewControllerCategoria
 
-AVAudioPlayer *music;
+//AVAudioPlayer *music;
 
 -(NSString*)caminhoHerois
 {
@@ -97,7 +97,7 @@ AVAudioPlayer *music;
 }
 
 - (IBAction)BotaoVilao:(id)sender {
-    [music stop];
+//    [music stop];
     [self zerarScore];
     NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
     [plistPerfil insertObject:@"3" atIndex:8];
@@ -108,7 +108,7 @@ AVAudioPlayer *music;
     [self presentViewController:vilao animated:YES completion:nil];
 }
 - (IBAction)BotaoHeroi:(id)sender {
-    [music stop];
+//    [music stop];
     [self zerarScore];
     
     NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
@@ -120,7 +120,7 @@ AVAudioPlayer *music;
     [self presentViewController:heroi animated:YES completion:nil];
 }
 - (IBAction)BotaoVoltar:(id)sender {
-    [music stop];
+//    [music stop];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -141,13 +141,13 @@ AVAudioPlayer *music;
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    NSURL *musicFile;
-    musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"categoria" ofType:@"m4a"]];
-    
-    music = [[AVAudioPlayer alloc]initWithContentsOfURL:musicFile error:nil];
-    music.volume = 0.5;
-    music.numberOfLoops=10;
-    [music play];
+//    NSURL *musicFile;
+//    musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"categoria" ofType:@"m4a"]];
+//    
+//    music = [[AVAudioPlayer alloc]initWithContentsOfURL:musicFile error:nil];
+//    music.volume = 0.5;
+//    music.numberOfLoops=10;
+//    [music play];
     
 }
 
