@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6246" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6245" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6239"/>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MELViewControllerMenuiPad">
@@ -17,12 +17,12 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo Menu.png" translatesAutoresizingMaskIntoConstraints="NO" id="Em8-7m-tu8">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LogoVS.png" translatesAutoresizingMaskIntoConstraints="NO" id="Em8-7m-tu8">
                     <rect key="frame" x="396" y="28" width="233" height="289"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sh5-W7-yTc">
                     <rect key="frame" x="389" y="356" width="246" height="160"/>
-                    <state key="normal" backgroundImage="Botao Jogar.png">
+                    <state key="normal" backgroundImage="BotaoJogar.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -31,7 +31,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jts-QV-0AW">
                     <rect key="frame" x="389" y="539" width="246" height="160"/>
-                    <state key="normal" backgroundImage="Botao Perfil.png">
+                    <state key="normal" backgroundImage="BotaoPerfil.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -60,10 +60,10 @@
         </view>
     </objects>
     <resources>
-        <image name="Botao Jogar.png" width="320" height="203"/>
-        <image name="Botao Perfil.png" width="320" height="203"/>
+        <image name="BotaoJogar.png" width="320" height="203"/>
+        <image name="BotaoPerfil.png" width="320" height="203"/>
         <image name="GC Saturado.png" width="1024" height="1024"/>
-        <image name="Logo Menu.png" width="270" height="403"/>
+        <image name="LogoVS.png" width="641" height="1136"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
