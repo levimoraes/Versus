@@ -413,9 +413,6 @@ AVAudioPlayer *music;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-//        [timer2 invalidate];
-//        timer2 = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timer) userInfo:nil repeats:YES];
-    
     self.timer2 = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timer) userInfo:nil repeats:YES];
     
     [self pegarPerguntaAleatoria];

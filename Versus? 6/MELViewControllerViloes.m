@@ -16,7 +16,6 @@
 @implementation MELViewControllerViloes
 
 int tempo2 = 10;
-NSTimer *timer3;
 
 ////AVAudioPlayer *music;
 //
@@ -406,8 +405,7 @@ NSTimer *timer3;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [timer3 invalidate];
-    timer3 = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timer) userInfo:nil repeats:YES];
+        self.timer2 = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timer) userInfo:nil repeats:YES];
     
     [self pegarPerguntaAleatoria];
     [self sortearKey];
@@ -435,7 +433,7 @@ NSTimer *timer3;
     tempo2--;
     
     if(tempo2 <= 0){
-        tempo2 = NULL;
+        tempo2 = nil;
         tempo2 = 10;
     }
     
@@ -446,7 +444,6 @@ NSTimer *timer3;
 
 -(NSString*)caminhoPerfil
 {
-    
     NSArray *paths = NSSearchPathForDirectoriesInDomains
     (NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
@@ -471,6 +468,13 @@ NSTimer *timer3;
 
 -(void)proximaPergunta{
     _barraTempo = NULL;
+    tempo2 = nil;
+    tempo2 = 10;
+    if([self.timer2 isValid]){
+        [self.timer2 invalidate];
+        self.timer2 = nil;
+    }
+
     MELViewControllerViloes *heroi = [[MELViewControllerViloes alloc]init];
     [heroi setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
     [self presentViewController:heroi animated:YES completion:nil];

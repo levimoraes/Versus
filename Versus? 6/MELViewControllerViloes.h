@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelVidas;
 @property (weak, nonatomic) IBOutlet UIProgressView *barraTempo;
 @property (weak, nonatomic) NSTimer *timer;
+@property (weak, nonatomic) NSTimer *timer2;
 @property (weak, nonatomic) IBOutlet UIButton *opcao4;
 @property (weak, nonatomic) IBOutlet UIButton *opcao3;
 @property (weak, nonatomic) IBOutlet UIButton *opcao2;
