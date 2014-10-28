@@ -18,7 +18,7 @@
 @implementation MELViewControllerHerois
 
 int tempo = 10;
-NSTimer *timer2;
+//NSTimer *timer2;
 
 AVAudioPlayer *music;
 
@@ -116,7 +116,6 @@ AVAudioPlayer *music;
         [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
         
         _labelScore.text = pontosPlist;
-        
     }else{
         
         [_opcao1 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
@@ -399,6 +398,14 @@ AVAudioPlayer *music;
     [self performSelector:@selector(proximaPergunta) withObject:nil afterDelay:0.5];
 }
 
+-(void)viewDidDisappear:(BOOL)animated{
+
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+
+}
+
 - (void)viewDidLoad
 {
     
@@ -406,9 +413,10 @@ AVAudioPlayer *music;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [timer2 invalidate];
-    timer2 = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timer) userInfo:nil repeats:YES];
+//        [timer2 invalidate];
+//        timer2 = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timer) userInfo:nil repeats:YES];
     
+    self.timer2 = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timer) userInfo:nil repeats:YES];
     
     [self pegarPerguntaAleatoria];
     [self sortearKey];
@@ -436,7 +444,7 @@ AVAudioPlayer *music;
     tempo--;
     
     if(tempo <= 0){
-        tempo = NULL;
+        tempo = nil;
         tempo = 10;
     }
         
@@ -471,6 +479,12 @@ AVAudioPlayer *music;
 
 -(void)proximaPergunta{
     _barraTempo = NULL;
+    tempo = nil;
+    tempo = 10;
+    if([self.timer2 isValid]){
+        [self.timer2 invalidate];
+        self.timer2 = nil;
+    }
     MELViewControllerHerois *heroi = [[MELViewControllerHerois alloc]init];
     [heroi setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
     [self presentViewController:heroi animated:YES completion:nil];
