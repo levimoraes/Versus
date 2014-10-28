@@ -437,7 +437,7 @@
     
     
     //animando a imagem de fundo do menu
-    NSArray *imageNames = @[@"BG Menu.png", @"BGMenu2.png"];
+    NSArray *imageNames = @[@"BGMenu.png", @"BGMenu2.png"];
     
     NSMutableArray *images = [[NSMutableArray alloc] init];
     for (int i = 0; i < imageNames.count; i++) {
