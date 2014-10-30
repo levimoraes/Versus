@@ -76,7 +76,7 @@
                     <rect key="frame" x="239" y="553" width="135" height="58"/>
                 </imageView>
                 <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="VEp-wH-POb">
-                    <rect key="frame" x="20" y="327" width="984" height="2.5"/>
+                    <rect key="frame" x="20" y="327" width="984" height="3"/>
                     <color key="progressTintColor" red="0.92156869173049927" green="0.15686275064945221" blue="0.098039224743843079" alpha="1" colorSpace="deviceRGB"/>
                     <color key="trackTintColor" red="1" green="0.95564576572809623" blue="0.99122052484944889" alpha="1" colorSpace="calibratedRGB"/>
                 </progressView>
