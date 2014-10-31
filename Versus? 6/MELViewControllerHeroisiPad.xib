@@ -10,6 +10,8 @@
                 <outlet property="barraTempo" destination="odp-xM-zXu" id="FWC-Ug-uyU"/>
                 <outlet property="labelPergunta" destination="uiY-5t-KU7" id="I9K-tX-HXx"/>
                 <outlet property="labelScore" destination="5vd-oC-uew" id="bPX-o4-47X"/>
+                <outlet property="labelTempo" destination="dE1-wZ-u6y" id="Fah-bB-vV2"/>
+                <outlet property="labelVidas" destination="WXw-6E-Bf4" id="JLS-zA-GpK"/>
                 <outlet property="opcao1" destination="Mld-DG-GHR" id="iEn-Pa-LM3"/>
                 <outlet property="opcao2" destination="kZE-IX-rEt" id="D1h-9b-jkK"/>
                 <outlet property="opcao3" destination="veh-Jd-RLe" id="D2d-kP-EaL"/>

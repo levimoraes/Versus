@@ -30,6 +30,8 @@
 
 @implementation MELViewControllerMenuiPad
 
+AVAudioPlayer *music;
+
 - (IBAction)BotaoPerfil:(id)sender {
     MELViewControllerPerfiliPad *perfil = [[MELViewControllerPerfiliPad alloc]init];
     [self presentViewController:perfil animated:YES completion:nil];
@@ -482,6 +484,15 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    NSURL *musicFile;
+    musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"musicaVersus" ofType:@"m4a"]];
+    music = [[AVAudioPlayer alloc]initWithContentsOfURL:musicFile error:nil];
+    music.volume = 0.5;
+    music.numberOfLoops = 10;
+    [music play];
 }
 
 @end

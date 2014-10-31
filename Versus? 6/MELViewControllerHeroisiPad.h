@@ -23,5 +23,7 @@
 @property (nonatomic) NSString *key2;
 @property (nonatomic) NSString *key3;
 @property (nonatomic) NSString *key4;
+@property (weak, nonatomic) IBOutlet UILabel *labelVidas;
+@property (weak, nonatomic) IBOutlet UILabel *labelTempo;
 
 @end

@@ -79,9 +79,15 @@
 }
 
 - (IBAction)BotaoHeroi:(id)sender {
+    [self zerarScore];
+    
+    NSMutableArray *plistPerfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+    [plistPerfil insertObject:@"3" atIndex:8];
+    [plistPerfil writeToFile:[self caminhoPerfil] atomically:YES];
+    
+    MELViewControllerHeroisiPad *heroi = [[MELViewControllerHeroisiPad alloc]init];
     [self sortearHerois];
-    MELViewControllerHeroisiPad *vilao = [[MELViewControllerHeroisiPad alloc]init];
-    [self presentViewController:vilao animated:YES completion:nil];
+    [self presentViewController:heroi animated:YES completion:nil];
 
 }
 
@@ -89,6 +95,25 @@
     [self sortearViloes];
     MELViewControllerViloesiPad *vilao = [[MELViewControllerViloesiPad alloc]init];
     [self presentViewController:vilao animated:YES completion:nil];
+}
+
+-(void)zerarScore{
+    NSString *score = [NSString stringWithFormat:@"0"];
+    NSMutableArray *perfil = [[NSMutableArray alloc]initWithContentsOfFile:[self caminhoPerfil]];
+    [perfil insertObject:score atIndex:5];
+    [perfil writeToFile:[self caminhoPerfil] atomically:YES];
+}
+
+-(NSString*)caminhoPerfil
+{
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains
+    (NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    NSString *fileName = [NSString stringWithFormat:@"%@/perfil.plist",documentsDirectory];
+    
+    return fileName;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
