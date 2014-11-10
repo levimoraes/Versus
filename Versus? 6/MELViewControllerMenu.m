@@ -30,7 +30,7 @@
 @end
 
 @implementation MELViewControllerMenu
-
+    int flag = 0;
 AVAudioPlayer *music;
 
 - (IBAction)BotaoPerfil:(id)sender {
@@ -404,20 +404,6 @@ AVAudioPlayer *music;
     return fileName;
 }
 
-
-
--(void)viewWillAppear:(BOOL)animated
-{
-    NSURL *musicFile;
-    musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"musicaVersus" ofType:@"m4a"]];
-    
-    music = [[AVAudioPlayer alloc]initWithContentsOfURL:musicFile error:nil];
-    music.volume = 0.5;
-    music.numberOfLoops=10;
-    [music play];
-
-}
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -429,8 +415,14 @@ AVAudioPlayer *music;
 
 - (void)viewDidLoad
 {
+    NSURL *musicFile;
+    musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"musicaVersus" ofType:@"m4a"]];
     
-    
+    music = [[AVAudioPlayer alloc]initWithContentsOfURL:musicFile error:nil];
+    music.volume = 0.5;
+    music.numberOfLoops=10;
+    [music play];
+
     
     [self authenticateLocalPlayer];
     
@@ -440,11 +432,14 @@ AVAudioPlayer *music;
             NSLog(@"NAO CONECTADO");
             [_rankingButton setBackgroundImage:[UIImage imageNamed:@"GCSaturado.png"] forState:UIControlStateNormal];
             [_rankingButton setEnabled:NO];
+            [_rankingButton bringSubviewToFront:self.view];
         }
         else {
             NSLog(@"CONECTADO");
             [_rankingButton setBackgroundImage:[UIImage imageNamed:@"Game-Center2.png"] forState:UIControlStateNormal];
             [_rankingButton setEnabled:YES];
+            [_rankingButton bringSubviewToFront:self.view];
+        
         }
     }];
     
@@ -490,6 +485,19 @@ AVAudioPlayer *music;
         NSLog(@"%@",[self caminhoPerfil]);
     }
 }
+- (IBAction)stopMusic:(id)sender {
+    if (flag == 0) {
+        [_botaoMusica setBackgroundImage:[UIImage imageNamed:@"sem_som.png"] forState:UIControlStateNormal];
+        [music stop];
+        flag = 1;
+    } else {
+        [_botaoMusica setBackgroundImage:[UIImage imageNamed:@"com_som.png"] forState:UIControlStateNormal];
+        [music play];
+        flag = 0;
+    }
+
+}
+
 
 - (void)didReceiveMemoryWarning
 {

@@ -44,7 +44,7 @@
 		34E0F701199AA4E3005A1FD0 /* MELViewControllerHerois.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E0F6FF199AA4E3005A1FD0 /* MELViewControllerHerois.xib */; };
 		34FDFEC1199BD9E800627E26 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FDFEC0199BD9E800627E26 /* AVFoundation.framework */; };
 		6DAED63D19A3DD9D00763378 /* CustomActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAED63C19A3DD9D00763378 /* CustomActionSheet.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		6DE5E81819AD243200F5F9A0 /* GC Saturado.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5E81719AD243200F5F9A0 /* GC Saturado.png */; };
+		6DE5E81819AD243200F5F9A0 /* GCSaturado.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5E81719AD243200F5F9A0 /* GCSaturado.png */; };
 		6DE5E81A19AD244100F5F9A0 /* Game-Center2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE5E81919AD244100F5F9A0 /* Game-Center2.png */; };
 		A95ADF4319ABB2E200513C42 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95ADF4219ABB2E200513C42 /* QuartzCore.framework */; };
 		A9BC58DA19FFCD4C002D01B6 /* BotaoVoltar.png in Resources */ = {isa = PBXBuildFile; fileRef = A9BC58D919FFCD4C002D01B6 /* BotaoVoltar.png */; };
@@ -66,6 +66,8 @@
 		A9DF2CE619E70F97008BDD46 /* Score.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2CE219E70F97008BDD46 /* Score.png */; };
 		A9DF2CE719E70F97008BDD46 /* Tempo.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2CE319E70F97008BDD46 /* Tempo.png */; };
 		A9DF2CE819E70F97008BDD46 /* Vida.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2CE419E70F97008BDD46 /* Vida.png */; };
+		A9F2CDC61A1120CE00FDF851 /* sem_som.png in Resources */ = {isa = PBXBuildFile; fileRef = A9F2CDC51A1120CE00FDF851 /* sem_som.png */; };
+		A9F2CDC81A1128EE00FDF851 /* com_som.png in Resources */ = {isa = PBXBuildFile; fileRef = A9F2CDC71A1128EE00FDF851 /* com_som.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,7 +133,7 @@
 		34FDFEC0199BD9E800627E26 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6DAED63B19A3DD9D00763378 /* CustomActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomActionSheet.h; sourceTree = "<group>"; };
 		6DAED63C19A3DD9D00763378 /* CustomActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomActionSheet.m; sourceTree = "<group>"; };
-		6DE5E81719AD243200F5F9A0 /* GC Saturado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GC Saturado.png"; sourceTree = "<group>"; };
+		6DE5E81719AD243200F5F9A0 /* GCSaturado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GCSaturado.png; sourceTree = "<group>"; };
 		6DE5E81919AD244100F5F9A0 /* Game-Center2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Game-Center2.png"; sourceTree = "<group>"; };
 		A95ADF4219ABB2E200513C42 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A9BC58D919FFCD4C002D01B6 /* BotaoVoltar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotaoVoltar.png; path = Imagens/BotaoVoltar.png; sourceTree = "<group>"; };
@@ -273,6 +275,8 @@
 		A9DF2CE219E70F97008BDD46 /* Score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Score.png; path = Imagens/Score.png; sourceTree = "<group>"; };
 		A9DF2CE319E70F97008BDD46 /* Tempo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tempo.png; path = Imagens/Tempo.png; sourceTree = "<group>"; };
 		A9DF2CE419E70F97008BDD46 /* Vida.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Vida.png; path = Imagens/Vida.png; sourceTree = "<group>"; };
+		A9F2CDC51A1120CE00FDF851 /* sem_som.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sem_som.png; sourceTree = "<group>"; };
+		A9F2CDC71A1128EE00FDF851 /* com_som.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = com_som.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -479,6 +483,8 @@
 		34E0F6DF199A9CE4005A1FD0 /* imagens */ = {
 			isa = PBXGroup;
 			children = (
+				A9F2CDC71A1128EE00FDF851 /* com_som.png */,
+				A9F2CDC51A1120CE00FDF851 /* sem_som.png */,
 				A9BC58D919FFCD4C002D01B6 /* BotaoVoltar.png */,
 				A9C9102319E863CC008AC7CE /* LogoVS.png */,
 				A9DF2CE119E70F97008BDD46 /* Pergunta.png */,
@@ -495,7 +501,7 @@
 				A9DF2C8219E7058C008BDD46 /* BotaoPerfil.png */,
 				A9DF2C8419E7058C008BDD46 /* Escolhaseulado.png */,
 				6DE5E81919AD244100F5F9A0 /* Game-Center2.png */,
-				6DE5E81719AD243200F5F9A0 /* GC Saturado.png */,
+				6DE5E81719AD243200F5F9A0 /* GCSaturado.png */,
 			);
 			name = imagens;
 			sourceTree = "<group>";
@@ -751,15 +757,17 @@
 				34ABFE11199D4CF200E29175 /* MELViewControllerMenuiPad.xib in Resources */,
 				A9C9102419E863CC008AC7CE /* LogoVS.png in Resources */,
 				34E0F6EE199A9FF1005A1FD0 /* MELViewControllerCategoria.xib in Resources */,
+				A9F2CDC81A1128EE00FDF851 /* com_som.png in Resources */,
 				34E0F6DB199A9C8F005A1FD0 /* MELViewControllerMenu.xib in Resources */,
 				A9DF2C8C19E7058C008BDD46 /* BotaoPerfil.png in Resources */,
 				A9DF2C8E19E7058C008BDD46 /* Escolhaseulado.png in Resources */,
 				34ABFE1B199D4FD400E29175 /* MELViewControllerViloesiPad.xib in Resources */,
 				A9DF2CE019E70E6F008BDD46 /* BotaoVilao.png in Resources */,
+				A9F2CDC61A1120CE00FDF851 /* sem_som.png in Resources */,
 				A9DF2C8819E7058C008BDD46 /* Botao.png in Resources */,
 				34ABFE16199D4FB600E29175 /* MELViewControllerCategoriaiPad.xib in Resources */,
 				A9DF2C8519E7058C008BDD46 /* BGMenu.png in Resources */,
-				6DE5E81819AD243200F5F9A0 /* GC Saturado.png in Resources */,
+				6DE5E81819AD243200F5F9A0 /* GCSaturado.png in Resources */,
 				A9DF2CDF19E70E6F008BDD46 /* BotaoHeroi.png in Resources */,
 				34ABFE20199D4FF200E29175 /* MELViewControllerHeroisiPad.xib in Resources */,
 				A9DF2CE519E70F97008BDD46 /* Pergunta.png in Resources */,
