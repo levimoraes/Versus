@@ -49,6 +49,9 @@
 		A95ADF4319ABB2E200513C42 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95ADF4219ABB2E200513C42 /* QuartzCore.framework */; };
 		A9BC58DA19FFCD4C002D01B6 /* BotaoVoltar.png in Resources */ = {isa = PBXBuildFile; fileRef = A9BC58D919FFCD4C002D01B6 /* BotaoVoltar.png */; };
 		A9C9102419E863CC008AC7CE /* LogoVS.png in Resources */ = {isa = PBXBuildFile; fileRef = A9C9102319E863CC008AC7CE /* LogoVS.png */; };
+		A9CA70EA1A1134C400250AED /* MELViewControllerGameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CA70E81A1134C400250AED /* MELViewControllerGameOver.m */; };
+		A9CA70EB1A1134C400250AED /* MELViewControllerGameOver.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CA70E91A1134C400250AED /* MELViewControllerGameOver.xib */; };
+		A9CA70ED1A1134FF00250AED /* GameOver.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CA70EC1A1134FF00250AED /* GameOver.png */; };
 		A9CE718019F8286F00DBDA69 /* musicaVersus.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A9CE717F19F8286F00DBDA69 /* musicaVersus.m4a */; };
 		A9D94E7519AE565100B28EA3 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D94E7419AE565100B28EA3 /* libCorePlot-CocoaTouch.a */; };
 		A9D9525E19AE59EB00B28EA3 /* CPTNumericData+TypeConversions_Generation.py in Resources */ = {isa = PBXBuildFile; fileRef = A9D951C219AE59EB00B28EA3 /* CPTNumericData+TypeConversions_Generation.py */; };
@@ -138,6 +141,10 @@
 		A95ADF4219ABB2E200513C42 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A9BC58D919FFCD4C002D01B6 /* BotaoVoltar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotaoVoltar.png; path = Imagens/BotaoVoltar.png; sourceTree = "<group>"; };
 		A9C9102319E863CC008AC7CE /* LogoVS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LogoVS.png; path = Imagens/LogoVS.png; sourceTree = "<group>"; };
+		A9CA70E71A1134C400250AED /* MELViewControllerGameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MELViewControllerGameOver.h; path = ../webService/MELViewControllerGameOver.h; sourceTree = "<group>"; };
+		A9CA70E81A1134C400250AED /* MELViewControllerGameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MELViewControllerGameOver.m; path = ../webService/MELViewControllerGameOver.m; sourceTree = "<group>"; };
+		A9CA70E91A1134C400250AED /* MELViewControllerGameOver.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MELViewControllerGameOver.xib; path = ../webService/MELViewControllerGameOver.xib; sourceTree = "<group>"; };
+		A9CA70EC1A1134FF00250AED /* GameOver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GameOver.png; path = Imagens/GameOver.png; sourceTree = "<group>"; };
 		A9CE717F19F8286F00DBDA69 /* musicaVersus.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = musicaVersus.m4a; sourceTree = "<group>"; };
 		A9D94E6319AE533600B28EA3 /* CPTGraphHostingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGraphHostingView.h; sourceTree = "<group>"; };
 		A9D94E6619AE533600B28EA3 /* CPTPlatformSpecificCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlatformSpecificCategories.h; sourceTree = "<group>"; };
@@ -445,6 +452,7 @@
 		34E0F6DC199A9C99005A1FD0 /* .h */ = {
 			isa = PBXGroup;
 			children = (
+				A9CA70E71A1134C400250AED /* MELViewControllerGameOver.h */,
 				6DAED63B19A3DD9D00763378 /* CustomActionSheet.h */,
 				34E0F6D7199A9C8F005A1FD0 /* MELViewControllerMenu.h */,
 				34E0F6EA199A9FF1005A1FD0 /* MELViewControllerCategoria.h */,
@@ -458,6 +466,7 @@
 		34E0F6DD199A9CAE005A1FD0 /* .m */ = {
 			isa = PBXGroup;
 			children = (
+				A9CA70E81A1134C400250AED /* MELViewControllerGameOver.m */,
 				34E0F6D8199A9C8F005A1FD0 /* MELViewControllerMenu.m */,
 				6DAED63C19A3DD9D00763378 /* CustomActionSheet.m */,
 				34E0F6EB199A9FF1005A1FD0 /* MELViewControllerCategoria.m */,
@@ -476,6 +485,7 @@
 				34E0F6FA199AA4C2005A1FD0 /* MELViewControllerViloes.xib */,
 				34E0F6FF199AA4E3005A1FD0 /* MELViewControllerHerois.xib */,
 				34130DD0199D2A780059276B /* MELViewControllerPerfil.xib */,
+				A9CA70E91A1134C400250AED /* MELViewControllerGameOver.xib */,
 			);
 			name = xib;
 			sourceTree = "<group>";
@@ -483,6 +493,7 @@
 		34E0F6DF199A9CE4005A1FD0 /* imagens */ = {
 			isa = PBXGroup;
 			children = (
+				A9CA70EC1A1134FF00250AED /* GameOver.png */,
 				A9F2CDC71A1128EE00FDF851 /* com_som.png */,
 				A9F2CDC51A1120CE00FDF851 /* sem_som.png */,
 				A9BC58D919FFCD4C002D01B6 /* BotaoVoltar.png */,
@@ -775,8 +786,10 @@
 				A9DF2CE819E70F97008BDD46 /* Vida.png in Resources */,
 				6DE5E81A19AD244100F5F9A0 /* Game-Center2.png in Resources */,
 				A9D9528419AE59EB00B28EA3 /* license.txt in Resources */,
+				A9CA70ED1A1134FF00250AED /* GameOver.png in Resources */,
 				A9CE718019F8286F00DBDA69 /* musicaVersus.m4a in Resources */,
 				A9DF2C8719E7058C008BDD46 /* BGPerguntas.png in Resources */,
+				A9CA70EB1A1134C400250AED /* MELViewControllerGameOver.xib in Resources */,
 				A9BC58DA19FFCD4C002D01B6 /* BotaoVoltar.png in Resources */,
 				34E0F6F6199AA3E9005A1FD0 /* viloes.plist in Resources */,
 				34E0F6B3199A9C5D005A1FD0 /* InfoPlist.strings in Resources */,
@@ -803,6 +816,7 @@
 				34E0F6FB199AA4C2005A1FD0 /* MELViewControllerViloes.m in Sources */,
 				34ABFE24199D501100E29175 /* MELViewControllerPerfiliPad.m in Sources */,
 				34130DD1199D2A780059276B /* MELViewControllerPerfil.m in Sources */,
+				A9CA70EA1A1134C400250AED /* MELViewControllerGameOver.m in Sources */,
 				34E0F6B5199A9C5D005A1FD0 /* main.m in Sources */,
 				34ABFE1A199D4FD400E29175 /* MELViewControllerViloesiPad.m in Sources */,
 				34E0F6DA199A9C8F005A1FD0 /* MELViewControllerMenu.m in Sources */,

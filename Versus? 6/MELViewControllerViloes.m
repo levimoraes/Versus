@@ -8,6 +8,8 @@
 
 #import "MELViewControllerViloes.h"
 #import "MELViewControllerMenu.h"
+#import "MELViewControllerPerfil.h"
+#import "MELViewControllerGameOver.h"
 
 @interface MELViewControllerViloes ()
 
@@ -131,10 +133,9 @@ int tempo2 = 10;
         int vidas = [vidasPlist intValue];
         
         if (vidas-1<0) {
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Fim de Jogo" message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [alert show];
-            [self Desistir];
-        }
+            MELViewControllerGameOver *gameOver = [[MELViewControllerGameOver alloc]init];
+            [self presentViewController:gameOver animated:YES completion:nil];
+            [self Desistir];        }
         else{
             vidas--;
             vidasPlist = [NSString stringWithFormat:@"%d",vidas];
@@ -211,10 +212,9 @@ int tempo2 = 10;
         int vidas = [vidasPlist intValue];
         
         if (vidas-1<0) {
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Game Over" message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [alert show];
-            [self Desistir];
-        }
+            MELViewControllerGameOver *gameOver = [[MELViewControllerGameOver alloc]init];
+            [self presentViewController:gameOver animated:YES completion:nil];
+            [self Desistir];        }
         else{
             vidas--;
             vidasPlist = [NSString stringWithFormat:@"%d",vidas];
@@ -291,10 +291,9 @@ int tempo2 = 10;
         int vidas = [vidasPlist intValue];
         
         if (vidas-1<0) {
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Game Over" message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [alert show];
-            [self Desistir];
-        }
+            MELViewControllerGameOver *gameOver = [[MELViewControllerGameOver alloc]init];
+            [self presentViewController:gameOver animated:YES completion:nil];
+            [self Desistir];        }
         else{
             vidas--;
             vidasPlist = [NSString stringWithFormat:@"%d",vidas];
@@ -371,8 +370,8 @@ int tempo2 = 10;
         int vidas = [vidasPlist intValue];
         
         if (vidas-1<0) {
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Game Over" message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
-            [alert show];
+            MELViewControllerGameOver *gameOver = [[MELViewControllerGameOver alloc]init];
+            [self presentViewController:gameOver animated:YES completion:nil];
             [self Desistir];
         }
         else{
